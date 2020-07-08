@@ -1,0 +1,71 @@
+/* ========== CSS NAVBAR ========== */
+
+.nav-link:hover {
+  color: #fca728 !important;
+}
+
+.btn {
+  width: 91px !important;
+  height: 36px !important;
+  border-radius: 35px !important;
+  border: none !important;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16) !important;
+  background-color: #fca728 !important;
+  color: #312e2e !important;
+}
+
+.btn:hover {
+  background-color: #c9c5c0 !important;
+}
+
+nav input {
+  width: 250px;
+  height: 36px;
+  font-size: 20px;
+  background: #a79f9f40 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 50px;
+  opacity: 1;
+  border: 0;
+  padding: 10px;
+  margin: 5px;
+  outline: none;
+}
+
+/* ========== RESPONSIVE NAVBAR ========== */
+/* Extra small devices (less than 480px) */
+@media only screen and (max-width: 480px) {
+  nav img {
+    height: 50px;
+    width: auto;
+  }
+  nav h4 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Small devices (old iPhones, 480px and up) */
+@media only screen and (min-width: 480px) {
+  /* Values go here... */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* Values go here... */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  nav img {
+    height: 90px;
+    width: auto;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  nav img {
+    height: 90px;
+    width: auto;
+  }
+}
