@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Spinner from '../spinner/Spinner';
 import logoCentro from '../../images/logoCentro.png';
-// import IconVideos from '../../images/IconVideos.png';
+import IconVideos from '../../images/IconVideos.png';
 
 import './Home.css';
 
@@ -35,7 +35,7 @@ class Home extends Component {
         <div className='header-contenido container'>
           {/* Logo del centro */}
           <div className='container'>
-            <img src={logoCentro} alt='Dax Logo' />
+            <img className='logo-centro' src={logoCentro} alt='Dax Logo' />
           </div>
           {/* Formulario para buscar partes */}
           <div className='container d-flex justify-content-center'>
@@ -61,6 +61,16 @@ class Home extends Component {
               <p className='click-link-text'>
                 Click aqui si no sabes el numero de parte
               </p>
+            </Link>
+          </div>
+          <div className='container tutorial-link'>
+            <Link to='/tutorial'>
+              <img
+                className='logo-tutorial'
+                src={IconVideos}
+                alt='Tutorial Logo'
+              />
+              <p className='tutorial-text'>Tutoriales</p>
             </Link>
           </div>
         </div>

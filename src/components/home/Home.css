@@ -31,11 +31,15 @@ header input {
   TODO: Set the label font size
 } */
 
+.tutorial-link {
+  text-align: right;
+}
+
 /* ========== RESPONSIVE HOME ========== */
 
 /* EXTRA SMALL devices (less than 480px) */
 @media only screen and (max-width: 480px) {
-  header img {
+  .logo-centro {
     height: 120px;
     width: auto;
     margin-top: 100px;
@@ -57,11 +61,20 @@ header input {
     padding: 10px;
     margin: 10px;
   }
+  .logo-tutorial {
+    margin-top: 50px;
+    height: 45px;
+    width: auto;
+  }
+  .tutorial-text {
+    color: #312e2e;
+    font-size: 10px;
+  }
 }
 
 /* SMALL devices (old iPhones, 480px AND UP) */
 @media only screen and (min-width: 480px) {
-  header img {
+  .logo-centro {
     height: 150px;
     width: auto;
     margin-top: 100px;
@@ -87,7 +100,7 @@ header input {
 
 /* MEDIUM devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  header img {
+  .logo-centro {
     height: 200px;
     width: auto;
     margin-top: 100px;
@@ -113,7 +126,7 @@ header input {
 
 /* LARGE devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  header img {
+  .logo-centro {
     height: 250px;
     width: auto;
     margin-top: 250px;
@@ -139,7 +152,7 @@ header input {
 
 /* EXTRA LARGE devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  header img {
+  .logo-centro {
     height: 300px;
     width: auto;
     margin-top: 180px;
