@@ -1,0 +1,7 @@
+.spinner-wrapper {
+  color: #fca728;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+}

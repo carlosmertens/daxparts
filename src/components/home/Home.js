@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Spinner from '../spinner/Spinner';
 import logoCentro from '../../images/logoCentro.png';
 // import IconVideos from '../../images/IconVideos.png';
 
@@ -9,6 +10,7 @@ class Home extends Component {
   // Objecto (State) inicial del campo de captura
   state = {
     parte: '',
+    buscar: '',
   };
 
   // Evento que captura el campo de entrada
@@ -18,9 +20,16 @@ class Home extends Component {
     });
   };
 
+  // TODO: Use when Form "Buscar" is requested
+  // async componentDidMount() {}
+
   render() {
     // Prueba para capturar numero de parte
     console.log(this.state.parte);
+    // TODO: Connect Spinner with componentDidMount when searchs for a part
+    if (this.state.buscar.length !== 0) {
+      return <Spinner />;
+    }
     return (
       <header>
         <div className='header-contenido container'>
