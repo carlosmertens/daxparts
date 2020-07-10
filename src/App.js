@@ -6,6 +6,7 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 
 import Navbar from './components/navbar/Navbar';
 import Home from './components/home/Home';
+import Somos from './components/somos/Somos';
 
 class App extends Component {
   state = {};
@@ -14,6 +15,7 @@ class App extends Component {
       <Router>
         <Route path='/' component={Navbar} />
         <Route exact path='/' component={Home} />
+        <Route exact path='/somos' component={Somos} />
       </Router>
     );
   }

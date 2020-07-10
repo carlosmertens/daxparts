@@ -32,7 +32,7 @@ class Home extends Component {
     }
     return (
       <header>
-        <div className='header-contenido container'>
+        <div className='container header-contenido'>
           {/* Logo del centro */}
           <div className='container'>
             <img className='logo-centro' src={logoCentro} alt='Dax Logo' />
