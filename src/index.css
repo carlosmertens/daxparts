@@ -33,28 +33,28 @@ body {
   background-color: #c9c5c0 !important;
 }
 
-/* ========== RESPONSIVE HOME ========== */
-/* Extra small devices (less than 480px) */
+/* ========== RESPONSIVE TEMPLATE ========== */
+/* EXTRA SMALL devices (less than 480px) */
 @media only screen and (max-width: 480px) {
   /* Values go here... */
 }
 
-/* Small devices (old iPhones, 480px and up) */
+/* SMALL devices (old iPhones, 480px and up) */
 @media only screen and (min-width: 480px) {
   /* Values go here... */
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* MEDIUM devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   /* Values go here... */
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* LARGE devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   /* Values go here... */
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* EXTRA LARGE devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   /* Values go here... */
 }
