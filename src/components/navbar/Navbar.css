@@ -28,55 +28,60 @@ nav input {
 /* Extra small devices (less than 480px) */
 @media only screen and (max-width: 480px) {
   nav img {
-    height: 50px;
+    height: 60px;
     width: auto;
   }
   nav h4 {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 
 /* Small devices (old iPhones, 480px and up) */
 @media only screen and (min-width: 480px) {
   nav img {
-    height: 50px;
+    height: 70px;
     width: auto;
   }
   nav h4 {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   nav img {
-    height: 50px;
+    height: 80px;
     width: auto;
   }
   nav h4 {
-    font-size: 15px;
+    font-size: 22px;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   nav img {
-    height: 50px;
+    height: 90px;
     width: auto;
   }
   nav h4 {
-    font-size: 15px;
+    font-size: 20px;
+    margin: auto 15px auto 15px;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   nav img {
-    height: 90px;
+    padding-left: 30px;
+    height: 100px;
     width: auto;
   }
   nav h4 {
     font-size: 25px;
-    margin: auto 10px auto 10px;
+    margin: auto 25px auto 25px;
+  }
+  nav form {
+    padding-right: 30px;
   }
 }
