@@ -7,6 +7,10 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 import Navbar from './components/navbar/Navbar';
 import Home from './components/home/Home';
 import Somos from './components/somos/Somos';
+import Hacemos from './components/hacemos/Hacemos';
+import Ofrecemos from './components/ofrecemos/Ofrecemos';
+import Contacto from './components/contacto/Contacto';
+import Tutorial from './components/tutorial/Tutorial';
 
 class App extends Component {
   state = {};
@@ -16,6 +20,10 @@ class App extends Component {
         <Route path='/' component={Navbar} />
         <Route exact path='/' component={Home} />
         <Route exact path='/somos' component={Somos} />
+        <Route exact path='/hacemos' component={Hacemos} />
+        <Route exact path='/ofrecemos' component={Ofrecemos} />
+        <Route exact path='/contacto' component={Contacto} />
+        <Route exact path='/tutorial' component={Tutorial} />
       </Router>
     );
   }
