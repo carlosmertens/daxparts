@@ -1,9 +1,12 @@
 import React from 'react';
+import './Ofrecemos.css';
 
 function Ofrecemos() {
   return (
-    <div>
-      <h1>Ofrecemos</h1>
+    <div className='container-fluid ofrecemos-contenido'>
+      <div className='container ofrecemos-title'>
+        <h1>Que ofrecemos?</h1>
+      </div>
     </div>
   );
 }
