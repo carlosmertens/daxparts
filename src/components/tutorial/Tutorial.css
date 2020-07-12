@@ -5,3 +5,76 @@
   font-weight: 700;
   text-align: right;
 }
+
+.tutorial-subtitle {
+  text-align: right;
+}
+
+.logo-video {
+  float: right;
+  padding-right: 40px;
+}
+
+.texto-logo-tutorial {
+  float: left;
+  padding-left: 40px;
+}
+
+/* ========== RESPONSIVE HOME ========== */
+/* EXTRA SMALL devices (less than 480px) */
+@media only screen and (max-width: 480px) {
+  .tutorial-title h1 {
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .tutorial-subtitle {
+    padding-bottom: 20px;
+  }
+  .tutorial-contenido .col-sm {
+    padding-bottom: 40px;
+  }
+  .logo-video {
+    height: 35px;
+    width: auto;
+    /* float: right;
+    padding-right: 40px; */
+  }
+
+  /* .texto-logo-tutorial {
+    float: left;
+    padding-left: 40px;
+  } */
+}
+
+/* SMALL devices (old iPhones, 480px and up) */
+@media only screen and (min-width: 480px) {
+  .tutorial-title h1 {
+    font-size: 40px;
+    padding-top: 20px;
+  }
+}
+
+/* MEDIUM devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .tutorial-title h1 {
+    font-size: 50px;
+    padding-top: 20px;
+  }
+}
+
+/* LARGE devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .tutorial-title h1 {
+    font-size: 80px;
+    padding-top: 50px;
+  }
+}
+
+/* EXTRA LARGE devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .tutorial-title h1 {
+    font-size: 80px;
+    padding-top: 50px;
+  }
+}
