@@ -5,3 +5,52 @@
   font-weight: 700;
   text-align: right;
 }
+
+.contacto-contenido .row {
+  text-align: center;
+}
+
+/* ========== RESPONSIVE HOME ========== */
+/* EXTRA SMALL devices (less than 480px) */
+@media only screen and (max-width: 480px) {
+  .contacto-title h1 {
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .contacto-contenido .col-md {
+    padding-bottom: 30px;
+  }
+}
+
+/* SMALL devices (old iPhones, 480px and up) */
+@media only screen and (min-width: 480px) {
+  .contacto-title h1 {
+    font-size: 40px;
+    padding-top: 20px;
+  }
+}
+
+/* MEDIUM devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .contacto-title h1 {
+    font-size: 50px;
+    padding-top: 20px;
+  }
+}
+
+/* LARGE devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .contacto-title h1 {
+    font-size: 60px;
+    padding-top: 20px;
+  }
+}
+
+/* EXTRA LARGE devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .contacto-title h1 {
+    font-size: 60px;
+    padding-top: 20px;
+  }
+}
