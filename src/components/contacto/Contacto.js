@@ -1,9 +1,12 @@
 import React from 'react';
+import './Contacto.css';
 
 function Contacto() {
   return (
-    <div>
-      <h1>Contacto</h1>
+    <div className='container-fluid contacto-contenido'>
+      <div className='container contacto-title'>
+        <h1>Contáctanos!</h1>
+      </div>
     </div>
   );
 }
