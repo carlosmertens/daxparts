@@ -1,8 +1,6 @@
 /* ========== HOME PAGE ========== */
 
 header {
-  align-items: center;
-  justify-content: center;
   text-align: center;
 }
 
@@ -22,10 +20,6 @@ header input {
 .click-link-text {
   color: #fca728;
 }
-
-/* header label {
-  TODO: Set the label font size
-} */
 
 .tutorial-link {
   text-align: right;
@@ -74,85 +68,102 @@ header input {
     height: 150px;
     width: auto;
     margin-top: 100px;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
   }
 
   header label {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .click-link {
-    margin-top: 20px;
-    font-size: 16px;
+    margin-top: 40px;
+    font-size: 18px;
   }
 
   header input {
-    width: 180px;
+    width: 160px;
     height: 36px;
     padding: 10px;
-    margin: 15px;
+    margin: 10px;
+  }
+  .logo-tutorial {
+    margin-top: 80px;
+    height: 50px;
+    width: auto;
+  }
+  .tutorial-text {
+    color: #312e2e;
+    font-size: 15px;
   }
 }
 
 /* MEDIUM devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .logo-centro {
-    height: 200px;
+    height: 225px;
     width: auto;
-    margin-top: 100px;
-    margin-bottom: 60px;
+    margin-top: 150px;
+    margin-bottom: 80px;
   }
 
   header label {
-    font-size: 18px;
-  }
-
-  .click-link {
-    margin-top: 20px;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   header input {
-    width: 200px;
+    width: 300px;
     height: 36px;
-    padding: 10px;
-    margin: 20px;
+    margin: 5px;
+    font-size: 18px;
+    margin: 15px;
+  }
+  .click-link {
+    margin-top: 50px;
+    font-size: 20px;
+  }
+  .logo-tutorial {
+    margin-top: 150px;
+    height: 60px;
+    width: auto;
+  }
+  .tutorial-text {
+    color: #312e2e;
+    font-size: 18px;
   }
 }
 
 /* LARGE devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .logo-centro {
-    height: 250px;
+    height: 300px;
     width: auto;
     margin-top: 150px;
-    margin-bottom: 45px;
+    margin-bottom: 100px;
   }
 
   header label {
-    font-size: 20px;
-  }
-
-  .click-link {
-    margin-top: 40px;
-    font-size: 20px;
+    font-size: 25px;
   }
 
   header input {
-    width: 250px;
+    width: 325px;
     height: 36px;
     margin: 5px;
-    font-size: 15px;
+    font-size: 18px;
     margin: 15px;
   }
+  .click-link {
+    margin-top: 50px;
+    font-size: 25px;
+  }
   .logo-tutorial {
-    margin-top: 80px;
-    height: 55px;
+    margin-top: 150px;
+    height: 60px;
     width: auto;
   }
   .tutorial-text {
     color: #312e2e;
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 
@@ -161,32 +172,32 @@ header input {
   .logo-centro {
     height: 300px;
     width: auto;
-    margin-top: 150px;
+    margin-top: 130px;
     margin-bottom: 40px;
   }
 
   header label {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   header input {
-    width: 250px;
+    width: 350px;
     height: 36px;
     margin: 5px;
-    font-size: 15px;
+    font-size: 18px;
     margin: 15px;
   }
   .click-link {
     margin-top: 40px;
-    font-size: 20px;
+    font-size: 25px;
   }
   .logo-tutorial {
     margin-top: 80px;
-    height: 55px;
+    height: 60px;
     width: auto;
   }
   .tutorial-text {
     color: #312e2e;
-    font-size: 15px;
+    font-size: 18px;
   }
 }
