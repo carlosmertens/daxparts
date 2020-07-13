@@ -10,7 +10,7 @@ function Hacemos() {
 
       <div className='container'>
         <div className='row'>
-          <div className='col-sm'>
+          <div className='col-md'>
             <p className='hacemos-texto'>
               Nuestro sistema de ventas nos permite ofrecer repuestos para varios
               rubros y aplicaciones; con mas de 250,000 distintos repuestos, en
@@ -22,7 +22,7 @@ function Hacemos() {
               nuestro servicio y como lo hacemos
             </p>
           </div>
-          <div className='col-sm'>
+          <div className='col-md'>
             <div className='embed-responsive embed-responsive-16by9'>
               <iframe
                 title='Venta de Repuestos DAX'

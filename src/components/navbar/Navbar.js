@@ -45,12 +45,13 @@ class Navbar extends Component {
             </li>
           </ul>
           <form className='form-inline my-2 my-lg-0'>
-            <input
+            {/* <input
               className='mr-sm-2'
-              type='search'
+              type='text'
               placeholder='Usuario'
               aria-label='Search'
-            />
+            /> */}
+            <h4 className='text-white'>Ya tienes una cuenta?</h4>
             <button
               className='btn btn-outline-success my-2 my-sm-0'
               type='submit'>

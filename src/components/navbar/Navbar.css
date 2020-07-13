@@ -34,6 +34,9 @@ nav input {
   nav h4 {
     font-size: 18px;
   }
+  form h4 {
+    padding-right: 10px;
+  }
 }
 
 /* Small devices (old iPhones, 480px and up) */
