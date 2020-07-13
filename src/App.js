@@ -11,6 +11,7 @@ import Hacemos from './components/hacemos/Hacemos';
 import Ofrecemos from './components/ofrecemos/Ofrecemos';
 import Contacto from './components/contacto/Contacto';
 import Tutorial from './components/tutorial/Tutorial';
+import Cotizacion from './components/cotizacion/Cotizacion';
 
 class App extends Component {
   state = {};
@@ -24,6 +25,7 @@ class App extends Component {
         <Route exact path='/ofrecemos' component={Ofrecemos} />
         <Route exact path='/contacto' component={Contacto} />
         <Route exact path='/tutorial' component={Tutorial} />
+        <Route exact path='/cotizacion' component={Cotizacion} />
       </Router>
     );
   }
