@@ -22,7 +22,7 @@ header input {
 }
 
 .tutorial-link {
-  text-align: right;
+  text-align: center;
 }
 
 /* ========== RESPONSIVE HOME ========== */
@@ -76,7 +76,6 @@ header input {
   }
 
   .click-link {
-    margin-top: 40px;
     font-size: 18px;
   }
 
@@ -118,7 +117,6 @@ header input {
     margin: 15px;
   }
   .click-link {
-    margin-top: 50px;
     font-size: 20px;
   }
   .logo-tutorial {
@@ -135,7 +133,7 @@ header input {
 /* LARGE devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .logo-centro {
-    height: 300px;
+    height: 275px;
     width: auto;
     margin-top: 150px;
     margin-bottom: 100px;
@@ -153,7 +151,6 @@ header input {
     margin: 15px;
   }
   .click-link {
-    margin-top: 50px;
     font-size: 25px;
   }
   .logo-tutorial {
@@ -188,8 +185,7 @@ header input {
     margin: 15px;
   }
   .click-link {
-    margin-top: 40px;
-    font-size: 25px;
+    font-size: 20px;
   }
   .logo-tutorial {
     margin-top: 80px;
