@@ -1,9 +1,5 @@
 /* ========== SOMOS CSS ========== */
 
-.somos-contenido {
-  width: 100%;
-}
-
 .somos-title h1 {
   color: #fca728;
   font-weight: 700;
@@ -24,57 +20,57 @@
 /* EXTRA SMALL devices (less than 480px) */
 @media only screen and (max-width: 480px) {
   .somos-title h1 {
-    font-size: 30px;
+    font-size: 40px;
     padding-top: 30px;
   }
   .somos-texto {
-    font-size: 12px;
-    padding-top: 40px;
+    font-size: 13px;
+    padding-top: 30px;
   }
   .somos-banner {
     margin-top: 50px;
-    margin-bottom: 20px;
   }
   .somos-banner h3 {
-    margin: 15px auto 10px auto;
+    margin: 30px 0px 25px 0px;
+    font-size: 18px;
   }
 }
 
 /* SMALL devices (old iPhones, 480px and up) */
 @media only screen and (min-width: 480px) {
   .somos-title h1 {
-    font-size: 40px;
-    padding-top: 30px;
+    font-size: 50px;
+    padding-top: 50px;
   }
   .somos-texto {
-    font-size: 15px;
-    padding-top: 40px;
+    font-size: 18px;
+    padding-top: 80px;
   }
   .somos-banner {
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-top: 100px;
   }
   .somos-banner h3 {
-    margin: 15px auto 10px auto;
+    margin: 40px 0px 40px 0px;
+    font-size: 22px;
   }
 }
 
 /* MEDIUM devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .somos-title h1 {
-    font-size: 50px;
-    padding-top: 30px;
+    font-size: 60px;
+    padding-top: 50px;
   }
   .somos-texto {
-    font-size: 22px;
-    padding-top: 100px;
+    font-size: 20px;
+    padding-top: 80px;
   }
   .somos-banner {
     margin-top: 100px;
   }
   .somos-banner h3 {
-    margin: 40px auto 40px auto;
-    font-size: 25px;
+    margin: 50px 0px 50px 0px;
+    font-size: 28px;
   }
 }
 
@@ -82,17 +78,17 @@
 @media only screen and (min-width: 992px) {
   .somos-title h1 {
     font-size: 60px;
-    padding-top: 100px;
+    padding-top: 50px;
   }
   .somos-texto {
-    font-size: 25px;
-    padding-top: 100px;
+    font-size: 22px;
+    padding-top: 80px;
   }
   .somos-banner {
-    margin-top: 200px;
+    margin-top: 100px;
   }
   .somos-banner h3 {
-    margin: 60px auto 60px auto;
+    margin: 50px 0px 50px 0px;
     font-size: 30px;
   }
 }
@@ -104,14 +100,14 @@
     padding-top: 50px;
   }
   .somos-texto {
-    font-size: 25px;
+    font-size: 22px;
     padding-top: 80px;
   }
   .somos-banner {
-    margin-top: 150px;
+    margin-top: 100px;
   }
   .somos-banner h3 {
-    margin: 60px auto 60px auto;
+    margin: 50px 0px 50px 0px;
     font-size: 30px;
   }
 }

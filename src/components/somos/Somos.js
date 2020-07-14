@@ -6,7 +6,7 @@ const somosTexto =
 
 function Somos() {
   return (
-    <div className='container-fluid somos-contenido'>
+    <div className='somos-contenido'>
       <div className='container somos-title'>
         <h1>Quiene somos?</h1>
       </div>
