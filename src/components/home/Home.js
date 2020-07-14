@@ -37,9 +37,11 @@ class Home extends Component {
                   type='text'
                   id='buscar'
                 />
-                <button className='btn btn-primary mb-2' type='submit'>
-                  Buscar
-                </button>
+                <Link to='/cotizacion'>
+                  <button className='btn btn-primary mb-2' type='submit'>
+                    Buscar
+                  </button>
+                </Link>
               </div>
             </form>
           </div>
@@ -71,7 +73,25 @@ class Home extends Component {
                       QUE HACER CUANDO NO TIENES TU NUMERO DE PARTE
                     </h5>
                   </div>
-                  <div className='modal-body'>...</div>
+                  <div className='modal-body'>
+                    <div className='row'>
+                      <div className='col'>
+                        <Link to='/tutorial/'>
+                          <button
+                            className='que-hacer-button'
+                            // data-dismiss='modal'
+                            aria-hidden='true'>
+                            Manuales en linea gratitos
+                          </button>
+                        </Link>
+                      </div>
+                      <div className='col'>
+                        <button className='que-hacer-button'>
+                          Avisanos que necesitas y nosotros lo buscamos
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
