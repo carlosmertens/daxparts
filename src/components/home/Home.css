@@ -8,6 +8,8 @@ header {
   position: relative;
 }
 
+/* ===== Formulario para adquirir numero de parte ===== */
+
 header input {
   background: #a79f9f40 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
@@ -21,6 +23,24 @@ header input {
   color: #fca728;
 }
 
+/* ===== Modal "Click aqui" ===== */
+.button-link {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.button-link:focus {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.modal-title {
+  color: #fca728;
+}
+
+/* ===== Icono Tutorial ===== */
 .tutorial-link {
   text-align: center;
 }

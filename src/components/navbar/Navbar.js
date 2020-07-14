@@ -52,7 +52,7 @@ class Navbar extends Component {
             {/* Button trigger modal */}
             <button
               type='button'
-              class='btn'
+              className='btn'
               data-toggle='modal'
               data-target='#ingresarModal'>
               Ingresar
@@ -70,13 +70,13 @@ class Navbar extends Component {
                 <div className='modal-content align-items-center d-flex'>
                   <div className='modal-header'>
                     <img src={navLogo} alt='Dax Logo' />
-                    <button
+                    {/* <button
                       type='button'
                       className='close'
                       data-dismiss='modal'
                       aria-label='Close'>
                       <span aria-hidden='true'>&times;</span>
-                    </button>
+                    </button> */}
                   </div>
                   <div className='modal-body'>...</div>
                   <div className='modal-footer'>

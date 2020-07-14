@@ -45,12 +45,38 @@ class Home extends Component {
           </div>
           {/* Enlace para ayuda */}
           <div className='container click-link'>
-            <Link to='/'>
+            {/* <!-- Button trigger modal --> */}
+            <button
+              type='button'
+              className='button-link'
+              data-toggle='modal'
+              data-target='#exampleModal'>
               <p className='click-link-text'>
                 Click aqui si no sabes el numero de parte
               </p>
-            </Link>
+            </button>
+
+            {/* <!-- Modal --> */}
+            <div
+              className='modal fade'
+              id='exampleModal'
+              tabindex='-1'
+              role='dialog'
+              aria-labelledby='exampleModalLabel'
+              aria-hidden='true'>
+              <div className='modal-dialog'>
+                <div className='modal-content align-items-center d-flex'>
+                  <div className='modal-header'>
+                    <h5 className='modal-title' id='exampleModalLabel'>
+                      QUE HACER CUANDO NO TIENES TU NUMERO DE PARTE
+                    </h5>
+                  </div>
+                  <div className='modal-body'>...</div>
+                </div>
+              </div>
+            </div>
           </div>
+          {/* Icono Tutorial */}
           <div className='container tutorial-link'>
             <Link to='/tutorial'>
               <img
@@ -68,3 +94,11 @@ class Home extends Component {
 }
 
 export default Home;
+
+{
+  /* <Link to='/'>
+              <p className='click-link-text'>
+                Click aqui si no sabes el numero de parte
+              </p>
+            </Link> */
+}

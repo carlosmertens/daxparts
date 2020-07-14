@@ -21,7 +21,7 @@ class Cotizacion extends Component {
   }
 
   render() {
-    // Mientras buscar state este vacio, spinner va a correr
+    // Mientras "buscar state" este vacio, spinner va a correr
     if (this.state.buscar.length === 0) {
       return <Spinner />;
     }
@@ -45,13 +45,13 @@ class Cotizacion extends Component {
               </thead>
               <tbody>
                 <tr>
-                  <th scope='row'>descripcion test</th>
-                  <td>aplicacion test</td>
-                  <td>tipo test</td>
-                  <td>precio test</td>
-                  <td>entrega test</td>
+                  <th scope='row'>{this.state.buscar.username}</th>
+                  <td>{this.state.buscar.address.street}</td>
+                  <td>{this.state.buscar.address.suite}</td>
+                  <td>{this.state.buscar.address.geo.lat}</td>
+                  <td>{this.state.buscar.address.geo.lng}</td>
                 </tr>
-                <tr>
+                {/* <tr>
                   <th scope='row'>Test 2</th>
                   <td>Test 2</td>
                   <td>Test 2</td>
@@ -64,7 +64,7 @@ class Cotizacion extends Component {
                   <td>tipo 3</td>
                   <td>precio 3</td>
                   <td>entrega 3</td>
-                </tr>
+                </tr> */}
               </tbody>
             </table>
           </div>
