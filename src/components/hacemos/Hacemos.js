@@ -3,31 +3,28 @@ import './Hacemos.css';
 
 function Hacemos() {
   return (
-    <div className='container-fluid hacemos-contenido'>
+    <div className='container-fluid hacemos'>
       <div className='container hacemos-title'>
-        <h1>Como lo hacemos?</h1>
+        <h1>¿Que Hacemos?</h1>
       </div>
 
       <div className='container'>
         <div className='row'>
-          <div className='col-md'>
+          <div className='col-lg-6'>
             <p className='hacemos-texto'>
-              Nuestro sistema de ventas nos permite ofrecer repuestos para varios
-              rubros y aplicaciones; con mas de 250,000 distintos repuestos, en
-              mas de 50 distintos fabricantes y una red de socios logísticos
-              estratégicos. Nuestro servicio es único en el mundo de los
-              repuestos.
-              <br />
-              Los invitamos a mirar el video a continuación, el cual explica
-              nuestro servicio y como lo hacemos
+              Te ofrecemos un servicio fácil y sencillo de búsqueda, cotización y
+              compra de repuestos para equipo pesado, agrícola y de construcción.
+              Nuestro sistema te ofertará las mejores marcas, precios y tiempos de
+              entrega de Bolivia y el mundo. Tú decides cual comprar y te lo
+              enviamos. No necesitas llamar a diferentes tiendas para encontrar tu
+              parte, nosotros la encontramos por ti. Todo en un solo lugar.
             </p>
           </div>
-          <div className='col-md'>
-            <div className='embed-responsive embed-responsive-16by9'>
+          <div className='col-lg-6'>
+            <div className='dax-video embed-responsive embed-responsive-16by9'>
               <iframe
+                className='embed-responsive-item'
                 title='Venta de Repuestos DAX'
-                width='560'
-                height='315'
                 src='https://www.youtube.com/embed/4jnCVogNCtc'
                 frameBorder='0'
                 allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
