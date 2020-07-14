@@ -34,6 +34,16 @@ nav input {
   outline: none;
 }
 
+/* ===== Modal ===== */
+.close {
+  color: orange;
+}
+
+.modal-header img {
+  width: 200px;
+  height: auto;
+}
+
 /* ========== RESPONSIVE NAVBAR ========== */
 /* Extra small devices (less than 480px) */
 @media only screen and (max-width: 480px) {
