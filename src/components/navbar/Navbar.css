@@ -1,30 +1,24 @@
 /* ========== CSS NAVBAR ========== */
 
-/* nav {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-} */
-
 .nav-link:hover {
   color: #fca728 !important;
 }
 
-.text-white {
+/* .text-white {
   font-size: 15px;
   padding: 0%;
   margin-right: 10px;
-}
+} */
 
-img {
+/* img {
   padding: 1rem;
-}
+} */
 
 nav input {
   width: 250px;
   height: 36px;
-  font-size: 15px;
-  background: #a79f9f40 0% 0% no-repeat padding-box;
+  font-size: 18px;
+  background: #d1c5c540 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
   border-radius: 50px;
   opacity: 1;
@@ -70,23 +64,29 @@ nav input {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   nav img {
-    height: 80px;
+    height: 75px;
     width: auto;
   }
   nav h4 {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   nav img {
-    height: 90px;
+    padding-left: 30px;
+    height: 80px;
     width: auto;
   }
   nav h4 {
     font-size: 20px;
     margin: auto 15px auto 15px;
+  }
+  nav input {
+    width: 230px;
+    height: 36px;
+    font-size: 18px;
   }
 }
 
@@ -94,11 +94,11 @@ nav input {
 @media only screen and (min-width: 1200px) {
   nav img {
     padding-left: 30px;
-    height: 100px;
+    height: 85px;
     width: auto;
   }
   nav h4 {
-    font-size: 25px;
+    font-size: 22px;
     margin: auto 25px auto 25px;
   }
   nav form {

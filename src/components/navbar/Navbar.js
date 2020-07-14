@@ -26,29 +26,35 @@ class Navbar extends Component {
           <ul className='navbar-nav mx-auto'>
             <li className='nav-item'>
               <Link to='/somos' className='nav-link text-white'>
-                <h4>Quienes Somos?</h4>
+                <h4>Quienes somos?</h4>
               </Link>
             </li>
             <li className='nav-item'>
               <Link to='/hacemos' className='nav-link text-white' href='/'>
-                <h4>Que Hacemos?</h4>
+                <h4>Como lo hacemos?</h4>
               </Link>
             </li>
             <li className='nav-item'>
               <Link to='ofrecemos' className='nav-link text-white' href='/'>
-                <h4>Que Ofrecemos?</h4>
+                <h4>Que ofrecemos?</h4>
               </Link>
             </li>
             <li className='nav-item'>
               <Link to='contacto' className='nav-link text-white' href='/'>
-                <h4>Contacto</h4>
+                <h4>Contáctanos</h4>
               </Link>
             </li>
           </ul>
 
           {/* Boton de ingresar */}
           <div className='form-inline my-2 my-lg-0'>
-            <h4 className='text-white'>Ya tienes una cuenta?</h4>
+            {/* <h4 className='text-white'>Ya tienes una cuenta?</h4> */}
+            <input
+              className='mr-sm-2'
+              type='text'
+              placeholder='Usuario'
+              aria-label='Search'
+            />
             {/* Button trigger modal */}
             <button
               type='button'
@@ -62,7 +68,7 @@ class Navbar extends Component {
             <div
               className='modal fade'
               id='ingresarModal'
-              tabindex='-1'
+              tabIndex='-1'
               role='dialog'
               aria-labelledby='exampleModalLabel'
               aria-hidden='true'>
@@ -78,7 +84,14 @@ class Navbar extends Component {
                       <span aria-hidden='true'>&times;</span>
                     </button> */}
                   </div>
-                  <div className='modal-body'>...</div>
+                  <div className='modal-body'>
+                    <input
+                      className='mr-sm-2'
+                      type='password'
+                      placeholder='Contraseña'
+                      aria-label='Search'
+                    />
+                  </div>
                   <div className='modal-footer'>
                     <button
                       type='button'

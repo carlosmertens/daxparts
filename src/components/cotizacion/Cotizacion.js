@@ -6,13 +6,13 @@ import './Cotizacion.css';
 class Cotizacion extends Component {
   constructor(props) {
     super(props);
-    this.state = { buscar: [] };
+    this.state = { buscar: '', parte: '5' };
   }
 
   // Llamar back-end (server) para obtener busqueda de parte
   async componentDidMount() {
     const buscarData = await axios.get(
-      'https://jsonplaceholder.typicode.com/users/2'
+      `https://jsonplaceholder.typicode.com/users/${this.state.parte}`
     );
     // Guardar data en buscar state
     this.setState({ buscar: buscarData.data });

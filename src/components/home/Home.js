@@ -10,42 +10,41 @@ class Home extends Component {
     parte: '',
   };
 
-  // Evento que captura el campo de entrada
-  changeParte = (e) => {
-    this.setState({
-      parte: e.target.value,
-    });
+  // Evento que captura el numero de busqueda
+  buscarParte = (e) => {
+    e.preventDefault();
+    const numero = document.getElementById('buscar').value;
+    this.setState({ parte: numero });
   };
 
   render() {
+    console.log(this.state.parte);
     return (
       <header>
         <div className='container header-contenido'>
-          {/* Logo del centro */}
+          {/* ===== Logo del centro ===== */}
           <div className='container'>
             <img className='logo-centro' src={logoCentro} alt='Dax Logo' />
           </div>
-          {/* Formulario para buscar partes */}
+          {/* ===== Formulario para buscar partes ===== */}
           <div className='container d-flex justify-content-center'>
-            <form className='form-inline'>
+            <form className='form-inline' onSubmit={this.buscarParte}>
               <div className='form-group mb-2'>
                 <label htmlFor='buscar'>Nro. de parte</label>
                 <input
-                  onChange={this.changeParte}
-                  value={this.state.parte}
-                  placeholder='Introduce el numero de parte'
                   type='text'
                   id='buscar'
+                  placeholder='Introduce el numero de parte'
                 />
-                <Link to='/cotizacion'>
-                  <button className='btn btn-primary mb-2' type='submit'>
-                    Buscar
-                  </button>
-                </Link>
+                {/* <Link to='/cotizacion'> */}
+                <button className='btn btn-primary mb-2' type='submit'>
+                  Buscar
+                </button>
+                {/* </Link> */}
               </div>
             </form>
           </div>
-          {/* Enlace para ayuda */}
+          {/* ===== Enlace para ayuda ===== */}
           <div className='container click-link'>
             {/* <!-- Button trigger modal --> */}
             <button
@@ -62,7 +61,7 @@ class Home extends Component {
             <div
               className='modal fade'
               id='exampleModal'
-              tabindex='-1'
+              tabIndex='-1'
               role='dialog'
               aria-labelledby='exampleModalLabel'
               aria-hidden='true'>
@@ -96,7 +95,7 @@ class Home extends Component {
               </div>
             </div>
           </div>
-          {/* Icono Tutorial */}
+          {/* ===== Icono Tutorial ===== */}
           <div className='container tutorial-link'>
             <Link to='/tutorial'>
               <img
@@ -114,11 +113,3 @@ class Home extends Component {
 }
 
 export default Home;
-
-{
-  /* <Link to='/'>
-              <p className='click-link-text'>
-                Click aqui si no sabes el numero de parte
-              </p>
-            </Link> */
-}
