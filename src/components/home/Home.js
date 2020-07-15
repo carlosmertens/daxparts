@@ -36,11 +36,11 @@ class Home extends Component {
                   id='buscar'
                   placeholder='Introduce el numero de parte'
                 />
-                {/* <Link to='/cotizacion'> */}
-                <button className='btn btn-primary mb-2' type='submit'>
-                  Buscar
-                </button>
-                {/* </Link> */}
+                <Link to='/cotizacion'>
+                  <button className='btn btn-primary mb-2' type='submit'>
+                    Buscar
+                  </button>
+                </Link>
               </div>
             </form>
           </div>
