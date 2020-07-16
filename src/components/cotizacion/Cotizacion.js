@@ -51,6 +51,34 @@ class Cotizacion extends Component {
                   <td>{this.state.buscar.address.geo.lat}</td>
                   <td>{this.state.buscar.address.geo.lng}</td>
                 </tr>
+                <tr>
+                  <th scope='row'>{this.state.buscar.username}</th>
+                  <td>{this.state.buscar.address.street}</td>
+                  <td>{this.state.buscar.address.suite}</td>
+                  <td>{this.state.buscar.address.geo.lat}</td>
+                  <td>{this.state.buscar.address.geo.lng}</td>
+                </tr>
+                <tr>
+                  <th scope='row'>{this.state.buscar.username}</th>
+                  <td>{this.state.buscar.address.street}</td>
+                  <td>{this.state.buscar.address.suite}</td>
+                  <td>{this.state.buscar.address.geo.lat}</td>
+                  <td>{this.state.buscar.address.geo.lng}</td>
+                </tr>
+                <tr>
+                  <th scope='row'>{this.state.buscar.username}</th>
+                  <td>{this.state.buscar.address.street}</td>
+                  <td>{this.state.buscar.address.suite}</td>
+                  <td>{this.state.buscar.address.geo.lat}</td>
+                  <td>{this.state.buscar.address.geo.lng}</td>
+                </tr>
+                <tr>
+                  <th scope='row'>{this.state.buscar.username}</th>
+                  <td>{this.state.buscar.address.street}</td>
+                  <td>{this.state.buscar.address.suite}</td>
+                  <td>{this.state.buscar.address.geo.lat}</td>
+                  <td>{this.state.buscar.address.geo.lng}</td>
+                </tr>
                 {/* <tr>
                   <th scope='row'>Test 2</th>
                   <td>Test 2</td>

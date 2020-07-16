@@ -4,13 +4,18 @@ import './Navbar.css';
 import navLogo from '../../images/logoNav.png';
 import navLogoWhite from '../../images/logoNavWhite.png';
 
+import texto from '../../textos/textos.json';
+
 class Navbar extends Component {
   render() {
+    console.log(texto);
     return (
       <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
+        {/* Logo Navigador */}
         <Link to='/' className='navbar-brand'>
           <img src={navLogoWhite} alt='Dax Logo' />
         </Link>
+        {/* Boton pantalla pequeña */}
         <button
           className='navbar-toggler'
           type='button'
@@ -26,42 +31,42 @@ class Navbar extends Component {
           <ul className='navbar-nav mx-auto'>
             <li className='nav-item'>
               <Link to='/somos' className='nav-link text-white'>
-                <h4>Quienes somos?</h4>
+                <h4>{texto.es.navbar.enlace1}</h4>
               </Link>
             </li>
             <li className='nav-item'>
               <Link to='/hacemos' className='nav-link text-white' href='/'>
-                <h4>Como lo hacemos?</h4>
+                <h4>{texto.es.navbar.enlace2}</h4>
               </Link>
             </li>
             <li className='nav-item'>
               <Link to='ofrecemos' className='nav-link text-white' href='/'>
-                <h4>Que ofrecemos?</h4>
+                <h4>{texto.es.navbar.enlace3}</h4>
               </Link>
             </li>
             <li className='nav-item'>
               <Link to='contacto' className='nav-link text-white' href='/'>
-                <h4>Contáctanos</h4>
+                <h4>{texto.es.navbar.enlace4}</h4>
               </Link>
             </li>
           </ul>
 
           {/* Boton de ingresar */}
           <div className='form-inline my-2 my-lg-0'>
-            {/* <h4 className='text-white'>Ya tienes una cuenta?</h4> */}
-            <input
+            <h4 className='text-white'>{texto.es.navbar.leyenda}</h4>
+            {/* <input
               className='mr-sm-2'
               type='text'
               placeholder='Usuario'
               aria-label='Search'
-            />
+            /> */}
             {/* Button trigger modal */}
             <button
               type='button'
               className='btn'
               data-toggle='modal'
               data-target='#ingresarModal'>
-              Ingresar
+              {texto.es.navbar.botonTexto}
             </button>
 
             {/* Modal */}
@@ -76,13 +81,13 @@ class Navbar extends Component {
                 <div className='modal-content align-items-center d-flex'>
                   <div className='modal-header'>
                     <img src={navLogo} alt='Dax Logo' />
-                    {/* <button
+                    <button
                       type='button'
                       className='close'
                       data-dismiss='modal'
                       aria-label='Close'>
                       <span aria-hidden='true'>&times;</span>
-                    </button> */}
+                    </button>
                   </div>
                   <div className='modal-body'>
                     <input
