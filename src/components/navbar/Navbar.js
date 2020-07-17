@@ -8,7 +8,7 @@ import texto from '../../textos/textos.json';
 
 class Navbar extends Component {
   render() {
-    console.log(texto);
+    // console.log(texto);
     return (
       <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
         {/* Logo Navigador */}
@@ -31,29 +31,29 @@ class Navbar extends Component {
           <ul className='navbar-nav mx-auto'>
             <li className='nav-item'>
               <Link to='/somos' className='nav-link text-white'>
-                <h4>{texto.es.navbar.enlace1}</h4>
+                <h4>{texto.navbar.enlace1}</h4>
               </Link>
             </li>
             <li className='nav-item'>
               <Link to='/hacemos' className='nav-link text-white' href='/'>
-                <h4>{texto.es.navbar.enlace2}</h4>
+                <h4>{texto.navbar.enlace2}</h4>
               </Link>
             </li>
             <li className='nav-item'>
               <Link to='ofrecemos' className='nav-link text-white' href='/'>
-                <h4>{texto.es.navbar.enlace3}</h4>
+                <h4>{texto.navbar.enlace3}</h4>
               </Link>
             </li>
             <li className='nav-item'>
               <Link to='contacto' className='nav-link text-white' href='/'>
-                <h4>{texto.es.navbar.enlace4}</h4>
+                <h4>{texto.navbar.enlace4}</h4>
               </Link>
             </li>
           </ul>
 
           {/* Boton de ingresar */}
           <div className='form-inline my-2 my-lg-0'>
-            <h4 className='text-white'>{texto.es.navbar.leyenda}</h4>
+            <h4 className='text-white'>{texto.navbar.leyenda}</h4>
             {/* <input
               className='mr-sm-2'
               type='text'
@@ -66,7 +66,7 @@ class Navbar extends Component {
               className='btn'
               data-toggle='modal'
               data-target='#ingresarModal'>
-              {texto.es.navbar.botonTexto}
+              {texto.navbar.botonTexto}
             </button>
 
             {/* Modal */}

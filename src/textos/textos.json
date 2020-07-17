@@ -1,32 +1,15 @@
 {
-  "es": {
-    "navbar": {
-      "enlace1": "Quienes somos?",
-      "enlace2": "Como lo hacemos?",
-      "enlace3": "Que ofrecemos",
-      "enlace4": "Contáctanos",
-      "leyenda": "Ya tienes una cuenta?",
-      "botonTexto": "Ingresar"
-    },
-
-    "somos": {
-      "titulo": "Quienes somos?",
-      "contenido": "Desde el 2018, DAX se ha especializado en facilitar repuestos para todo tipo de maquinaria a sus clientes en Latino América. Inicialmente atendiendo el rubro de la construcción en Bolivia, Perú, y Paraguay; hoy el servicio de DAX se extiende a diversos países y rubros. Su pasión por la tecnología; le ha permitido desarrollar tecnología propia que permite a sus clientes adquirir repuestos de manera eficiente, económica y en un solo lugar. Permitiendo a sus clientes beneficiarse de ahorros en repuestos, fletes, y tiempo."
-    }
+  "navbar": {
+    "enlace1": "Quienes somos?",
+    "enlace2": "Como lo hacemos?",
+    "enlace3": "Que ofrecemos",
+    "enlace4": "Contáctanos",
+    "leyenda": "Ya tienes una cuenta?",
+    "botonTexto": "Ingresar"
   },
-  "en": {
-    "navbar": {
-      "enlace1": "Who are we?",
-      "enlace2": "How we do it?",
-      "enlace3": "What we offer?",
-      "enlace4": "Contacts",
-      "leyenda": "Do you have an account yet?",
-      "botonTexto": "Login"
-    },
 
-    "somos": {
-      "titulo": "Who are we?",
-      "contenido": "Since 2018, DAX has specialized in providing spare parts for all types of machinery to its clients in Latin America. Initially attending to the construction sector in Bolivia, Peru, and Paraguay; Today the DAX service extends to various countries and areas. His passion for technology; It has allowed it to develop its own technology that allows its customers to purchase spare parts efficiently, economically and in one place. Allowing your customers to benefit from savings on spare parts, freight, and time."
-    }
+  "somos": {
+    "titulo": "Quienes somos?",
+    "contenido": "Desde el 2018, DAX se ha especializado en facilitar repuestos para todo tipo de maquinaria a sus clientes en Latino América. Inicialmente atendiendo el rubro de la construcción en Bolivia, Perú, y Paraguay; hoy el servicio de DAX se extiende a diversos países y rubros. Su pasión por la tecnología; le ha permitido desarrollar tecnología propia que permite a sus clientes adquirir repuestos de manera eficiente, económica y en un solo lugar. Permitiendo a sus clientes beneficiarse de ahorros en repuestos, fletes, y tiempo."
   }
 }

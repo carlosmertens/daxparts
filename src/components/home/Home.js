@@ -18,10 +18,18 @@ class Home extends Component {
   };
 
   render() {
-    console.log(this.state.parte);
+    // console.log(this.state.parte);
     return (
       <header>
         <div className='container header-contenido'>
+          <div className='idiomas'>
+            <button className='ingles' onClick={this.props.cambiarEng}>
+              EN
+            </button>
+            <button className='castellano' onClick={this.props.cambiarEsp}>
+              ES
+            </button>
+          </div>
           {/* ===== Logo del centro ===== */}
           <div className='container'>
             <img className='logo-centro' src={logoCentro} alt='Dax Logo' />

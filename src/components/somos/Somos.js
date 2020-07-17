@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Somos.css';
 
-import texto from '../../textos/textos.json';
+// import texto from '../../textos/textos.json';
 
 class Somos extends Component {
   constructor(props) {
@@ -12,14 +12,15 @@ class Somos extends Component {
   }
 
   render() {
+    console.log(this.props);
     return (
       <div className='somos-contenido'>
         <div className='container somos-title'>
-          <h1>{texto.en.somos.titulo}</h1>
+          <h1>{this.props.idioma.somos.titulo}</h1>
         </div>
 
         <div className='container somos-texto'>
-          <p>{texto.es.somos.contenido}</p>
+          <p>{this.props.idioma.somos.contenido}</p>
         </div>
 
         <div className='container-fluid somos-banner'>
