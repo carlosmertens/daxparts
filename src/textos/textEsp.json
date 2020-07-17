@@ -58,5 +58,30 @@
       "f1": "Camiones",
       "f2": "Camiones volquetas equipos especiales etc"
     }
+  },
+
+  "contacto": {
+    "titulo": "Contáctanos!",
+    "usa": {
+      "nombre": "Dax Parts Usa",
+      "email": "dax@daxparts.com",
+      "telefono": "+591-678-98045"
+    },
+    "bolivia": {
+      "nombre": "Dax Parts Bolivia",
+      "email": "fabiola@daxparts.com",
+      "telefono": "+591-678-98045"
+    },
+    "peru": {
+      "nombre": "Dax Parts Peru",
+      "email": "em@daxparts.com",
+      "telefono": "+591-678-98045"
+    },
+    "paraguay": {
+      "nombre": "Dax Parts Paraguay",
+      "email": "ventaspy@daxparts.com",
+      "telefono": "+591-678-98045"
+    },
+    "contenido": "Nos gusta conocer y conversar con nuestros nuevos clientes. Comienza enviándonos un mensaje y nos pondremos en contacto en breve."
   }
 }

@@ -58,5 +58,30 @@
       "f1": "Trucks",
       "f2": "Dump trucks special equipment etc"
     }
+  },
+
+  "contacto": {
+    "titulo": "How to reach us",
+    "usa": {
+      "nombre": "Dax Parts Usa",
+      "email": "dax@daxparts.com",
+      "telefono": "+591-678-98045"
+    },
+    "bolivia": {
+      "nombre": "Dax Parts Bolivia",
+      "email": "fabiola@daxparts.com",
+      "telefono": "+591-678-98045"
+    },
+    "peru": {
+      "nombre": "Dax Parts Peru",
+      "email": "em@daxparts.com",
+      "telefono": "+591-678-98045"
+    },
+    "paraguay": {
+      "nombre": "Dax Parts Paraguay",
+      "email": "ventaspy@daxparts.com",
+      "telefono": "+591-678-98045"
+    },
+    "contenido": "We like to meet and chat with our new clients. Start by sending us a message and we will contact you shortly."
   }
 }
