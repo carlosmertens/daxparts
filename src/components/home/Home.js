@@ -5,10 +5,13 @@ import IconVideos from '../../images/IconVideos.png';
 import './Home.css';
 
 class Home extends Component {
-  // Objecto (State) inicial del campo de captura
-  state = {
-    parte: '',
-  };
+  constructor(props) {
+    super(props);
+    // Objecto (State) inicial del campo de captura
+    this.state = {
+      parte: '',
+    };
+  }
 
   // Evento que captura el numero de busqueda
   buscarParte = (e) => {
@@ -18,10 +21,12 @@ class Home extends Component {
   };
 
   render() {
-    // console.log(this.state.parte);
+    // desestructuración del props idioma
+    const texto = { ...this.props.idioma };
     return (
       <header>
         <div className='container header-contenido'>
+          {/* Boton de idiomas */}
           <div className='idiomas'>
             <button className='ingles' onClick={this.props.cambiarEng}>
               EN
@@ -38,15 +43,15 @@ class Home extends Component {
           <div className='container d-flex justify-content-center'>
             <form className='form-inline' onSubmit={this.buscarParte}>
               <div className='form-group mb-2'>
-                <label htmlFor='buscar'>Nro. de parte</label>
+                <label htmlFor='buscar'>{texto.home.leyendaBuscar}</label>
                 <input
                   type='text'
                   id='buscar'
-                  placeholder='Introduce el numero de parte'
+                  placeholder={texto.home.campoBuscar}
                 />
                 <Link to='/cotizacion'>
                   <button className='btn btn-primary mb-2' type='submit'>
-                    Buscar
+                    {texto.home.botonBuscar}
                   </button>
                 </Link>
               </div>
@@ -60,9 +65,7 @@ class Home extends Component {
               className='button-link'
               data-toggle='modal'
               data-target='#exampleModal'>
-              <p className='click-link-text'>
-                Click aqui si no sabes el numero de parte
-              </p>
+              <p className='click-link-text'>{texto.home.enlaceClick}</p>
             </button>
 
             {/* <!-- Modal --> */}
@@ -111,7 +114,7 @@ class Home extends Component {
                 src={IconVideos}
                 alt='Tutorial Logo'
               />
-              <p className='tutorial-text'>Tutoriales</p>
+              <p className='tutorial-text'>{texto.home.leyendaTutorial}</p>
             </Link>
           </div>
         </div>

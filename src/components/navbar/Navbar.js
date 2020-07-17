@@ -4,9 +4,11 @@ import './Navbar.css';
 import navLogo from '../../images/logoNav.png';
 import navLogoWhite from '../../images/logoNavWhite.png';
 
-import texto from '../../textos/textos.json';
-
 class Navbar extends Component {
+  constructor() {
+    super();
+    this.state = '';
+  }
   render() {
     // console.log(texto);
     return (
@@ -31,29 +33,29 @@ class Navbar extends Component {
           <ul className='navbar-nav mx-auto'>
             <li className='nav-item'>
               <Link to='/somos' className='nav-link text-white'>
-                <h4>{texto.navbar.enlace1}</h4>
+                <h4>{this.props.idioma.navbar.enlace1}</h4>
               </Link>
             </li>
             <li className='nav-item'>
               <Link to='/hacemos' className='nav-link text-white' href='/'>
-                <h4>{texto.navbar.enlace2}</h4>
+                <h4>{this.props.idioma.navbar.enlace2}</h4>
               </Link>
             </li>
             <li className='nav-item'>
               <Link to='ofrecemos' className='nav-link text-white' href='/'>
-                <h4>{texto.navbar.enlace3}</h4>
+                <h4>{this.props.idioma.navbar.enlace3}</h4>
               </Link>
             </li>
             <li className='nav-item'>
               <Link to='contacto' className='nav-link text-white' href='/'>
-                <h4>{texto.navbar.enlace4}</h4>
+                <h4>{this.props.idioma.navbar.enlace4}</h4>
               </Link>
             </li>
           </ul>
 
           {/* Boton de ingresar */}
           <div className='form-inline my-2 my-lg-0'>
-            <h4 className='text-white'>{texto.navbar.leyenda}</h4>
+            <h4 className='text-white'>{this.props.idioma.navbar.leyenda}</h4>
             {/* <input
               className='mr-sm-2'
               type='text'
@@ -66,7 +68,7 @@ class Navbar extends Component {
               className='btn'
               data-toggle='modal'
               data-target='#ingresarModal'>
-              {texto.navbar.botonTexto}
+              {this.props.idioma.navbar.botonTexto}
             </button>
 
             {/* Modal */}

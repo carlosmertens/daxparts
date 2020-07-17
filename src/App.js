@@ -13,10 +13,12 @@ import Contacto from './components/contacto/Contacto';
 import Tutorial from './components/tutorial/Tutorial';
 import Cotizacion from './components/cotizacion/Cotizacion';
 
-import castellano from './textos/textos.json';
+// Importar json con los textos de ingles y castellano
+import castellano from './textos/textEsp.json';
 import ingles from './textos/textEng.json';
 
 class App extends Component {
+  // Objecto (State) inicial del idioma
   state = {
     lang: 'es',
   };
@@ -31,18 +33,20 @@ class App extends Component {
   };
 
   render() {
-    // console.log(this.state.lang);
-    // console.log(textEs);
+    // Logica para selecionar idioma de la pagina
     let idioma = castellano;
-    console.log(this.state.lang);
     if (this.state.lang !== 'es') {
       idioma = ingles;
     }
-    console.log(idioma);
 
     return (
       <Router>
-        <Route path='/' component={Navbar} />
+        <Route
+          path='/'
+          render={() => {
+            return <Navbar idioma={idioma} />;
+          }}
+        />
         <Route
           exact
           path='/'
@@ -63,11 +67,41 @@ class App extends Component {
             return <Somos idioma={idioma} />;
           }}
         />
-        <Route exact path='/hacemos' component={Hacemos} />
-        <Route exact path='/ofrecemos' component={Ofrecemos} />
-        <Route exact path='/contacto' component={Contacto} />
-        <Route exact path='/tutorial' component={Tutorial} />
-        <Route exact path='/cotizacion' component={Cotizacion} />
+        <Route
+          exact
+          path='/hacemos'
+          render={() => {
+            return <Hacemos idioma={idioma} />;
+          }}
+        />
+        <Route
+          exact
+          path='/ofrecemos'
+          render={() => {
+            return <Ofrecemos idioma={idioma} />;
+          }}
+        />
+        <Route
+          exact
+          path='/contacto'
+          render={() => {
+            return <Contacto idioma={idioma} />;
+          }}
+        />
+        <Route
+          exact
+          path='/tutorial'
+          render={() => {
+            return <Tutorial idioma={idioma} />;
+          }}
+        />
+        <Route
+          exact
+          path='/cotizacion'
+          render={() => {
+            return <Cotizacion idioma={idioma} />;
+          }}
+        />
       </Router>
     );
   }

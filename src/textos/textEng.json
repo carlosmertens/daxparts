@@ -8,6 +8,14 @@
     "botonTexto": "Login"
   },
 
+  "home": {
+    "leyendaBuscar": "Replacement number",
+    "campoBuscar": "Enter number",
+    "botonBuscar": "Search",
+    "enlaceClick": "Click here is you do not know the number",
+    "leyendaTutorial": "Tutorials"
+  },
+
   "somos": {
     "titulo": "Who are we?",
     "contenido": "Since 2018, DAX has specialized in providing spare parts for all types of machinery to its clients in Latin America. Initially attending to the construction sector in Bolivia, Peru, and Paraguay; Today the DAX service extends to various countries and areas. His passion for technology; It has allowed it to develop its own technology that allows its customers to purchase spare parts efficiently, economically and in one place. Allowing your customers to benefit from savings on spare parts, freight, and time."

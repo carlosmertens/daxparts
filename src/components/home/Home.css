@@ -8,6 +8,15 @@ header {
   position: relative;
 }
 
+.idiomas {
+  margin: 5px;
+}
+
+.ingles,
+.castellano {
+  margin: 2px;
+}
+
 /* ===== Formulario para adquirir numero de parte ===== */
 
 header input {
