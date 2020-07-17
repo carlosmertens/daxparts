@@ -5,7 +5,12 @@
     "enlace3": "Que ofrecemos",
     "enlace4": "Contáctanos",
     "leyenda": "Ya tienes una cuenta?",
-    "botonTexto": "Ingresar"
+    "botonTexto": "Ingresar",
+    "modal": {
+      "campoUuario": "Usuario",
+      "campoContrasena": "Contraseña",
+      "botonIngresar": "Ingresar"
+    }
   },
 
   "home": {
@@ -23,6 +28,11 @@
 
   "somos": {
     "titulo": "Quienes somos?",
-    "contenido": "Desde el 2018, DAX se ha especializado en facilitar repuestos para todo tipo de maquinaria a sus clientes en Latino América. Inicialmente atendiendo el rubro de la construcción en Bolivia, Perú, y Paraguay; hoy el servicio de DAX se extiende a diversos países y rubros. Su pasión por la tecnología; le ha permitido desarrollar tecnología propia que permite a sus clientes adquirir repuestos de manera eficiente, económica y en un solo lugar. Permitiendo a sus clientes beneficiarse de ahorros en repuestos, fletes, y tiempo."
+    "contenido": "Desde el 2018, DAX se ha especializado en facilitar repuestos para todo tipo de maquinaria a sus clientes en Latino América. Inicialmente atendiendo el rubro de la construcción en Bolivia, Perú, y Paraguay; hoy el servicio de DAX se extiende a diversos países y rubros. Su pasión por la tecnología; le ha permitido desarrollar tecnología propia que permite a sus clientes adquirir repuestos de manera eficiente, económica y en un solo lugar. Permitiendo a sus clientes beneficiarse de ahorros en repuestos, fletes, y tiempo.",
+    "banner": {
+      "texto1": "250.000+ Repuestos",
+      "texto2": "50+ Fabricantes",
+      "texto3": "13+ Años al mercado"
+    }
   }
 }

@@ -10,7 +10,8 @@ class Navbar extends Component {
     this.state = '';
   }
   render() {
-    // console.log(texto);
+    // Desestructuración del props idioma
+    const texto = { ...this.props.idioma };
     return (
       <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
         {/* Logo Navigador */}
@@ -33,29 +34,29 @@ class Navbar extends Component {
           <ul className='navbar-nav mx-auto'>
             <li className='nav-item'>
               <Link to='/somos' className='nav-link text-white'>
-                <h4>{this.props.idioma.navbar.enlace1}</h4>
+                <h4>{texto.navbar.enlace1}</h4>
               </Link>
             </li>
             <li className='nav-item'>
               <Link to='/hacemos' className='nav-link text-white' href='/'>
-                <h4>{this.props.idioma.navbar.enlace2}</h4>
+                <h4>{texto.navbar.enlace2}</h4>
               </Link>
             </li>
             <li className='nav-item'>
               <Link to='ofrecemos' className='nav-link text-white' href='/'>
-                <h4>{this.props.idioma.navbar.enlace3}</h4>
+                <h4>{texto.navbar.enlace3}</h4>
               </Link>
             </li>
             <li className='nav-item'>
               <Link to='contacto' className='nav-link text-white' href='/'>
-                <h4>{this.props.idioma.navbar.enlace4}</h4>
+                <h4>{texto.navbar.enlace4}</h4>
               </Link>
             </li>
           </ul>
 
           {/* Boton de ingresar */}
           <div className='form-inline my-2 my-lg-0'>
-            <h4 className='text-white'>{this.props.idioma.navbar.leyenda}</h4>
+            <h4 className='text-white'>{texto.navbar.leyenda}</h4>
             {/* <input
               className='mr-sm-2'
               type='text'
@@ -68,7 +69,7 @@ class Navbar extends Component {
               className='btn'
               data-toggle='modal'
               data-target='#ingresarModal'>
-              {this.props.idioma.navbar.botonTexto}
+              {texto.navbar.botonTexto}
             </button>
 
             {/* Modal */}
@@ -95,7 +96,7 @@ class Navbar extends Component {
                     <input
                       className='mr-sm-2'
                       type='password'
-                      placeholder='Contraseña'
+                      placeholder={texto.navbar.modal.campoContrasena}
                       aria-label='Search'
                     />
                   </div>
@@ -104,7 +105,7 @@ class Navbar extends Component {
                       type='button'
                       className='btn btn-secondary'
                       data-dismiss='modal'>
-                      Ingresar
+                      {texto.navbar.modal.botonIngresar}
                     </button>
                   </div>
                 </div>
