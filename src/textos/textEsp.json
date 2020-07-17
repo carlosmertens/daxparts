@@ -13,7 +13,12 @@
     "campoBuscar": "Introduce el numero de parte",
     "botonBuscar": "Buscar",
     "enlaceClick": "Click aqui si no sabes el numero de parte",
-    "leyendaTutorial": "Tutoriales"
+    "leyendaTutorial": "Tutoriales",
+    "modal": {
+      "titulo": "QUE HACER CUANDO NO TIENES TU NUMERO DE PARTE",
+      "enlaceTutorial": "Manuales en linea gratitos",
+      "enlaceBuscamos": "Avisanos que necesitas y nosotros lo buscamos"
+    }
   },
 
   "somos": {

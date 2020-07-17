@@ -80,7 +80,7 @@ class Home extends Component {
                 <div className='modal-content align-items-center d-flex'>
                   <div className='modal-header'>
                     <h5 className='modal-title' id='exampleModalLabel'>
-                      QUE HACER CUANDO NO TIENES TU NUMERO DE PARTE
+                      {texto.home.modal.titulo}
                     </h5>
                   </div>
                   <div className='modal-body'>
@@ -91,13 +91,13 @@ class Home extends Component {
                             className='que-hacer-button'
                             // data-dismiss='modal'
                             aria-hidden='true'>
-                            Manuales en linea gratitos
+                            {texto.home.modal.enlaceTutorial}
                           </button>
                         </Link>
                       </div>
                       <div className='col'>
                         <button className='que-hacer-button'>
-                          Avisanos que necesitas y nosotros lo buscamos
+                          {texto.home.modal.enlaceBuscamos}
                         </button>
                       </div>
                     </div>

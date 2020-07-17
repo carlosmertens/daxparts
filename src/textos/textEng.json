@@ -13,7 +13,12 @@
     "campoBuscar": "Enter number",
     "botonBuscar": "Search",
     "enlaceClick": "Click here is you do not know the number",
-    "leyendaTutorial": "Tutorials"
+    "leyendaTutorial": "Tutorials",
+    "modal": {
+      "titulo": "WHAT TO DO WITHOUT THE PARTS CODE",
+      "enlaceTutorial": "Online tutorials",
+      "enlaceBuscamos": "Let us know what you need"
+    }
   },
 
   "somos": {
