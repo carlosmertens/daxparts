@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './Ofrecemos.css';
 
 import excavadoraLogo from '../../images/excavadoraLogo.png';
@@ -7,76 +7,80 @@ import agricolaLogo from '../../images/agricolaLogo.png';
 import elecLogo from '../../images/elecLogo.png';
 import camionLogo from '../../images/camionLogo.png';
 
-function Ofrecemos() {
-  return (
-    <div className='container-fluid ofrecemos-contenido'>
-      <div className='container ofrecemos-title'>
-        <h1>Que ofrecemos?</h1>
-      </div>
+class Ofrecemos extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  render() {
+    // Desestructuración del props idioma
+    const texto = { ...this.props.idioma };
+    return (
+      <div className='container-fluid ofrecemos-contenido'>
+        <div className='container ofrecemos-title'>
+          <h1>{texto.ofrecemos.titulo}</h1>
+        </div>
 
-      <div className='container'>
-        <h4>Repuestos para:</h4>
-      </div>
+        <div className='container'>
+          <h4>{texto.ofrecemos.subtitulo}</h4>
+        </div>
 
-      {/* Grid de contenido */}
-      <div className='row justify-content-center'>
-        <div className='col-sm'>
-          <div className='container ofrecemos-opcion-small'>
-            <p>
-              <span>Equipo de movimiento de tierra:</span> Excavadoras tractores,
-              bull-dozer pala cargadoras motoniveladoras etc.
-            </p>
-            <img src={excavadoraLogo} alt='Logo' />
+        {/* Grid de contenido */}
+        <div className='row justify-content-center'>
+          <div className='col-sm'>
+            <div className='container ofrecemos-opcion-small'>
+              <p>
+                <span>{texto.ofrecemos.span.a1}</span> {texto.ofrecemos.span.a2}
+              </p>
+              <img src={excavadoraLogo} alt='Logo' />
+            </div>
+          </div>
+          <div className='col-sm'>
+            <div className='container ofrecemos-opcion-small'>
+              <p>
+                <span>{texto.ofrecemos.span.b1}</span> {texto.ofrecemos.span.b2}
+              </p>
+              <img src={gruaLogo} alt='Logo' />
+            </div>
+          </div>
+          <div className='col-sm'>
+            <div className='container ofrecemos-opcion-big'>
+              <p>
+                <span>{texto.ofrecemos.span.c1}</span> {texto.ofrecemos.span.c2}
+              </p>
+              <img src={agricolaLogo} alt='Logo' />
+            </div>
           </div>
         </div>
-        <div className='col-sm'>
-          <div className='container ofrecemos-opcion-small'>
-            <p>
-              <span>Grúas y equipos de izaje:</span> Grúas Manlift montacargas
-              telehandler etc.
-            </p>
-            <img src={gruaLogo} alt='Logo' />
+        <div className='row'>
+          <div className='col-sm'>
+            <div className='ofrecemos-opcion-big'>
+              <p>
+                <span>{texto.ofrecemos.span.d1}</span> {texto.ofrecemos.span.d2}
+              </p>
+              <img src={elecLogo} alt='Logo' />
+            </div>
           </div>
-        </div>
-        <div className='col-sm'>
-          <div className='container ofrecemos-opcion-big'>
-            <p>
-              <span>Equipo Agrícola:</span> Cosechadoras tractores fumigadoras
-              etc.
-            </p>
-            <img src={agricolaLogo} alt='Logo' />
+          <div className='col-sm'>
+            <div className='ofrecemos-opcion-big'>
+              <p>
+                <span>{texto.ofrecemos.span.e1}</span> {texto.ofrecemos.span.e2}
+              </p>
+              <img src={agricolaLogo} alt='Logo' />
+            </div>
           </div>
-        </div>
-      </div>
-      <div className='row'>
-        <div className='col-sm'>
-          <div className='ofrecemos-opcion-big'>
-            <p>
-              <span>Equipos Estacionarios:</span> Generadores, compresores,
-              soldadoras, bombas, etc.
-            </p>
-            <img src={elecLogo} alt='Logo' />
-          </div>
-        </div>
-        <div className='col-sm'>
-          <div className='ofrecemos-opcion-big'>
-            <p>
-              <span>Equipos de Caña:</span> osechadoras Sembradoras etc
-            </p>
-            <img src={agricolaLogo} alt='Logo' />
-          </div>
-        </div>
-        <div className='col-sm'>
-          <div className='ofrecemos-opcion-small'>
-            <p>
-              <span>Camiones</span> Camiones volquetas equipos especiales etc
-            </p>
-            <img src={camionLogo} alt='Logo' />
+          <div className='col-sm'>
+            <div className='ofrecemos-opcion-small'>
+              <p>
+                <span>{texto.ofrecemos.span.f1}</span> {texto.ofrecemos.span.f2}
+              </p>
+              <img src={camionLogo} alt='Logo' />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Ofrecemos;

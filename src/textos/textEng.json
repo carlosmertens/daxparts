@@ -34,5 +34,24 @@
       "texto2": "50+ Manufacturers",
       "texto3": "13+ Years in the market"
     }
+  },
+
+  "ofrecemos": {
+    "titulo": "What we offer??",
+    "subtitulo": "Spare parts for:",
+    "span": {
+      "a1": "Earth moving equipment:",
+      "a2": "Excavators, tractors, bull-dozer shovel loaders, motor graders etc.",
+      "b1": "Cranes and lifting equipment:",
+      "b2": "Manlift cranes forklift telehandler etc.",
+      "c1": "Agricultural Equipment:",
+      "c2": "Combine harvesters, sprayers, etc.",
+      "d1": "Stationary Equipment:",
+      "d2": "Generators, compressors, welders, pumps, etc.",
+      "e1": "Cane Equipment:",
+      "e2": "harvesters Seeders etc",
+      "f1": "Trucks",
+      "f2": "Dump trucks special equipment etc"
+    }
   }
 }

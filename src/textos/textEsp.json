@@ -34,5 +34,24 @@
       "texto2": "50+ Fabricantes",
       "texto3": "13+ Años al mercado"
     }
+  },
+
+  "ofrecemos": {
+    "titulo": "Que ofrecemos?",
+    "subtitulo": "Repuesto para:",
+    "span": {
+      "a1": "Equipo de movimiento de tierra:",
+      "a2": "Excavadoras, tractores, bull-dozer pala cargadoras motoniveladoras etc.",
+      "b1": "Grúas y equipos de izaje:",
+      "b2": "Grúas Manlift montacargas telehandler etc.",
+      "c1": "Equipo Agrícola:",
+      "c2": "Cosechadoras tractores fumigadoras etc.",
+      "d1": "Equipos Estacionarios:",
+      "d2": "Generadores, compresores, soldadoras, bombas, etc.",
+      "e1": "Equipos de Caña:",
+      "e2": "osechadoras Sembradoras etc",
+      "f1": "Camiones",
+      "f2": "Camiones volquetas equipos especiales etc"
+    }
   }
 }
