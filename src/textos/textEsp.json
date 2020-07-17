@@ -36,6 +36,11 @@
     }
   },
 
+  "hacemos": {
+    "titulo": "¿Que Hacemos?",
+    "contenido": "Te ofrecemos un servicio fácil y sencillo de búsqueda, cotización y compra de repuestos para equipo pesado, agrícola y de construcción. Nuestro sistema te ofertará las mejores marcas, precios y tiempos de entrega de Bolivia y el mundo. Tú decides cual comprar y te lo enviamos. No necesitas llamar a diferentes tiendas para encontrar tu parte, nosotros la encontramos por ti. Todo en un solo lugar."
+  },
+
   "ofrecemos": {
     "titulo": "Que ofrecemos?",
     "subtitulo": "Repuesto para:",

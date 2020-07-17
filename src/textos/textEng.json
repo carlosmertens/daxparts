@@ -1,8 +1,8 @@
 {
   "navbar": {
-    "enlace1": "Who are we?",
-    "enlace2": "How we do it?",
-    "enlace3": "What we offer?",
+    "enlace1": "Who we are",
+    "enlace2": "How we do it",
+    "enlace3": "What we offer",
     "enlace4": "Contacts",
     "leyenda": "Do you have an account yet?",
     "botonTexto": "Login",
@@ -27,7 +27,7 @@
   },
 
   "somos": {
-    "titulo": "Who are we?",
+    "titulo": "Who we are",
     "contenido": "Since 2018, DAX has specialized in providing spare parts for all types of machinery to its clients in Latin America. Initially attending to the construction sector in Bolivia, Peru, and Paraguay; Today the DAX service extends to various countries and areas. His passion for technology; It has allowed it to develop its own technology that allows its customers to purchase spare parts efficiently, economically and in one place. Allowing your customers to benefit from savings on spare parts, freight, and time.",
     "banner": {
       "texto1": "250.000+ Spare Parts",
@@ -36,8 +36,13 @@
     }
   },
 
+  "hacemos": {
+    "titulo": "What we do",
+    "contenido": "We offer you an easy and simple service to search, quote and buy spare parts for heavy, agricultural and construction equipment. Our system will offer you the best brands, prices and delivery times in Bolivia and the world. You decide which one to buy and we will send it to you. You don't need to call different stores to find your part, we will find it for you. All in one place."
+  },
+
   "ofrecemos": {
-    "titulo": "What we offer??",
+    "titulo": "What we offer",
     "subtitulo": "Spare parts for:",
     "span": {
       "a1": "Earth moving equipment:",
