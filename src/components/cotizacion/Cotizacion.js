@@ -25,10 +25,14 @@ class Cotizacion extends Component {
     if (this.state.buscar.length === 0) {
       return <Spinner />;
     }
+    // Desestructuración del props idioma
+    const texto = { ...this.props.idioma };
     return (
       <div className='container-fluid cotizacion-contenido'>
         <div className='container cotizacion-title'>
-          <h1>Resultado</h1>
+          <p>
+            {texto.cotizacion.titulo} {this.state.parte}
+          </p>
         </div>
 
         <div className='container cotizacion-table'>
@@ -36,11 +40,11 @@ class Cotizacion extends Component {
             <table className='table table-striped table-bordered'>
               <thead className='thead-dark'>
                 <tr>
-                  <th scope='col'>Descripcion</th>
-                  <th scope='col'>Aplicacion</th>
-                  <th scope='col'>Tipo</th>
-                  <th scope='col'>Precio</th>
-                  <th scope='col'>Tiempo de Entrega</th>
+                  <th scope='col'>{texto.cotizacion.tabla.col1}</th>
+                  <th scope='col'>{texto.cotizacion.tabla.col2}</th>
+                  <th scope='col'>{texto.cotizacion.tabla.col3}</th>
+                  <th scope='col'>{texto.cotizacion.tabla.col4}</th>
+                  <th scope='col'>{texto.cotizacion.tabla.col5}</th>
                 </tr>
               </thead>
               <tbody>

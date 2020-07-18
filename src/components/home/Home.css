@@ -8,13 +8,32 @@ header {
   position: relative;
 }
 
+/* ===== Boton de idiomas ===== */
 .idiomas {
   margin: 5px;
+  text-align: right;
 }
 
 .ingles,
 .castellano {
   margin: 2px;
+}
+
+.ingles,
+.castellano {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.ingles:focus,
+.castellano:focus {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.eng-flag,
+.esp-flag {
+  height: 30px;
 }
 
 /* ===== Formulario para adquirir numero de parte ===== */

@@ -1,9 +1,10 @@
 /* ========== COTIZACION CSS ========== */
 
-.cotizacion-title h1 {
+.cotizacion-title p {
   color: #fca728;
-  font-weight: 700;
+  font-size: 20px;
   text-align: left;
+  margin-top: 20px;
 }
 
 /* ========== RESPONSIVE COTIZACION ========== */

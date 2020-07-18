@@ -57,12 +57,7 @@ class Navbar extends Component {
           {/* Boton de ingresar */}
           <div className='form-inline my-2 my-lg-0'>
             <h4 className='text-white'>{texto.navbar.leyenda}</h4>
-            {/* <input
-              className='mr-sm-2'
-              type='text'
-              placeholder='Usuario'
-              aria-label='Search'
-            /> */}
+
             {/* Button trigger modal */}
             <button
               type='button'
@@ -81,7 +76,7 @@ class Navbar extends Component {
               aria-labelledby='exampleModalLabel'
               aria-hidden='true'>
               <div className='modal-dialog'>
-                <div className='modal-content align-items-center d-flex'>
+                <div className='modal-content'>
                   <div className='modal-header'>
                     <img src={navLogo} alt='Dax Logo' />
                     <button
@@ -93,20 +88,51 @@ class Navbar extends Component {
                     </button>
                   </div>
                   <div className='modal-body'>
-                    <input
-                      className='mr-sm-2'
-                      type='password'
-                      placeholder={texto.navbar.modal.campoContrasena}
-                      aria-label='Search'
-                    />
+                    <form>
+                      {/* Campo de Ususario */}
+                      <div className='form-group'>
+                        <input
+                          type='text'
+                          className='form-control mr-sm-2'
+                          id='inlineFormInputGroup'
+                          // TODO: Add to idioma
+                          placeholder='Nombre de Usuario'
+                        />
+                      </div>
+                      <div className='form-group'>
+                        {/* Campo de contrasena */}
+                        <input
+                          type='password'
+                          className='form-control mr-sm-2'
+                          placeholder={texto.navbar.modal.campoContrasena}
+                        />
+                      </div>
+                      {/* Me olvide Contrasena */}
+                      <div className='enlace-form'>
+                        <a className='me-olvide' href='/#'>
+                          Me olvide
+                        </a>
+                      </div>
+                      {/* Boton de Ingresar */}
+                      <div className='boton-form'>
+                        <button
+                          type='submit'
+                          className='btn'
+                          data-dismiss='modal'>
+                          {texto.navbar.modal.botonIngresar}
+                        </button>
+                      </div>
+                    </form>
                   </div>
                   <div className='modal-footer'>
-                    <button
-                      type='button'
-                      className='btn btn-secondary'
-                      data-dismiss='modal'>
-                      {texto.navbar.modal.botonIngresar}
-                    </button>
+                    <div className='texto-beneficios'>
+                      <p>Crea tu cuenta y disfruta de los beneficios!</p>
+                    </div>
+                    <div className='boton-crear-cuenta'>
+                      <button type='button' className='btn' data-dismiss='modal'>
+                        Crear
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>

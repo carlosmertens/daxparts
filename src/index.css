@@ -28,6 +28,7 @@ body {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16) !important;
   background-color: #fca728 !important;
   color: #312e2e !important;
+  margin: auto 5px auto 5px;
 }
 
 .btn:hover {

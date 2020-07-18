@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import logoCentro from '../../images/logoCentro.png';
 import IconVideos from '../../images/IconVideos.png';
+import engFlag from '../../images/eng.png';
+import espFlag from '../../images/esp.png';
 import './Home.css';
 
 class Home extends Component {
@@ -29,10 +31,10 @@ class Home extends Component {
           {/* Boton de idiomas */}
           <div className='idiomas'>
             <button className='ingles' onClick={this.props.cambiarEng}>
-              EN
+              <img className='eng-flag' src={engFlag} alt='ENG logo' />
             </button>
             <button className='castellano' onClick={this.props.cambiarEsp}>
-              ES
+              <img className='esp-flag' src={espFlag} alt='ESP logo' />
             </button>
           </div>
           {/* ===== Logo del centro ===== */}

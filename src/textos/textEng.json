@@ -83,5 +83,16 @@
       "telefono": "+591-678-98045"
     },
     "contenido": "We like to meet and chat with our new clients. Start by sending us a message and we will contact you shortly."
+  },
+
+  "cotizacion": {
+    "titulo": "Search result for spare part:",
+    "tabla": {
+      "col1": "Descripcion",
+      "col2": "Aplicacion",
+      "col3": "Type",
+      "col4": "Price",
+      "col5": "Delivery time"
+    }
   }
 }

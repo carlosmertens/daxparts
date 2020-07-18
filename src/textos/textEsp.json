@@ -83,5 +83,16 @@
       "telefono": "+591-678-98045"
     },
     "contenido": "Nos gusta conocer y conversar con nuestros nuevos clientes. Comienza enviándonos un mensaje y nos pondremos en contacto en breve."
+  },
+
+  "cotizacion": {
+    "titulo": "Resultado para parte:",
+    "tabla": {
+      "col1": "Descripcion",
+      "col2": "Aplicacion",
+      "col3": "Tipo",
+      "col4": "Precio",
+      "col5": "Tiempo de Entrega"
+    }
   }
 }
