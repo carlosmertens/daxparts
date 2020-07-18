@@ -1,32 +1,46 @@
 import React, { Component } from 'react';
 import Spinner from '../spinner/Spinner';
 import axios from 'axios';
+import config from '../../config';
 import './Cotizacion.css';
 
 class Cotizacion extends Component {
   constructor(props) {
     super(props);
-    this.state = { buscar: '', parte: '5' };
+    this.state = { parte: '5', busqueda: [] };
   }
 
-  // Llamar back-end (server) para obtener busqueda de parte
-  async componentDidMount() {
-    const buscarData = await axios.get(
-      `https://jsonplaceholder.typicode.com/users/${this.state.parte}`
-    );
-    // Guardar data en buscar state
-    this.setState({ buscar: buscarData.data });
-    // Mostrar data en a consola
-    console.log(this.state.buscar);
+  componentDidMount() {
+    // Prueba con API de peliculas (TheMovieDB)
+    const nowPlayingUrl = `https://api.themoviedb.org/3/movie/now_playing?api_key=${config.api_key}`;
+    axios.get(nowPlayingUrl).then((response) => {
+      console.log(response.data);
+      const movieData = response.data.results;
+      this.setState({
+        busqueda: movieData,
+      });
+    });
   }
 
   render() {
     // Mientras "buscar state" este vacio, spinner va a correr
-    if (this.state.buscar.length === 0) {
+    if (this.state.busqueda.length === 0) {
       return <Spinner />;
     }
     // Desestructuración del props idioma
     const texto = { ...this.props.idioma };
+    // Bucle el resultado y formar las lineas de la tabla
+    const movieGrid = this.state.busqueda.map((item, index) => {
+      return (
+        <tr key={index}>
+          <th scope='row'>{item.title}</th>
+          <td>{item.id}</td>
+          <td>{item.original_language}</td>
+          <td>{item.vote_count}</td>
+          <td>{item.release_date}</td>
+        </tr>
+      );
+    });
     return (
       <div className='container-fluid cotizacion-contenido'>
         <div className='container cotizacion-title'>
@@ -47,57 +61,7 @@ class Cotizacion extends Component {
                   <th scope='col'>{texto.cotizacion.tabla.col5}</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <th scope='row'>{this.state.buscar.username}</th>
-                  <td>{this.state.buscar.address.street}</td>
-                  <td>{this.state.buscar.address.suite}</td>
-                  <td>{this.state.buscar.address.geo.lat}</td>
-                  <td>{this.state.buscar.address.geo.lng}</td>
-                </tr>
-                <tr>
-                  <th scope='row'>{this.state.buscar.username}</th>
-                  <td>{this.state.buscar.address.street}</td>
-                  <td>{this.state.buscar.address.suite}</td>
-                  <td>{this.state.buscar.address.geo.lat}</td>
-                  <td>{this.state.buscar.address.geo.lng}</td>
-                </tr>
-                <tr>
-                  <th scope='row'>{this.state.buscar.username}</th>
-                  <td>{this.state.buscar.address.street}</td>
-                  <td>{this.state.buscar.address.suite}</td>
-                  <td>{this.state.buscar.address.geo.lat}</td>
-                  <td>{this.state.buscar.address.geo.lng}</td>
-                </tr>
-                <tr>
-                  <th scope='row'>{this.state.buscar.username}</th>
-                  <td>{this.state.buscar.address.street}</td>
-                  <td>{this.state.buscar.address.suite}</td>
-                  <td>{this.state.buscar.address.geo.lat}</td>
-                  <td>{this.state.buscar.address.geo.lng}</td>
-                </tr>
-                <tr>
-                  <th scope='row'>{this.state.buscar.username}</th>
-                  <td>{this.state.buscar.address.street}</td>
-                  <td>{this.state.buscar.address.suite}</td>
-                  <td>{this.state.buscar.address.geo.lat}</td>
-                  <td>{this.state.buscar.address.geo.lng}</td>
-                </tr>
-                {/* <tr>
-                  <th scope='row'>Test 2</th>
-                  <td>Test 2</td>
-                  <td>Test 2</td>
-                  <td>Test 2</td>
-                  <td>Test 2</td>
-                </tr>
-                <tr>
-                  <th scope='row'>descripcion 3</th>
-                  <td>aplicacion 3</td>
-                  <td>tipo 3</td>
-                  <td>precio 3</td>
-                  <td>entrega 3</td>
-                </tr> */}
-              </tbody>
+              <tbody>{movieGrid}</tbody>
             </table>
           </div>
         </div>
