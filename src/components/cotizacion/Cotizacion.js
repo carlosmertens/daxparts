@@ -3,6 +3,7 @@ import Spinner from '../spinner/Spinner';
 import axios from 'axios';
 import config from '../../config';
 import './Cotizacion.css';
+import { Link } from 'react-router-dom';
 
 class Cotizacion extends Component {
   constructor(props) {
@@ -63,6 +64,40 @@ class Cotizacion extends Component {
               </thead>
               <tbody>{movieGrid}</tbody>
             </table>
+            <div className='Container bg-secondary'>
+              <p className='nota text-white'>
+                Nombres OEM, logos y numeros de partes son usados para referencia.
+                No implicamos que nuestros productos o servicios estén afiliados,
+                patrocinados o aprobados por los fabricantes de equipos originales
+              </p>
+            </div>
+            <div className='container d-flex justify-content-center'>
+              <div className='beneficios bg-dark'>
+                <h4 className='titulo-jumbo'>Si eres usuario podras:</h4>
+                <p className='beneficios-jumbo'>Crear varias cotizaciones</p>
+                <p className='beneficios-jumbo'>
+                  Ingresar cientos de codigos de manera sencilla
+                </p>
+                <p className='beneficios-jumbo'>
+                  Email o imprimiar tus cotizaciones
+                </p>
+                <p className='beneficios-jumbo'>
+                  Hacer seguimientos a tus ordenes
+                </p>
+                <p className='beneficios-jumbo'>
+                  Acceder a miles de piezas usadas y reconstruidas
+                </p>
+                <p className='beneficios-jumbo'>
+                  Comprar repuestos de reemplazos de diferentes marcas
+                </p>
+                <p className='beneficios-jumbo'>y mucho mas...</p>
+                <Link to='/crear'>
+                  <button className='btn mb-2' type='button'>
+                    Crear
+                  </button>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>

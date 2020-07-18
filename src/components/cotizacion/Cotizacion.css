@@ -7,6 +7,28 @@
   margin-top: 20px;
 }
 
+.nota {
+  padding: 15px 5px 15px 25px;
+}
+
+.beneficios {
+  border-radius: 30px;
+  width: 500px;
+  text-align: center;
+}
+
+.titulo-jumbo {
+  color: #fca728;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.beneficios-jumbo {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 12px;
+}
+
 /* ========== RESPONSIVE COTIZACION ========== */
 /* EXTRA SMALL devices (less than 480px) */
 @media only screen and (max-width: 480px) {

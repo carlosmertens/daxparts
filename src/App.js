@@ -12,6 +12,7 @@ import Ofrecemos from './components/ofrecemos/Ofrecemos';
 import Contacto from './components/contacto/Contacto';
 import Tutorial from './components/tutorial/Tutorial';
 import Cotizacion from './components/cotizacion/Cotizacion';
+import Crear from './components/crearUsuario/Crear';
 
 // Importar json con los textos de ingles y castellano
 import castellano from './textos/textEsp.json';
@@ -102,6 +103,7 @@ class App extends Component {
             return <Cotizacion idioma={idioma} />;
           }}
         />
+        <Route exact path='/crear' component={Crear} />
       </Router>
     );
   }

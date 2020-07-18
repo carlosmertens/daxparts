@@ -52,7 +52,7 @@ class Home extends Component {
                   placeholder={texto.home.campoBuscar}
                 />
                 <Link to='/cotizacion'>
-                  <button className='btn btn-primary mb-2' type='submit'>
+                  <button className='btn mb-2' type='submit'>
                     {texto.home.botonBuscar}
                   </button>
                 </Link>
