@@ -8,14 +8,14 @@ import { Link } from 'react-router-dom';
 class Cotizacion extends Component {
   constructor(props) {
     super(props);
-    this.state = { parte: '5', busqueda: [] };
+    this.state = { busqueda: [] };
   }
 
   componentDidMount() {
     // Prueba con API de peliculas (TheMovieDB)
     const nowPlayingUrl = `https://api.themoviedb.org/3/movie/now_playing?api_key=${config.api_key}`;
     axios.get(nowPlayingUrl).then((response) => {
-      console.log(response.data);
+      // console.log(response.data);
       const movieData = response.data.results;
       this.setState({
         busqueda: movieData,
@@ -42,12 +42,11 @@ class Cotizacion extends Component {
         </tr>
       );
     });
+    console.log(this.props.parte);
     return (
       <div className='container-fluid cotizacion-contenido'>
         <div className='container cotizacion-title'>
-          <p>
-            {texto.cotizacion.titulo} {this.state.parte}
-          </p>
+          <p>{texto.cotizacion.titulo}</p>
         </div>
 
         <div className='container cotizacion-table'>

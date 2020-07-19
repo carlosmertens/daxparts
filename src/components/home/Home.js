@@ -9,22 +9,13 @@ import './Home.css';
 class Home extends Component {
   constructor(props) {
     super(props);
-    // Objecto (State) inicial del campo de captura
-    this.state = {
-      parte: '',
-    };
+    this.state = '';
   }
-
-  // Evento que captura el numero de busqueda
-  buscarParte = (e) => {
-    e.preventDefault();
-    const numero = document.getElementById('buscar').value;
-    this.setState({ parte: numero });
-  };
 
   render() {
     // desestructuración del props idioma
     const texto = { ...this.props.idioma };
+    console.log(this.props.parte);
     return (
       <header>
         <div className='container header-contenido'>
@@ -43,7 +34,7 @@ class Home extends Component {
           </div>
           {/* ===== Formulario para buscar partes ===== */}
           <div className='container d-flex justify-content-center'>
-            <form className='form-inline' onSubmit={this.buscarParte}>
+            <form className='form-inline'>
               <div className='form-group mb-2'>
                 <label htmlFor='buscar'>{texto.home.leyendaBuscar}</label>
                 <input
@@ -51,8 +42,12 @@ class Home extends Component {
                   id='buscar'
                   placeholder={texto.home.campoBuscar}
                 />
+
                 <Link to='/cotizacion'>
-                  <button className='btn mb-2' type='submit'>
+                  <button
+                    className='btn mb-2'
+                    type='submit'
+                    onClick={this.props.buscarParte}>
                     {texto.home.botonBuscar}
                   </button>
                 </Link>

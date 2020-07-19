@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 // import navLogo from '../../images/logoNav.png';
 import navLogoWhite from '../../images/logoNavWhite.png';
-import Usuario from './Usuario';
+// import Usuario from './Usuario';
+
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import openModal from '../../actions/openModal';
 
 class Navbar extends Component {
   constructor() {
@@ -57,11 +61,31 @@ class Navbar extends Component {
           </ul>
 
           {/* Boton de ingresar al modal de ususario */}
-          <Usuario texto={texto} />
+          {/* <Usuario texto={texto} /> */}
+          <div className='form-inline my-2 my-lg-0'>
+            <h4 className='text-white'>{texto.navbar.leyenda}</h4>
+            <button
+              type='button'
+              className='btn'
+              onClick={() => {
+                this.props.openModal('open', 'Ingresar');
+              }}>
+              {texto.navbar.botonTexto}
+            </button>
+          </div>
         </div>
       </nav>
     );
   }
 }
 
-export default Navbar;
+function mapDispatchToProps(dispacher) {
+  return bindActionCreators(
+    {
+      openModal: openModal,
+    },
+    dispacher
+  );
+}
+
+export default connect(null, mapDispatchToProps)(Navbar);

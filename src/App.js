@@ -12,16 +12,19 @@ import Ofrecemos from './components/ofrecemos/Ofrecemos';
 import Contacto from './components/contacto/Contacto';
 import Tutorial from './components/tutorial/Tutorial';
 import Cotizacion from './components/cotizacion/Cotizacion';
+
 import Crear from './components/crearUsuario/Crear';
+import Modal from './components/modal/Modal';
 
 // Importar json con los textos de ingles y castellano
 import castellano from './textos/textEsp.json';
 import ingles from './textos/textEng.json';
 
 class App extends Component {
-  // Objecto (State) inicial del idioma
+  // Objecto (State) inicial del idioma y el campo de busqueda
   state = {
     lang: 'es',
+    parte: '',
   };
 
   // Evento de cambiar idioma
@@ -33,6 +36,13 @@ class App extends Component {
     this.setState({ lang: 'es' });
   };
 
+  // Evento que captura el numero de busqueda
+  buscarParte = (e) => {
+    e.preventDefault();
+    const numero = document.getElementById('buscar').value;
+    this.setState({ parte: numero });
+  };
+
   render() {
     // Logica para selecionar idioma de la pagina
     let idioma = castellano;
@@ -42,6 +52,7 @@ class App extends Component {
 
     return (
       <Router>
+        <Route path='/' component={Modal} />
         <Route
           path='/'
           render={() => {
@@ -57,6 +68,8 @@ class App extends Component {
                 idioma={idioma}
                 cambiarEng={this.cambiarEng}
                 cambiarEsp={this.cambiarEsp}
+                parte={this.state.parte}
+                buscarParte={this.buscarParte}
               />
             );
           }}
@@ -100,7 +113,7 @@ class App extends Component {
           exact
           path='/cotizacion'
           render={() => {
-            return <Cotizacion idioma={idioma} />;
+            return <Cotizacion idioma={idioma} parte={this.state.parte} />;
           }}
         />
         <Route exact path='/crear' component={Crear} />
