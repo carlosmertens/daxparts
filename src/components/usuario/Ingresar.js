@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import navLogo from '../../images/logoNav.png';
 import './Usuario.css';
 
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import openModal from '../../actions/openModal';
+
+import Crear from './Crear';
+
 class Ingresar extends Component {
   constructor(props) {
     super(props);
@@ -48,11 +54,29 @@ class Ingresar extends Component {
         </div>
 
         <div className='modal-footer d-flex justify-content-center'>
-          <p>No tienes cuenta? Regístrate</p>
+          <div>
+            No tienes una cuenta?{' '}
+            <span
+              className='pointer'
+              onClick={() => {
+                this.props.openModal('open', <Crear />);
+              }}>
+              Pincha aqui
+            </span>
+          </div>
         </div>
       </>
     );
   }
 }
 
-export default Ingresar;
+function mapDispatchToProps(dispacher) {
+  return bindActionCreators(
+    {
+      openModal: openModal,
+    },
+    dispacher
+  );
+}
+
+export default connect(null, mapDispatchToProps)(Ingresar);

@@ -20,19 +20,35 @@ class Modal extends Component {
     }
 
     return (
-      <div className='site-modal' style={modalInlineStyle}>
-        <div className='modal-content'>
-          <div className='col right'>
-            <span onClick={this.closeModal} className='close'>
-              &times;
-            </span>
-          </div>
-          <div className='formulario-ingreso'>
-            {/* Contenido del modal */}
-            {this.props.siteModal.content}
+      <div className='site-modal' style={modalInlineStyle} tabIndex='-1' role='dialog'>
+        <div className='modal-dialog'>
+          <div className='modal-content'>
+            <div className='col right'>
+              <span onClick={this.closeModal} className='close'>
+                &times;
+              </span>
+            </div>
+            <div className='formulario-ingreso'>
+              {/* Contenido del modal */}
+              {this.props.siteModal.content}
+            </div>
           </div>
         </div>
       </div>
+
+      // <div className='site-modal' style={modalInlineStyle}>
+      //   <div className='modal-content'>
+      //     <div className='col right'>
+      //       <span onClick={this.closeModal} className='close'>
+      //         &times;
+      //       </span>
+      //     </div>
+      //     <div className='formulario-ingreso'>
+      //       {/* Contenido del modal */}
+      //       {this.props.siteModal.content}
+      //     </div>
+      //   </div>
+      // </div>
     );
   }
 }
