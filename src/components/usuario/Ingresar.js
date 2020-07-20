@@ -48,7 +48,7 @@ class Ingresar extends Component {
         </div>
 
         <div className='modal-footer d-flex justify-content-center'>
-          <p>No tienes cuenta? Crear</p>
+          <p>No tienes cuenta? Regístrate</p>
         </div>
       </>
     );
