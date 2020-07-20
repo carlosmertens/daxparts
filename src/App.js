@@ -13,7 +13,6 @@ import Contacto from './components/contacto/Contacto';
 import Tutorial from './components/tutorial/Tutorial';
 import Cotizacion from './components/cotizacion/Cotizacion';
 
-import Crear from './components/crearUsuario/Crear';
 import Modal from './components/modal/Modal';
 
 // Importar json con los textos de ingles y castellano
@@ -116,7 +115,6 @@ class App extends Component {
             return <Cotizacion idioma={idioma} parte={this.state.parte} />;
           }}
         />
-        <Route exact path='/crear' component={Crear} />
       </Router>
     );
   }

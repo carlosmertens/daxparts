@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 // import navLogo from '../../images/logoNav.png';
 import navLogoWhite from '../../images/logoNavWhite.png';
-// import Usuario from './Usuario';
+import Ingresar from '../usuario/Ingresar';
+import Crear from '../usuario/Crear';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -63,12 +64,20 @@ class Navbar extends Component {
           {/* Boton de ingresar al modal de ususario */}
           {/* <Usuario texto={texto} /> */}
           <div className='form-inline my-2 my-lg-0'>
-            <h4 className='text-white'>{texto.navbar.leyenda}</h4>
+            {/* <h4 className='text-white'>{texto.navbar.leyenda}</h4> */}
             <button
               type='button'
               className='btn'
               onClick={() => {
-                this.props.openModal('open', 'Ingresar');
+                this.props.openModal('open', <Crear />);
+              }}>
+              Crear
+            </button>
+            <button
+              type='button'
+              className='btn'
+              onClick={() => {
+                this.props.openModal('open', <Ingresar />);
               }}>
               {texto.navbar.botonTexto}
             </button>

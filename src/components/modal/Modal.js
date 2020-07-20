@@ -27,7 +27,10 @@ class Modal extends Component {
               &times;
             </span>
           </div>
-          <div className=''>{this.props.siteModal.content}</div>
+          <div className='formulario-ingreso'>
+            {/* Contenido del modal */}
+            {this.props.siteModal.content}
+          </div>
         </div>
       </div>
     );
