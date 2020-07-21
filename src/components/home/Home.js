@@ -10,7 +10,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import openModal from '../../actions/openModal';
 
-import Buscamos from '../buscamos/Buscamos';
+import Noparte from '../noparte/Noparte';
 
 class Home extends Component {
   constructor(props) {
@@ -63,7 +63,7 @@ class Home extends Component {
               type='button'
               className='button-link'
               onClick={() => {
-                this.props.openModal('open', <Buscamos />);
+                this.props.openModal('open', <Noparte />);
               }}>
               <p className='click-link-text'>{texto.home.enlaceClick}</p>
             </button>
