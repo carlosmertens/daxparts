@@ -6,6 +6,12 @@ import engFlag from '../../images/eng.png';
 import espFlag from '../../images/esp.png';
 import './Home.css';
 
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import openModal from '../../actions/openModal';
+
+import Buscamos from '../buscamos/Buscamos';
+
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -37,11 +43,7 @@ class Home extends Component {
             <form className='form-inline'>
               <div className='form-group mb-2'>
                 <label htmlFor='buscar'>{texto.home.leyendaBuscar}</label>
-                <input
-                  type='text'
-                  id='buscar'
-                  placeholder={texto.home.campoBuscar}
-                />
+                <input type='text' id='buscar' placeholder={texto.home.campoBuscar} />
 
                 <Link to='/cotizacion'>
                   <button
@@ -60,13 +62,14 @@ class Home extends Component {
             <button
               type='button'
               className='button-link'
-              data-toggle='modal'
-              data-target='#exampleModal'>
+              onClick={() => {
+                this.props.openModal('open', <Buscamos />);
+              }}>
               <p className='click-link-text'>{texto.home.enlaceClick}</p>
             </button>
 
             {/* <!-- Modal --> */}
-            <div
+            {/* <div
               className='modal fade'
               id='exampleModal'
               tabIndex='-1'
@@ -86,7 +89,7 @@ class Home extends Component {
                         <Link to='/tutorial/'>
                           <button
                             className='que-hacer-button'
-                            // data-dismiss='modal'
+                            data-dismiss='modal'
                             aria-hidden='true'>
                             {texto.home.modal.enlaceTutorial}
                           </button>
@@ -101,16 +104,12 @@ class Home extends Component {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           {/* ===== Icono Tutorial ===== */}
           <div className='container tutorial-link'>
             <Link to='/tutorial'>
-              <img
-                className='logo-tutorial'
-                src={IconVideos}
-                alt='Tutorial Logo'
-              />
+              <img className='logo-tutorial' src={IconVideos} alt='Tutorial Logo' />
               <p className='tutorial-text'>{texto.home.leyendaTutorial}</p>
             </Link>
           </div>
@@ -120,4 +119,13 @@ class Home extends Component {
   }
 }
 
-export default Home;
+function mapDispatchToProps(dispacher) {
+  return bindActionCreators(
+    {
+      openModal: openModal,
+    },
+    dispacher
+  );
+}
+
+export default connect(null, mapDispatchToProps)(Home);

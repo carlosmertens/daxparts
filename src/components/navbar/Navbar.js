@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-// import navLogo from '../../images/logoNav.png';
 import navLogoWhite from '../../images/logoNavWhite.png';
-import Ingresar from '../usuario/Ingresar';
-import Crear from '../usuario/Crear';
+import Ingresar from '../ingresar/Ingresar';
+import Crear from '../crear/Crear';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -61,8 +60,7 @@ class Navbar extends Component {
             </li>
           </ul>
 
-          {/* Boton de ingresar al modal de ususario */}
-          {/* <Usuario texto={texto} /> */}
+          {/* Botones modal de iIngresar y Crear */}
           <div className='form-inline my-2 my-lg-0'>
             {/* <h4 className='text-white'>{texto.navbar.leyenda}</h4> */}
             <button
@@ -71,7 +69,7 @@ class Navbar extends Component {
               onClick={() => {
                 this.props.openModal('open', <Crear />);
               }}>
-              Crear
+              Crear Cuenta
             </button>
             <button
               type='button'

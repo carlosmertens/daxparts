@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import navLogo from '../../images/logoNav.png';
-import './Usuario.css';
+import './Ingresar.css';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import openModal from '../../actions/openModal';
 
-import Crear from './Crear';
+import Crear from '../crear/Crear';
 
 class Ingresar extends Component {
   constructor(props) {

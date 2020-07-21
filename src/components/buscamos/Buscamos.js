@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import navLogo from '../../images/logoNav.png';
-import './Usuario.css';
+// import './Buscamos.css';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import openModal from '../../actions/openModal';
 
-import Ingresar from './Ingresar';
+import Ingresar from '../ingresar/Ingresar';
 
-class Crear extends Component {
+class Buscamos extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -25,14 +25,32 @@ class Crear extends Component {
 
         <div className='modal-body'>
           <form onSubmit={this.submitLogin}>
-            <h4>Datos del Cliente</h4>
+            <h4>Datos del Equipo</h4>
             <div className='form-group d-flex justify-content-center'>
               <input
                 type='text'
                 className='form-control mr-sm-2'
-                placeholder='Empresa'
+                placeholder='Marca de tu equipo'
               />
             </div>
+
+            <div className='form-group d-flex justify-content-center'>
+              <input
+                type='text'
+                className='form-control mr-sm-2'
+                placeholder='Modelo de tu equipo'
+              />
+            </div>
+
+            <div className='form-group d-flex justify-content-center'>
+              <input
+                type='text'
+                className='form-control mr-sm-2'
+                placeholder='Serie de tu equipo'
+              />
+            </div>
+
+            <h4>Tus datos</h4>
 
             <div className='form-group d-flex justify-content-center'>
               <input
@@ -43,46 +61,7 @@ class Crear extends Component {
             </div>
 
             <div className='form-group d-flex justify-content-center'>
-              <select className='form-control'>
-                <option selected>Cedula de identidad</option>
-                <option>NIT</option>
-                <option>Pasaporte</option>
-                <option>RUC</option>
-              </select>
-            </div>
-
-            <div className='form-group d-flex justify-content-center'>
-              <input
-                type='text'
-                className='form-control mr-sm-2'
-                placeholder='Numero de identidad'
-              />
-            </div>
-
-            <div className='form-group d-flex justify-content-center'>
-              <select className='form-control'>
-                <option selected>Bolivia</option>
-                <option>Chile</option>
-                <option>Estados Unidos</option>
-                <option>Paraguay</option>
-                <option>Peru</option>
-              </select>
-            </div>
-
-            <div className='form-group d-flex justify-content-center'>
-              <input
-                type='text'
-                className='form-control mr-sm-2'
-                placeholder='Ciudad'
-              />
-            </div>
-
-            <div className='form-group d-flex justify-content-center'>
-              <input
-                type='text'
-                className='form-control mr-sm-2'
-                placeholder='Teléfono'
-              />
+              <input type='text' className='form-control mr-sm-2' placeholder='Pais' />
             </div>
 
             <div className='form-group d-flex justify-content-center'>
@@ -93,43 +72,17 @@ class Crear extends Component {
               />
             </div>
 
-            <h4>Datos del Cliente</h4>
-
             <div className='form-group d-flex justify-content-center'>
               <input
                 type='text'
                 className='form-control mr-sm-2'
-                placeholder='Usuario'
-              />
-            </div>
-
-            <div className='form-group d-flex justify-content-center'>
-              <input
-                type='password'
-                className='form-control mr-sm-2'
-                placeholder='Password'
-              />
-            </div>
-
-            <div className='form-group d-flex justify-content-center'>
-              <input
-                type='password'
-                className='form-control mr-sm-2'
-                placeholder='Password'
-              />
-            </div>
-
-            <div className='form-group d-flex justify-content-center'>
-              <input
-                type='password'
-                className='form-control mr-sm-2'
-                placeholder='Confirmar password'
+                placeholder='Teléfono/WhatsApp'
               />
             </div>
 
             <div className='boton-form'>
               <button type='submit' className='btn'>
-                Crear
+                Cotizar
               </button>
             </div>
           </form>
@@ -161,4 +114,4 @@ function mapDispatchToProps(dispacher) {
   );
 }
 
-export default connect(null, mapDispatchToProps)(Crear);
+export default connect(null, mapDispatchToProps)(Buscamos);
