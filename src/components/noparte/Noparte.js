@@ -16,6 +16,10 @@ class Noparte extends Component {
     this.state = {};
   }
 
+  closeModal = () => {
+    this.props.openModal('closed', '');
+  };
+
   render() {
     return (
       <>
@@ -33,7 +37,7 @@ class Noparte extends Component {
             <div className='row'>
               <div className='col'>
                 <Link to='/tutorial/'>
-                  <button className='que-hacer-button'>
+                  <button className='que-hacer-button' onClick={this.closeModal}>
                     Manuales en linea gratuitos
                   </button>
                 </Link>
@@ -68,6 +72,12 @@ class Noparte extends Component {
   }
 }
 
+function mapStateToProps(state) {
+  return {
+    siteModal: state.siteModal,
+  };
+}
+
 function mapDispatchToProps(dispacher) {
   return bindActionCreators(
     {
@@ -77,4 +87,4 @@ function mapDispatchToProps(dispacher) {
   );
 }
 
-export default connect(null, mapDispatchToProps)(Noparte);
+export default connect(mapStateToProps, mapDispatchToProps)(Noparte);
