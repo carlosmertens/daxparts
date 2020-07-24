@@ -8,65 +8,79 @@
 /* Extra small devices (less than 480px) */
 @media only screen and (max-width: 480px) {
   nav img {
-    height: 60px;
+    padding-left: 20px;
+    height: 90px;
     width: auto;
   }
   nav h4 {
-    font-size: 18px;
+    font-size: 20px;
+    margin: auto 30px auto 30px;
   }
-  form h4 {
-    padding-right: 10px;
+  .botones {
+    padding-right: 20px;
   }
 }
 
 /* Small devices (old iPhones, 480px and up) */
 @media only screen and (min-width: 480px) {
   nav img {
-    height: 70px;
+    padding-left: 20px;
+    height: 90px;
     width: auto;
   }
   nav h4 {
-    font-size: 18px;
+    font-size: 20px;
+    margin: auto 30px auto 30px;
+  }
+  .botones {
+    padding-right: 20px;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   nav img {
-    height: 75px;
+    padding-left: 20px;
+    height: 90px;
     width: auto;
   }
   nav h4 {
-    font-size: 18px;
-    margin: auto 15px auto 15px;
+    font-size: 20px;
+    margin: auto 30px auto 30px;
+  }
+  .botones {
+    padding-right: 20px;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   nav img {
-    padding-left: 30px;
+    padding-left: 20px;
     height: 80px;
     width: auto;
   }
   nav h4 {
-    font-size: 15px;
-    margin: auto 15px auto 15px;
+    font-size: 18px;
+    margin: auto 20px auto 20px;
   }
+  /* .botones {
+    padding-right: 0px;
+  } */
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   nav img {
-    padding-left: 30px;
-    height: 85px;
+    padding-left: 20px;
+    height: 90px;
     width: auto;
   }
   nav h4 {
-    font-size: 18px;
-    margin: auto 15px auto 15px;
+    font-size: 20px;
+    margin: auto 30px auto 30px;
   }
-  nav form {
-    padding-right: 30px;
-  }
+  /* .botones {
+    padding-right: 20px;
+  } */
 }

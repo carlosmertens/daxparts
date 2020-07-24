@@ -61,7 +61,7 @@ class Navbar extends Component {
           </ul>
 
           {/* Botones modal de iIngresar y Crear */}
-          <div className='form-inline my-2 my-lg-0'>
+          <div className='form-inline botones my-2 my-lg-0'>
             {/* <h4 className='text-white'>{texto.navbar.leyenda}</h4> */}
             <button
               type='button'
