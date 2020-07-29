@@ -21,6 +21,11 @@ class Ingresar extends Component {
     e.preventDefault();
     console.log(this.state.email);
     console.log(this.state.password);
+    this.closeModal();
+  };
+
+  closeModal = () => {
+    this.props.openModal('closed', '');
   };
 
   render() {
@@ -81,6 +86,12 @@ class Ingresar extends Component {
   }
 }
 
+function mapStateToProps(state) {
+  return {
+    siteModal: state.siteModal,
+  };
+}
+
 function mapDispatchToProps(dispacher) {
   return bindActionCreators(
     {
@@ -90,4 +101,4 @@ function mapDispatchToProps(dispacher) {
   );
 }
 
-export default connect(null, mapDispatchToProps)(Ingresar);
+export default connect(mapStateToProps, mapDispatchToProps)(Ingresar);

@@ -11,8 +11,29 @@ import Ingresar from '../ingresar/Ingresar';
 class Crear extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      ID: 'Cedula de identidad',
+      pais: 'Bolivia',
+    };
   }
+
+  changeEmpresa = (e) => this.setState({ empresa: e.target.value });
+  changeNombre = (e) => this.setState({ nombre: e.target.value });
+  changeID = (e) => this.setState({ ID: e.target.value });
+  changeNumeroID = (e) => this.setState({ numeroID: e.target.value });
+  changePais = (e) => this.setState({ pais: e.target.value });
+  changeCiudad = (e) => this.setState({ ciudad: e.target.value });
+  changeTelefono = (e) => this.setState({ telefono: e.target.value });
+  changeEmail = (e) => this.setState({ email: e.target.value });
+  changeUsuario = (e) => this.setState({ usuario: e.target.value });
+  changePassword = (e) => this.setState({ password: e.target.value });
+  changePassword1 = (e) => this.setState({ password1: e.target.value });
+
+  submitLogin = (e) => {
+    e.preventDefault();
+    console.log(this.state);
+    this.closeModal();
+  };
 
   render() {
     return (
@@ -31,6 +52,7 @@ class Crear extends Component {
                 type='text'
                 className='form-control mr-sm-2'
                 placeholder='Empresa'
+                onChange={this.changeEmpresa}
               />
             </div>
 
@@ -39,12 +61,16 @@ class Crear extends Component {
                 type='text'
                 className='form-control mr-sm-2'
                 placeholder='Nombre'
+                onChange={this.changeNombre}
               />
             </div>
 
             <div className='form-group d-flex justify-content-center'>
-              <select className='form-control'>
-                <option selected>Cedula de identidad</option>
+              <select
+                className='form-control'
+                onChange={this.changeID}
+                value={this.state.ID}>
+                <option>Cedula de identidad</option>
                 <option>NIT</option>
                 <option>Pasaporte</option>
                 <option>RUC</option>
@@ -56,12 +82,16 @@ class Crear extends Component {
                 type='text'
                 className='form-control mr-sm-2'
                 placeholder='Numero de identidad'
+                onChange={this.changeNumeroID}
               />
             </div>
 
             <div className='form-group d-flex justify-content-center'>
-              <select className='form-control'>
-                <option selected>Bolivia</option>
+              <select
+                className='form-control'
+                onChange={this.changePais}
+                value={this.state.pais}>
+                <option>Bolivia</option>
                 <option>Chile</option>
                 <option>Estados Unidos</option>
                 <option>Paraguay</option>
@@ -74,6 +104,7 @@ class Crear extends Component {
                 type='text'
                 className='form-control mr-sm-2'
                 placeholder='Ciudad'
+                onChange={this.changeCiudad}
               />
             </div>
 
@@ -82,6 +113,7 @@ class Crear extends Component {
                 type='text'
                 className='form-control mr-sm-2'
                 placeholder='Teléfono'
+                onChange={this.changeTelefono}
               />
             </div>
 
@@ -90,6 +122,7 @@ class Crear extends Component {
                 type='email'
                 className='form-control mr-sm-2'
                 placeholder='Email'
+                onChange={this.changeEmail}
               />
             </div>
 
@@ -100,6 +133,7 @@ class Crear extends Component {
                 type='text'
                 className='form-control mr-sm-2'
                 placeholder='Usuario'
+                onChange={this.changeUsuario}
               />
             </div>
 
@@ -108,14 +142,7 @@ class Crear extends Component {
                 type='password'
                 className='form-control mr-sm-2'
                 placeholder='Password'
-              />
-            </div>
-
-            <div className='form-group d-flex justify-content-center'>
-              <input
-                type='password'
-                className='form-control mr-sm-2'
-                placeholder='Password'
+                onChange={this.changePassword}
               />
             </div>
 
@@ -124,6 +151,7 @@ class Crear extends Component {
                 type='password'
                 className='form-control mr-sm-2'
                 placeholder='Confirmar password'
+                onChange={this.changePassword2}
               />
             </div>
 
