@@ -22,17 +22,18 @@ import ingles from './textos/textEng.json';
 class App extends Component {
   // Objecto (State) inicial del idioma y el campo de busqueda
   state = {
-    lang: 'es',
+    lang: 'Español',
+    country: 'Bolivia',
     parte: '',
   };
 
   // Evento de cambiar idioma
   cambiarEng = () => {
-    this.setState({ lang: 'en' });
+    this.setState({ lang: 'English' });
   };
 
   cambiarEsp = () => {
-    this.setState({ lang: 'es' });
+    this.setState({ lang: 'Español' });
   };
 
   // Evento que captura el numero de busqueda
@@ -45,7 +46,7 @@ class App extends Component {
   render() {
     // Logica para selecionar idioma de la pagina
     let idioma = castellano;
-    if (this.state.lang !== 'es') {
+    if (this.state.lang !== 'Español') {
       idioma = ingles;
     }
 

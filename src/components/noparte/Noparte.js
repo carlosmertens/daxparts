@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import navLogo from '../../images/logoNav.png';
+// import navLogo from '../../images/logoNav.png';
 import './Noparte.css';
 import { Link } from 'react-router-dom';
 
@@ -23,17 +23,17 @@ class Noparte extends Component {
   render() {
     return (
       <>
-        <div className='modal-logo d-flex justify-content-center'>
+        {/* <div className='modal-logo d-flex justify-content-center'>
           <img src={navLogo} alt='Dax Logo' />
-        </div>
+        </div> */}
 
         <div className='modal-body'>
           <div className='modal-header'>
-            <h5 className='modal-title' id='exampleModalLabel'>
+            <h4 className='modal-title'>
               QUE HACER CUANDO NO TIENES TU NUMERO DE PARTE
-            </h5>
+            </h4>
           </div>
-          <div className='modal-body'>
+          <div className='modal-body d-flex justify-content-center'>
             <div className='row'>
               <div className='col'>
                 <Link to='/tutorial/'>
