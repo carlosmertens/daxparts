@@ -60,17 +60,8 @@ class Navbar extends Component {
             </li>
           </ul>
 
-          {/* Botones modal de iIngresar y Crear */}
+          {/* Botones modal de Ingresar y Crear Cuenta */}
           <div className='form-inline botones my-2 my-lg-0'>
-            {/* <h4 className='text-white'>{texto.navbar.leyenda}</h4> */}
-            <button
-              type='button'
-              className='btn'
-              onClick={() => {
-                this.props.openModal('open', <Crear />);
-              }}>
-              Crear Cuenta
-            </button>
             <button
               type='button'
               className='btn'
@@ -79,6 +70,14 @@ class Navbar extends Component {
               }}>
               {texto.navbar.botonTexto}
             </button>
+            <button
+              type='button'
+              className='btn'
+              onClick={() => {
+                this.props.openModal('open', <Crear />);
+              }}>
+              Crear cuenta
+            </button>
           </div>
         </div>
       </nav>
@@ -86,6 +85,7 @@ class Navbar extends Component {
   }
 }
 
+// Action dispacher para llamar modal
 function mapDispatchToProps(dispacher) {
   return bindActionCreators(
     {

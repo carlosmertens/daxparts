@@ -67,44 +67,6 @@ class Home extends Component {
               }}>
               <p className='click-link-text'>{texto.home.enlaceClick}</p>
             </button>
-
-            {/* <!-- Modal --> */}
-            {/* <div
-              className='modal fade'
-              id='exampleModal'
-              tabIndex='-1'
-              role='dialog'
-              aria-labelledby='exampleModalLabel'
-              aria-hidden='true'>
-              <div className='modal-dialog'>
-                <div className='modal-content align-items-center d-flex'>
-                  <div className='modal-header'>
-                    <h5 className='modal-title' id='exampleModalLabel'>
-                      {texto.home.modal.titulo}
-                    </h5>
-                  </div>
-                  <div className='modal-body'>
-                    <div className='row'>
-                      <div className='col'>
-                        <Link to='/tutorial/'>
-                          <button
-                            className='que-hacer-button'
-                            data-dismiss='modal'
-                            aria-hidden='true'>
-                            {texto.home.modal.enlaceTutorial}
-                          </button>
-                        </Link>
-                      </div>
-                      <div className='col'>
-                        <button className='que-hacer-button'>
-                          {texto.home.modal.enlaceBuscamos}
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> */}
           </div>
           {/* ===== Icono Tutorial ===== */}
           <div className='container tutorial-link'>

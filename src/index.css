@@ -29,6 +29,7 @@ body {
   background-color: #fca728 !important;
   color: #312e2e !important;
   margin: 10px !important;
+  padding: 5px 10px 5px 10px !important;
 }
 
 .btn:hover {

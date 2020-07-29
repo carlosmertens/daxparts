@@ -14,6 +14,15 @@ class Ingresar extends Component {
     this.state = {};
   }
 
+  changeEmail = (e) => this.setState({ email: e.target.value });
+  changePassword = (e) => this.setState({ password: e.target.value });
+
+  submitLogin = (e) => {
+    e.preventDefault();
+    console.log(this.state.email);
+    console.log(this.state.password);
+  };
+
   render() {
     return (
       <>
@@ -28,6 +37,7 @@ class Ingresar extends Component {
                 type='text'
                 className='form-control mr-sm-2'
                 placeholder='Nombre de Usuario'
+                onChange={this.changeEmail}
               />
             </div>
 
@@ -36,6 +46,7 @@ class Ingresar extends Component {
                 type='password'
                 className='form-control mr-sm-2'
                 placeholder='Password'
+                onChange={this.changePassword}
               />
             </div>
 
