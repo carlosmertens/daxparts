@@ -43,13 +43,19 @@ class Home extends Component {
             <form className='form-inline'>
               <div className='form-group mb-2'>
                 <label htmlFor='buscar'>{texto.home.leyendaBuscar}</label>
-                <input type='text' id='buscar' placeholder={texto.home.campoBuscar} />
+                <input
+                  type='text'
+                  id='buscar'
+                  placeholder={texto.home.campoBuscar}
+                  onChange={this.props.buscarParte}
+                />
 
                 <Link to='/cotizacion'>
                   <button
                     className='btn mb-2'
                     type='submit'
-                    onClick={this.props.buscarParte}>
+                    // onClick={this.props.buscarParte}
+                  >
                     {texto.home.botonBuscar}
                   </button>
                 </Link>
