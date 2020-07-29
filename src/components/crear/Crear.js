@@ -35,6 +35,10 @@ class Crear extends Component {
     this.closeModal();
   };
 
+  closeModal = () => {
+    this.props.openModal('closed', '');
+  };
+
   render() {
     return (
       <>
@@ -180,6 +184,12 @@ class Crear extends Component {
   }
 }
 
+function mapStateToProps(state) {
+  return {
+    siteModal: state.siteModal,
+  };
+}
+
 function mapDispatchToProps(dispacher) {
   return bindActionCreators(
     {
@@ -189,4 +199,4 @@ function mapDispatchToProps(dispacher) {
   );
 }
 
-export default connect(null, mapDispatchToProps)(Crear);
+export default connect(mapStateToProps, mapDispatchToProps)(Crear);

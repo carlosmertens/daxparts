@@ -12,7 +12,6 @@ class Buscamos extends Component {
   constructor(props) {
     super(props);
     this.state = {};
-    this.closeModal();
   }
 
   changeMarca = (e) => this.setState({ marca: e.target.value });
@@ -26,6 +25,11 @@ class Buscamos extends Component {
   submitLogin = (e) => {
     e.preventDefault();
     console.log(this.state);
+    this.closeModal();
+  };
+
+  closeModal = () => {
+    this.props.openModal('closed', '');
   };
 
   render() {
@@ -130,6 +134,12 @@ class Buscamos extends Component {
   }
 }
 
+function mapStateToProps(state) {
+  return {
+    siteModal: state.siteModal,
+  };
+}
+
 function mapDispatchToProps(dispacher) {
   return bindActionCreators(
     {
@@ -139,4 +149,4 @@ function mapDispatchToProps(dispacher) {
   );
 }
 
-export default connect(null, mapDispatchToProps)(Buscamos);
+export default connect(mapStateToProps, mapDispatchToProps)(Buscamos);
