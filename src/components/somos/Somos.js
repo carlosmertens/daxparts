@@ -20,7 +20,15 @@ class Somos extends Component {
           <p>{texto.somos.contenido}</p>
         </div>
 
-        <div className='container-fluid somos-banner'>
+        <div className='container somos-title'>
+          <h1>{texto.somos.titulo2}</h1>
+        </div>
+
+        <div className='container somos-texto'>
+          <p>{texto.somos.contenido2}</p>
+        </div>
+
+        {/* <div className='container-fluid somos-banner'>
           <div className='row'>
             <div className='col'>
               <h3>{texto.somos.banner.texto1}</h3>
@@ -32,7 +40,7 @@ class Somos extends Component {
               <h3>{texto.somos.banner.texto3}</h3>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }

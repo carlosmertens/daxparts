@@ -21,7 +21,7 @@ class Home extends Component {
   render() {
     // desestructuración del props idioma
     const texto = { ...this.props.idioma };
-    console.log(this.props.parte);
+    // console.log(this.props.parte);
     return (
       <header>
         <div className='container header-contenido'>

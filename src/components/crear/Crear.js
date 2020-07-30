@@ -50,7 +50,7 @@ class Crear extends Component {
 
         <div className='modal-body'>
           <form onSubmit={this.submitLogin}>
-            <h4>Datos del Cliente</h4>
+            <h4>Datos del cliente:</h4>
             <div className='form-group d-flex justify-content-center'>
               <input
                 type='text'
@@ -130,7 +130,7 @@ class Crear extends Component {
               />
             </div>
 
-            <h4>Datos del Cliente</h4>
+            <h4>Creación de usuario:</h4>
 
             <div className='form-group d-flex justify-content-center'>
               <input
@@ -175,7 +175,7 @@ class Crear extends Component {
               onClick={() => {
                 this.props.openModal('open', <Ingresar />);
               }}>
-              Pincha aqui
+              Click aqui!
             </span>
           </div>
         </div>

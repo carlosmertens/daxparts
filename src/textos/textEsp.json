@@ -1,6 +1,6 @@
 {
   "navbar": {
-    "enlace1": "Quiene somos?",
+    "enlace1": "Quienes somos?",
     "enlace2": "Como lo hacemos?",
     "enlace3": "Que ofrecemos",
     "enlace4": "Contáctanos",
@@ -28,7 +28,9 @@
 
   "somos": {
     "titulo": "Quienes somos?",
-    "contenido": "Desde el 2018, DAX se ha especializado en facilitar repuestos para todo tipo de maquinaria a sus clientes en Latino América. Inicialmente atendiendo el rubro de la construcción en Bolivia, Perú, y Paraguay; hoy el servicio de DAX se extiende a diversos países y rubros. Su pasión por la tecnología; le ha permitido desarrollar tecnología propia que permite a sus clientes adquirir repuestos de manera eficiente, económica y en un solo lugar. Permitiendo a sus clientes beneficiarse de ahorros en repuestos, fletes, y tiempo.",
+    "contenido": "Desde el 2018, DAX se ha especializado en facilitar repuestos para todo tipo de maquinaria a sus clientes en Latino América. Inicialmente atendiendo el rubro de la construcción en Bolivia, Perú, y Paraguay; hoy el servicio de DAX se extiende a diversos países y rubros.\nSu pasión por la tecnología; le ha permitido desarrollar tecnología propia que permite a sus clientes adquirir repuestos de manera eficiente, económica y en un solo lugar. Permitiendo a sus clientes beneficiarse de ahorros en repuestos, fletes, y tiempo.",
+    "titulo2": "Que hacemos?",
+    "contenido2": "Te ofrecemos un servicio fácil y sencillo de búsqueda, cotización y compra de repuestos para equipo pesado, agrícola y de construcción. Nuestro sistema te ofertará las mejores marcas, precios y tiempos de entrega de Bolivia y el mundo. Tú decides cual comprar y te lo enviamos. No necesitas llamar a diferentes tiendas para encontrar tu parte, nosotros la encontramos por ti. Todo en un solo lugar.",
     "banner": {
       "texto1": "250.000+ Repuestos",
       "texto2": "50+ Fabricantes",
@@ -37,8 +39,8 @@
   },
 
   "hacemos": {
-    "titulo": "¿Que Hacemos?",
-    "contenido": "Te ofrecemos un servicio fácil y sencillo de búsqueda, cotización y compra de repuestos para equipo pesado, agrícola y de construcción. Nuestro sistema te ofertará las mejores marcas, precios y tiempos de entrega de Bolivia y el mundo. Tú decides cual comprar y te lo enviamos. No necesitas llamar a diferentes tiendas para encontrar tu parte, nosotros la encontramos por ti. Todo en un solo lugar."
+    "titulo": "Como lo hacemos?",
+    "contenido": "Nuestro sistema de ventas nos permite ofrecer más de 250,000 repuestos, de 50 distintos fabricantes y una red de socios locales e internacionales. Colocas tu número de parte (sino lo conoces te ayudamos a encontrarlo) y nuestro motor de búsqueda te ofertará las mejores opciones. Te ofrecemos repuestos de las todas marcas, de las mejores tiendas en Bolivia y el mundo. Caterpillar, John Deere, Komatsu, Case, New Holland, Kubota, Volvo, Cummins, Iveco y muchas más."
   },
 
   "ofrecemos": {

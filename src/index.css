@@ -1,3 +1,5 @@
+/* ===== GLOBAL CSS VALUES ===== */
+
 * {
   padding: 0;
   margin: 0;
@@ -12,7 +14,7 @@ html,
 body {
   height: 100vh;
   width: 100%;
-  font-size: 10px;
+  font-size: 20px;
   font-family: 'Ubuntu', 'Roboto' sans-serif;
   display: inline-block;
   text-rendering: optimizeSpeed;
@@ -22,19 +24,24 @@ body {
 .btn {
   /* width: 91px !important; */
   /* height: 36px !important; */
-  font-size: 18px !important;
+  font-size: 20px !important;
   border-radius: 20px !important;
   border: none !important;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16) !important;
   background-color: #fca728 !important;
   color: #312e2e !important;
-  margin: 10px !important;
+  margin: 5px !important;
   padding: 5px 10px 5px 10px !important;
 }
 
 .btn:hover {
   background-color: #c9c5c0 !important;
 }
+
+/* ===== TEXT ===== */
+/* h1 {
+  font-size: 800px;
+} */
 
 /* ========== RESPONSIVE TEMPLATE ========== */
 /* EXTRA SMALL devices (less than 480px) */

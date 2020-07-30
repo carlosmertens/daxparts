@@ -26,55 +26,67 @@ class Ofrecemos extends Component {
         </div>
 
         {/* Grid de contenido */}
-        <div className='row justify-content-center'>
-          <div className='col-sm'>
-            <div className='container ofrecemos-opcion-small'>
-              <p>
-                <span>{texto.ofrecemos.span.a1}</span> {texto.ofrecemos.span.a2}
-              </p>
-              <img src={excavadoraLogo} alt='Logo' />
+        <div className='container'>
+          <div className='row justify-content-center'>
+            <div className='col-sm'>
+              <div className='container ofrecemos-opcion-small'>
+                <p>
+                  <span>{texto.ofrecemos.span.a1}</span> {texto.ofrecemos.span.a2}
+                </p>
+
+                <object width='100' data='../../images/bulldozer.svg'>
+                  <img
+                    loading='lazy'
+                    width='100'
+                    alt='Germany'
+                    src='../../images/bulldozer.svg'
+                  />
+                </object>
+
+                {/* <img src={excavadoraLogo} alt='Logo' /> */}
+              </div>
+            </div>
+            <div className='col-sm'>
+              <div className='container ofrecemos-opcion-small'>
+                <p>
+                  <span>{texto.ofrecemos.span.b1}</span> {texto.ofrecemos.span.b2}
+                </p>
+                <img src={gruaLogo} alt='Logo' />
+              </div>
+            </div>
+            <div className='col-sm'>
+              <div className='container ofrecemos-opcion-big'>
+                <p>
+                  <span>{texto.ofrecemos.span.c1}</span> {texto.ofrecemos.span.c2}
+                </p>
+                <img src={agricolaLogo} alt='Logo' />
+              </div>
             </div>
           </div>
-          <div className='col-sm'>
-            <div className='container ofrecemos-opcion-small'>
-              <p>
-                <span>{texto.ofrecemos.span.b1}</span> {texto.ofrecemos.span.b2}
-              </p>
-              <img src={gruaLogo} alt='Logo' />
+          <div className='row'>
+            <div className='col-sm'>
+              <div className='ofrecemos-opcion-big'>
+                <p>
+                  <span>{texto.ofrecemos.span.d1}</span> {texto.ofrecemos.span.d2}
+                </p>
+                <img src={elecLogo} alt='Logo' />
+              </div>
             </div>
-          </div>
-          <div className='col-sm'>
-            <div className='container ofrecemos-opcion-big'>
-              <p>
-                <span>{texto.ofrecemos.span.c1}</span> {texto.ofrecemos.span.c2}
-              </p>
-              <img src={agricolaLogo} alt='Logo' />
+            <div className='col-sm'>
+              <div className='ofrecemos-opcion-big'>
+                <p>
+                  <span>{texto.ofrecemos.span.e1}</span> {texto.ofrecemos.span.e2}
+                </p>
+                <img src={agricolaLogo} alt='Logo' />
+              </div>
             </div>
-          </div>
-        </div>
-        <div className='row'>
-          <div className='col-sm'>
-            <div className='ofrecemos-opcion-big'>
-              <p>
-                <span>{texto.ofrecemos.span.d1}</span> {texto.ofrecemos.span.d2}
-              </p>
-              <img src={elecLogo} alt='Logo' />
-            </div>
-          </div>
-          <div className='col-sm'>
-            <div className='ofrecemos-opcion-big'>
-              <p>
-                <span>{texto.ofrecemos.span.e1}</span> {texto.ofrecemos.span.e2}
-              </p>
-              <img src={agricolaLogo} alt='Logo' />
-            </div>
-          </div>
-          <div className='col-sm'>
-            <div className='ofrecemos-opcion-small'>
-              <p>
-                <span>{texto.ofrecemos.span.f1}</span> {texto.ofrecemos.span.f2}
-              </p>
-              <img src={camionLogo} alt='Logo' />
+            <div className='col-sm'>
+              <div className='ofrecemos-opcion-small'>
+                <p>
+                  <span>{texto.ofrecemos.span.f1}</span> {texto.ofrecemos.span.f2}
+                </p>
+                <img src={camionLogo} alt='Logo' />
+              </div>
             </div>
           </div>
         </div>
