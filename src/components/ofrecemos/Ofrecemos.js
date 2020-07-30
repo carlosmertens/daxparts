@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import './Ofrecemos.css';
 
-import excavadoraLogo from '../../images/excavadoraLogo.png';
 import gruaLogo from '../../images/gruaLogo.png';
 import agricolaLogo from '../../images/agricolaLogo.png';
 import elecLogo from '../../images/elecLogo.png';
 import camionLogo from '../../images/camionLogo.png';
+
+import { ReactComponent as Bulldozer } from '../../images/bulldozer.svg';
 
 class Ofrecemos extends Component {
   constructor(props) {
@@ -34,16 +35,7 @@ class Ofrecemos extends Component {
                   <span>{texto.ofrecemos.span.a1}</span> {texto.ofrecemos.span.a2}
                 </p>
 
-                <object width='100' data='../../images/bulldozer.svg'>
-                  <img
-                    loading='lazy'
-                    width='100'
-                    alt='Germany'
-                    src='../../images/bulldozer.svg'
-                  />
-                </object>
-
-                {/* <img src={excavadoraLogo} alt='Logo' /> */}
+                <Bulldozer />
               </div>
             </div>
             <div className='col-sm'>
