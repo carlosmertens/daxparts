@@ -46,7 +46,7 @@
 /* SMALL devices (old iPhones, 480px and up) */
 @media only screen and (min-width: 480px) {
   .ofrecemos-title h1 {
-    font-size: 30px;
+    font-size: 40px;
     padding-top: 30px;
   }
 }
@@ -54,16 +54,16 @@
 /* MEDIUM devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .ofrecemos-title h1 {
-    font-size: 30px;
-    padding-top: 30px;
+    font-size: 60px;
+    padding-top: 20px;
   }
 }
 
 /* LARGE devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .ofrecemos-title h1 {
-    font-size: 30px;
-    padding-top: 30px;
+    font-size: 60px;
+    padding-top: 20px;
   }
 }
 
@@ -72,5 +72,8 @@
   .ofrecemos-title h1 {
     font-size: 60px;
     padding-top: 20px;
+  }
+  .opcion {
+    margin-bottom: 100px !important;
   }
 }
