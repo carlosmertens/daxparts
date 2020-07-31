@@ -4,6 +4,7 @@ import usa from '../../images/usa.png';
 import bolivia from '../../images/bolivia.png';
 import peru from '../../images/peru.png';
 import paraguay from '../../images/paraguay.png';
+import mapa from '../../images/mapaDAX.png';
 
 class Contacto extends Component {
   constructor(props) {
@@ -23,6 +24,9 @@ class Contacto extends Component {
           <div className='row'>
             {/* Columna 1 (Banderas) */}
             <div className='col-sm'>
+              <div>
+                <p>{texto.contacto.contenido}</p>
+              </div>
               <div className='row'>
                 {/* row banderas */}
                 <div className='col-md'>
@@ -58,16 +62,16 @@ class Contacto extends Component {
                     {texto.contacto.paraguay.email}
                   </a>
                   <br />
-                  <a href='tel:+59167898045'>
-                    {texto.contacto.paraguay.telefono}
-                  </a>
+                  <a href='tel:+59167898045'>{texto.contacto.paraguay.telefono}</a>
                 </div>
               </div>
             </div>
 
             {/* Columna (Formulario) */}
             <div className='col-sm'>
-              <p>{texto.contacto.contenido}</p>
+              <div>
+                <img src={mapa} alt='Mapa' />
+              </div>
             </div>
           </div>
         </div>
