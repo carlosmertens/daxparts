@@ -21,56 +21,68 @@ class Contacto extends Component {
         </div>
 
         <div className='container contacto-contenido'>
-          <div className='row'>
-            {/* Columna 1 (Banderas) */}
-            <div className='col-sm'>
-              <div>
+          <div className='row align-items-center'>
+            {/* === Columna 1 === */}
+            <div className='col-md'>
+              <div className='contacto-texto'>
                 <p>{texto.contacto.contenido}</p>
               </div>
-              <div className='row'>
+              <div className='contacto-country row'>
                 {/* row banderas */}
-                <div className='col-md'>
+                <div className='contacto-grupo col-md'>
                   <img src={usa} alt='Bandera Usa' />
                   <h4>{texto.contacto.usa.nombre}</h4>
-                  <a href='mailto:dax@daxparts.com'>{texto.contacto.usa.email}</a>
+                  <a className='contacto-email' href='mailto:dax@daxparts.com'>
+                    {texto.contacto.usa.email}
+                  </a>
                   <br />
-                  <a href='tel:+59167898045'>{texto.contacto.usa.telefono}</a>
+                  <a className='contacto-telefono' href='tel:+59167898045'>
+                    {texto.contacto.usa.telefono}
+                  </a>
                 </div>
-                <div className='col-md'>
+                <div className='contacto-grupo col-md'>
                   <img src={bolivia} alt='Bandera Bolivia' />
                   <h4>{texto.contacto.bolivia.nombre}</h4>
-                  <a href='mailto:fabiola@daxparts.com'>
+                  <a className='contacto-email' href='mailto:fabiola@daxparts.com'>
                     {texto.contacto.bolivia.email}
                   </a>
                   <br />
-                  <a href='tel:+59167898045'>{texto.contacto.bolivia.telefono}</a>
+                  <a className='contacto-telefono' href='tel:+59167898045'>
+                    {texto.contacto.bolivia.telefono}
+                  </a>
                 </div>
               </div>
 
-              <div className='row'>
-                <div className='col-md'>
+              <div className='contacto-grupo row'>
+                <div className='contacto-grupo col-md'>
                   <img src={peru} alt='Bandera Peru' />
                   <h4>{texto.contacto.peru.nombre}</h4>
-                  <a href='mailto:em@daxparts.com'>{texto.contacto.peru.email}</a>
+                  <a className='contacto-email' href='mailto:em@daxparts.com'>
+                    {texto.contacto.peru.email}
+                  </a>
                   <br />
-                  <a href='tel:+59167898045'>{texto.contacto.peru.telefono}</a>
+                  <a className='contacto-telefono' href='tel:+59167898045'>
+                    {texto.contacto.peru.telefono}
+                  </a>
                 </div>
-                <div className='col-md'>
+                <div className='contacto-grupo col-md'>
                   <img src={paraguay} alt='Bandera Paraguay' />
                   <h4>{texto.contacto.paraguay.nombre}</h4>
-                  <a href='mailto:ventaspy@daxparts.com'>
+                  <a className='contacto-email' href='mailto:ventaspy@daxparts.com'>
                     {texto.contacto.paraguay.email}
                   </a>
                   <br />
-                  <a href='tel:+59167898045'>{texto.contacto.paraguay.telefono}</a>
+                  <a className='contacto-telefono' href='tel:+59167898045'>
+                    {texto.contacto.paraguay.telefono}
+                  </a>
                 </div>
               </div>
             </div>
 
-            {/* Columna (Formulario) */}
-            <div className='col-sm'>
-              <div>
-                <img src={mapa} alt='Mapa' />
+            {/* === Columna 2 === */}
+            <div className='col-md'>
+              <div className='contacto-mapa'>
+                <img src={mapa} className='img-fluid' alt='Mapa' />
               </div>
             </div>
           </div>

@@ -2,7 +2,7 @@
 
 .contacto-title h1 {
   color: #fca728;
-  font-weight: normal;
+  font-weight: bolder;
   text-align: right;
 }
 
@@ -10,11 +10,34 @@
   text-align: center;
 }
 
+.contacto-texto {
+  padding-bottom: 40px;
+}
+
+.contacto-grupo {
+  margin-bottom: 40px !important;
+}
+
+.contacto-contenido h4 {
+  padding-top: 10px;
+  font-size: 25px;
+}
+
+.contacto-email {
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+.contacto-telefono {
+  color: black;
+  font-size: 18px;
+}
+
 /* ========== RESPONSIVE HOME ========== */
 /* EXTRA SMALL devices (less than 480px) */
 @media only screen and (max-width: 480px) {
   .contacto-title h1 {
-    font-size: 30px;
+    font-size: 40px;
     padding-top: 30px;
     padding-bottom: 30px;
   }
@@ -26,16 +49,18 @@
 /* SMALL devices (old iPhones, 480px and up) */
 @media only screen and (min-width: 480px) {
   .contacto-title h1 {
-    font-size: 40px;
+    font-size: 50px;
     padding-top: 20px;
+    margin-bottom: 50px;
   }
 }
 
 /* MEDIUM devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .contacto-title h1 {
-    font-size: 50px;
+    font-size: 60px;
     padding-top: 20px;
+    margin-bottom: 50px;
   }
 }
 
@@ -44,6 +69,7 @@
   .contacto-title h1 {
     font-size: 60px;
     padding-top: 20px;
+    margin-bottom: 50px;
   }
 }
 
@@ -52,6 +78,6 @@
   .contacto-title h1 {
     font-size: 60px;
     padding-top: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 }
