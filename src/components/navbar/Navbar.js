@@ -20,9 +20,12 @@ class Navbar extends Component {
     return (
       <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
         {/* Logo Navigador */}
-        <Link to='/' className='navbar-brand'>
-          <img src={navLogoWhite} alt='Dax Logo' />
-        </Link>
+        <div className='navbar-brand'>
+          <Link to='/'>
+            <img src={navLogoWhite} alt='Dax Logo' />
+          </Link>
+        </div>
+
         {/* Boton pantalla pequeña */}
         <button
           className='navbar-toggler'
@@ -61,7 +64,7 @@ class Navbar extends Component {
           </ul>
 
           {/* Botones modal de Ingresar y Crear Cuenta */}
-          <div className='form-inline botones my-2 my-lg-0'>
+          <div className='form-inline my-2 my-lg-0'>
             <button
               type='button'
               className='btn'
