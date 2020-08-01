@@ -78,22 +78,24 @@ header input {
 /* EXTRA SMALL devices (less than 480px) */
 @media only screen and (max-width: 480px) {
   .logo-centro {
-    height: 120px;
-    width: auto;
-    margin-top: 50px;
+    height: auto;
+    width: 320px;
+    margin-top: 100px;
     margin-bottom: 40px;
   }
 
   header label {
     font-size: 18px;
   }
-
   header input {
     width: 300px;
     height: 36px;
     padding: 10px;
     font-size: 18px;
     margin: 15px;
+  }
+  .buscar {
+    font-size: 22px !important;
   }
   .click-link {
     margin-top: 20px;
@@ -113,9 +115,9 @@ header input {
 /* SMALL devices (old iPhones, 480px AND UP) */
 @media only screen and (min-width: 480px) {
   .logo-centro {
-    height: 160px;
-    width: auto;
-    margin-top: 120px;
+    height: auto;
+    width: 320px;
+    margin-top: 100px;
     margin-bottom: 40px;
   }
 
@@ -129,6 +131,9 @@ header input {
     padding: 10px;
     font-size: 18px;
     margin: 15px;
+  }
+  .buscar {
+    font-size: 22px !important;
   }
   .click-link {
     font-size: 17px;
@@ -147,8 +152,8 @@ header input {
 /* MEDIUM devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .logo-centro {
-    height: 200px;
-    width: auto;
+    height: auto;
+    width: 320px;
     margin-top: 100px;
     margin-bottom: 40px;
   }
@@ -161,9 +166,11 @@ header input {
     width: 350px;
     height: 36px;
     font-size: 18px;
-
     margin: 20px;
     margin-top: 12px;
+  }
+  .buscar {
+    font-size: 22px !important;
   }
   .click-link {
     font-size: 16px;
@@ -182,8 +189,8 @@ header input {
 /* LARGE devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .logo-centro {
-    height: 220px;
-    width: auto;
+    height: auto;
+    width: 320px;
     margin-top: 100px;
     margin-bottom: 40px;
   }
@@ -196,9 +203,11 @@ header input {
     width: 350px;
     height: 36px;
     font-size: 18px;
-
     margin: 20px;
     margin-top: 12px;
+  }
+  .buscar {
+    font-size: 22px !important;
   }
   .click-link {
     font-size: 16px;
@@ -217,8 +226,8 @@ header input {
 /* EXTRA LARGE devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .logo-centro {
-    height: 220px;
-    width: auto;
+    height: auto;
+    width: 320px;
     margin-top: 100px;
     margin-bottom: 40px;
   }
@@ -231,9 +240,11 @@ header input {
     width: 350px;
     height: 36px;
     font-size: 18px;
-
-    margin: 20px;
-    margin-top: 12px;
+    /* margin: 20px; */
+    /* margin-top: 12px; */
+  }
+  .buscar {
+    font-size: 22px !important;
   }
   .click-link {
     font-size: 16px;

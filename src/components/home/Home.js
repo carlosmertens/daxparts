@@ -52,8 +52,8 @@ class Home extends Component {
 
                 <Link to='/cotizacion'>
                   <button
-                    className='btn mb-2'
-                    type='submit'
+                    className='btn buscar mb-2'
+                    type='button'
                     // onClick={this.props.buscarParte}
                   >
                     {texto.home.botonBuscar}
