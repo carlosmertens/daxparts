@@ -22,31 +22,46 @@
   color: #fca728;
 }
 
+.ofrecemos-opciones {
+  margin-bottom: 40px !important;
+}
+.ofrecemos-icono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ofrecemos-texto {
+  text-align: left;
+}
+
 /* ========== RESPONSIVE TEMPLATE ========== */
 /* EXTRA SMALL devices (less than 480px) */
 @media only screen and (max-width: 480px) {
   .ofrecemos-title h1 {
-    font-size: 30px;
+    font-size: 35px;
     padding-top: 30px;
   }
   .ofrecemos-contenido h4 {
+    font-size: 22px;
     padding-top: 30px;
     padding-bottom: 20px;
   }
-  .ofrecemos-contenido-big img {
-    height: 100px;
-    width: auto;
-  }
   .ofrecemos-contenido .col-sm {
     padding-bottom: 30px;
+  }
+  .ofrecemos-opciones {
+    margin-bottom: 0px !important;
   }
 }
 
 /* SMALL devices (old iPhones, 480px and up) */
 @media only screen and (min-width: 480px) {
   .ofrecemos-title h1 {
-    font-size: 40px;
-    padding-top: 30px;
+    font-size: 60px;
+    padding-top: 20px;
+  }
+  .ofrecemos-contenido h4 {
+    margin: 40px 0px 100px 0px;
   }
 }
 
@@ -56,6 +71,9 @@
     font-size: 60px;
     padding-top: 20px;
   }
+  .ofrecemos-contenido h4 {
+    margin: 40px 0px 100px 0px;
+  }
 }
 
 /* LARGE devices (laptops/desktops, 992px and up) */
@@ -63,6 +81,9 @@
   .ofrecemos-title h1 {
     font-size: 60px;
     padding-top: 20px;
+  }
+  .ofrecemos-contenido h4 {
+    margin: 40px 0px 100px 0px;
   }
 }
 
@@ -74,8 +95,5 @@
   }
   .ofrecemos-contenido h4 {
     margin: 40px 0px 100px 0px;
-  }
-  .opcion {
-    margin-bottom: 80px !important;
   }
 }
