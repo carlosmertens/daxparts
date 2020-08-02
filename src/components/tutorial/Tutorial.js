@@ -7,7 +7,7 @@ import newholland from '../../images/newholland.png';
 import cat from '../../images/cat.png';
 import botcat from '../../images/bobcat.png';
 
-function Tutorial() {
+const Tutorial = () => {
   return (
     <div className='container-fluid tutorial-contenido'>
       <div className='container tutorial-title'>
@@ -16,8 +16,8 @@ function Tutorial() {
 
       <div className='tutorial-subtitle'>
         <p className='subtitulo'>
-          Te compartimos los siguientes links donde puedes tener acceso a manuales
-          de parte de manera gratuita:
+          Te compartimos los siguientes links donde puedes tener acceso a manuales de
+          parte de manera gratuita:
         </p>
       </div>
 
@@ -51,11 +51,7 @@ function Tutorial() {
             <div className='container'>
               <p className='texto-logo-tutorial'>como usar nuestra pagina</p>
               <Link to='/tutorial'>
-                <img
-                  src={IconVideos}
-                  alt='Videos de iconos'
-                  className='logo-video'
-                />
+                <img src={IconVideos} alt='Videos de iconos' className='logo-video' />
               </Link>
             </div>
           </div>
@@ -63,6 +59,6 @@ function Tutorial() {
       </div>
     </div>
   );
-}
+};
 
 export default Tutorial;
