@@ -1,13 +1,31 @@
 /* ========== TUTORIAL CSS ========== */
 
-.tutorial-title h1 {
+.tutorial-titulo h1 {
+  font-size: 60px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.tutorial-subtitulo {
+  margin-bottom: 50px;
+}
+
+.tutorial-titulo h1 {
   color: #fca728;
   font-weight: 700;
   text-align: right;
 }
 
-.tutorial-subtitle {
-  text-align: right;
+.tutorial p {
+  font-size: 20px;
+}
+
+.tutorial-contenido span {
+  color: #fca728;
+  font-size: 15px;
+}
+
+.tutorial-enlace {
+  color: #fca728;
 }
 
 .logo-video {
@@ -20,12 +38,21 @@
   padding-left: 40px;
 }
 
+.tutorial-video {
+  display: flex;
+  float: left;
+}
+.tutorial-video-texto {
+  display: flex;
+  float: right;
+}
+
 /* ========== RESPONSIVE HOME ========== */
 /* EXTRA SMALL devices (less than 480px) */
 @media only screen and (max-width: 480px) {
-  .tutorial-title h1 {
-    font-size: 30px;
-    padding-top: 30px;
+  .tutorial-titulo h1 {
+    font-size: 40px;
+    padding-top: 20px;
     padding-bottom: 30px;
   }
   .tutorial-subtitle {
@@ -49,32 +76,36 @@
 
 /* SMALL devices (old iPhones, 480px and up) */
 @media only screen and (min-width: 480px) {
-  .tutorial-title h1 {
-    font-size: 40px;
+  .tutorial-titulo h1 {
+    font-size: 50px;
     padding-top: 20px;
   }
 }
 
 /* MEDIUM devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .tutorial-title h1 {
-    font-size: 50px;
+  .tutorial-titulo h1 {
+    font-size: 60px;
     padding-top: 20px;
   }
 }
 
 /* LARGE devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .tutorial-title h1 {
-    font-size: 80px;
-    padding-top: 50px;
+  .tutorial-titulo h1 {
+    font-size: 60px;
+    padding-top: 20px;
   }
 }
 
 /* EXTRA LARGE devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .tutorial-title h1 {
-    font-size: 80px;
-    padding-top: 50px;
+  .tutorial-titulo h1 {
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .tutorial-subtitulo {
+    margin-bottom: 50px;
   }
 }

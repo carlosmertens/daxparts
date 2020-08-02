@@ -1,21 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Tutorial.css';
-import IconVideos from '../../images/IconVideos.png';
-import johnD from '../../images/john-deere.png';
-import newholland from '../../images/newholland.png';
-import cat from '../../images/cat.png';
-import botcat from '../../images/bobcat.png';
 
 const Tutorial = () => {
   return (
-    <div className='container-fluid tutorial-contenido'>
-      <div className='container tutorial-title'>
+    <div className='container-fluid tutorial'>
+      <div className='container tutorial-titulo'>
         <h1>Tutoriales</h1>
       </div>
 
-      <div className='tutorial-subtitle'>
-        <p className='subtitulo'>
+      <div className='container tutorial-subtitulo'>
+        <p>
           Te compartimos los siguientes links donde puedes tener acceso a manuales de
           parte de manera gratuita:
         </p>
@@ -23,36 +18,43 @@ const Tutorial = () => {
 
       <div className='container tutorial-contenido'>
         <div className='row'>
-          {/* === Columna1 === */}
+          {/* === Columna 1 === */}
           <div className='col-sm'>
-            <p>Usar Manuales de partes en linea</p>
-            <span>
-              puedes tener acceso a manuales de manera
-              <br />
-              gratuita,
-              <Link to='/hacemos'>
-                <em> Has click para ir al tuturial.</em>
-              </Link>
-            </span>
-            <div className='container logos'>
-              <img className='logo-marcas' src={johnD} alt='John-Deere' />
-              <img className='logo-marcas' src={newholland} alt='New Holland' />
-              <img className='logo-marcas' src={cat} alt='Cat' />
-              <img className='logo-marcas' src={botcat} alt='BootCat' />
+            <div className='container'>
+              <p>
+                Usar Manuales de partes en linea <br />
+                <span>
+                  puedes tener acceso a manuales de manera gratuita.{' '}
+                  <Link to='/hacemos'>
+                    <em className='tutorial-enlace'>Has click para ir al tuturial.</em>
+                  </Link>
+                </span>
+              </p>
+            </div>
+            <div className='container'>
+              <div className='row'>
+                <iframe
+                  className='tutorial-video'
+                  width='121'
+                  height='65'
+                  title='Video1'
+                  src='https://www.youtube.com/embed/tgbNymZ7vqY'></iframe>
+                <p className='tutorial-video-texto'>Video 1</p>
+              </div>
             </div>
           </div>
-          {/* === Columna2 === */}
+          {/* === Columna 2 === */}
           <div className='col-sm'>
-            <div>
-              <p> Otros videos que pueden interesarte</p>
-              {/* Icon */}
-            </div>
-            <div>{/* videos */}</div>
             <div className='container'>
-              <p className='texto-logo-tutorial'>como usar nuestra pagina</p>
-              <Link to='/tutorial'>
-                <img src={IconVideos} alt='Videos de iconos' className='logo-video' />
-              </Link>
+              <p>
+                como usar nuestra pagina <br />
+                <span>
+                  Te enseñamos como de manera sencilla y breve.{' '}
+                  <Link to='/hacemos'>
+                    <em className='tutorial-enlace'>Has click para ir al tuturial.</em>
+                  </Link>
+                </span>
+              </p>
             </div>
           </div>
         </div>
