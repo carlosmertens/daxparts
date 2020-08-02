@@ -11,8 +11,6 @@ const Somos = ({ idioma }) => (
       <p>{idioma.somos.contenido}</p>
     </div>
 
-    {/* <div className='container somos-title'></div> */}
-
     <div className='container somos-texto'>
       <h4>{idioma.somos.titulo2}</h4>
       <p>{idioma.somos.contenido2}</p>
