@@ -1,6 +1,10 @@
 /* ========== TUTORIAL CSS ========== */
 
-.tutorial-titulo h1 {
+.tutorial .row {
+  margin-bottom: 20px !important;
+}
+
+.tutorial-titulo {
   font-size: 60px;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -40,11 +44,11 @@
 
 .tutorial-video {
   display: flex;
-  float: left;
+  float: inline-start;
 }
-.tutorial-video-texto {
-  display: flex;
-  float: right;
+.tutorial-video-texto span {
+  font-size: 120px;
+  color: #fca728;
 }
 
 /* ========== RESPONSIVE HOME ========== */
