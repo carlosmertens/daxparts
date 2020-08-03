@@ -39,7 +39,9 @@ const Cotizacion = (props) => {
   return (
     <div className='container-fluid cotizacion-contenido'>
       <div className='container cotizacion-title'>
-        <p>{texto.cotizacion.titulo}</p>
+        <p>
+          {texto.cotizacion.titulo} {props.parte}
+        </p>
       </div>
 
       <div className='container cotizacion-table'>
@@ -58,32 +60,32 @@ const Cotizacion = (props) => {
           </table>
           <div className='Container bg-secondary'>
             <p className='nota text-white'>
-              Nombres OEM, logos y numeros de partes son usados para referencia. No
-              implicamos que nuestros productos o servicios estén afiliados,
-              patrocinados o aprobados por los fabricantes de equipos originales
+              <span>Nota:</span> Nombres OEM, logos y numeros de partes son usados para
+              referencia. No implicamos que nuestros productos o servicios estén
+              afiliados, patrocinados o aprobados por los fabricantes de equipos
+              originales
             </p>
           </div>
           <div className='container d-flex justify-content-center'>
-            <div className='beneficios bg-dark'>
-              <h4 className='titulo-jumbo'>Si eres usuario podras:</h4>
-              <p className='beneficios-jumbo'>Crear varias cotizaciones</p>
-              <p className='beneficios-jumbo'>
-                Ingresar cientos de codigos de manera sencilla
-              </p>
-              <p className='beneficios-jumbo'>Email o imprimiar tus cotizaciones</p>
-              <p className='beneficios-jumbo'>Hacer seguimientos a tus ordenes</p>
-              <p className='beneficios-jumbo'>
-                Acceder a miles de piezas usadas y reconstruidas
-              </p>
-              <p className='beneficios-jumbo'>
-                Comprar repuestos de reemplazos de diferentes marcas
-              </p>
-              <p className='beneficios-jumbo'>y mucho mas...</p>
-              <Link to='/crear'>
-                <button className='btn mb-2' type='button'>
-                  Crear
-                </button>
-              </Link>
+            <div className='container beneficios bg-dark'>
+              <div className='container row'>
+                <h4 className='titulo-jumbo'>Si eres usuario podras:</h4>
+              </div>
+              <div className='row'>
+                <div className='col'>
+                  <p className='beneficios-jumbo'>Crear varias cotizaciones</p>
+                  <p className='beneficios-jumbo'>Hacer seguimientos a tus ordenes</p>
+                  <p className='beneficios-jumbo'>
+                    Acceder a miles de piezas usadas y reconstruidas
+                  </p>
+                  <p className='beneficios-jumbo'>y mucho mas...</p>
+                </div>
+                <div className='col boton-ordenar'>
+                  <Link to='/crear' className='btn mb-2'>
+                    Comprar
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
