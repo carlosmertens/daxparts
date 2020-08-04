@@ -34,23 +34,23 @@ const Navbar = (props) => (
       {/* Enlaces Introductorios */}
       <ul className='navbar-nav mx-auto'>
         <li className='nav-item'>
-          <Link to='/somos' className='nav-link text-white'>
-            <h4>{props.idioma.navbar.enlace1}</h4>
+          <Link to='/somos' className='nav-link text-white navbar-enlace'>
+            {props.idioma.navbar.enlace1}
           </Link>
         </li>
         <li className='nav-item'>
-          <Link to='/hacemos' className='nav-link text-white' href='/'>
-            <h4>{props.idioma.navbar.enlace2}</h4>
+          <Link to='/hacemos' className='nav-link text-white navbar-enlace'>
+            {props.idioma.navbar.enlace2}
           </Link>
         </li>
         <li className='nav-item'>
-          <Link to='ofrecemos' className='nav-link text-white' href='/'>
-            <h4>{props.idioma.navbar.enlace3}</h4>
+          <Link to='ofrecemos' className='nav-link text-white navbar-enlace'>
+            {props.idioma.navbar.enlace3}
           </Link>
         </li>
         <li className='nav-item'>
-          <Link to='contacto' className='nav-link text-white' href='/'>
-            <h4>{props.idioma.navbar.enlace4}</h4>
+          <Link to='contacto' className='nav-link text-white navbar-enlace'>
+            {props.idioma.navbar.enlace4}
           </Link>
         </li>
       </ul>
@@ -59,19 +59,19 @@ const Navbar = (props) => (
       <div className='form-inline my-2 my-lg-0'>
         <button
           type='button'
-          className='btn'
+          className='btn btn-texto'
           onClick={() => {
             props.openModal('open', <Ingresar />);
           }}>
-          {props.idioma.navbar.botonTexto}
+          {props.idioma.navbar.botonTexto1}
         </button>
         <button
           type='button'
-          className='btn'
+          className='btn btn-texto'
           onClick={() => {
             props.openModal('open', <Crear />);
           }}>
-          Crear cuenta
+          {props.idioma.navbar.botonTexto2}
         </button>
       </div>
     </div>

@@ -59,15 +59,17 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   nav img {
-    padding-left: 15px;
     height: 56px;
     width: auto;
   }
-  nav h4 {
-    font-size: 22px;
-    padding-right: 50px;
+  .navbar-enlace {
+    font-size: 20px;
+    margin-right: 30px;
   }
   .btn {
     font-size: 20px !important;
+  }
+  .btn-texto {
+    font-size: 22px;
   }
 }
