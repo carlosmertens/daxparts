@@ -227,7 +227,7 @@ header input {
 @media only screen and (min-width: 1200px) {
   .logo-centro {
     height: auto;
-    width: 320px;
+    width: 329px;
     margin-top: 100px;
     margin-bottom: 40px;
   }
@@ -243,7 +243,7 @@ header input {
     /* margin: 20px; */
     /* margin-top: 12px; */
   }
-  .buscar {
+  .btn-buscar {
     font-size: 22px !important;
   }
   .click-link {
@@ -251,11 +251,11 @@ header input {
   }
   .logo-tutorial {
     margin-top: 80px;
-    height: 50px;
+    height: 47px;
     width: auto;
   }
   .tutorial-text {
     color: #312e2e;
-    font-size: 16px;
+    font-size: 20px;
   }
 }

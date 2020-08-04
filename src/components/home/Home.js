@@ -4,6 +4,7 @@ import logoCentro from '../../images/logoCentro.png';
 import IconVideos from '../../images/IconVideos.png';
 import engFlag from '../../images/eng.png';
 import espFlag from '../../images/esp.png';
+// import lupa from '../../images/lupa.png';
 import './Home.css';
 
 import { connect } from 'react-redux';
@@ -40,7 +41,7 @@ const Home = (props) => (
               onChange={props.buscarParte}
             />
 
-            <Link to='/cotizacion' className='btn buscar mb-2'>
+            <Link to='/cotizacion' className='btn btn-buscar mb-2'>
               {props.idioma.home.botonBuscar}
             </Link>
           </div>
