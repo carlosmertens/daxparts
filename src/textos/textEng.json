@@ -1,11 +1,11 @@
 {
   "navbar": {
-    "enlace1": "Who we are",
-    "enlace2": "How we do it",
-    "enlace3": "What we offer",
+    "enlace1": "Who are we?",
+    "enlace2": "How do we do it?",
+    "enlace3": "What do we offer?",
     "enlace4": "Contacts",
-    "leyenda": "Do you have an account yet?",
-    "botonTexto": "Login",
+    "botonTexto1": "Login",
+    "botonTexto2": "Signup",
     "modal": {
       "campoUuario": "User",
       "campoContrasena": "Password",

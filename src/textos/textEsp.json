@@ -4,8 +4,8 @@
     "enlace2": "Como lo hacemos?",
     "enlace3": "Que ofrecemos",
     "enlace4": "Contáctanos",
-    "leyenda": "Ya tienes una cuenta?",
-    "botonTexto": "Ingresar",
+    "botonTexto1": "Ingresar",
+    "botonTexto2": "Crear cuenta",
     "modal": {
       "campoUuario": "Usuario",
       "campoContrasena": "Contraseña",
