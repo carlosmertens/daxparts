@@ -6,7 +6,7 @@
   text-align: right;
 }
 
-.somos-banner {
+/* .somos-banner {
   background-color: #fca728;
   width: 100%;
   text-align: center;
@@ -15,7 +15,7 @@
 .somos-banner h3 {
   font-weight: bolder;
   color: #fff;
-}
+} */
 
 /* ========== RESPONSIVE HOME ========== */
 /* EXTRA SMALL devices (less than 480px) */
@@ -28,13 +28,14 @@
     font-size: 13px;
     padding-top: 30px;
   }
-  .somos-banner {
+
+  /* .somos-banner {
     margin-top: 50px;
   }
   .somos-banner h3 {
     margin: 30px 0px 25px 0px;
     font-size: 18px;
-  }
+  } */
 }
 
 /* SMALL devices (old iPhones, 480px and up) */
@@ -47,13 +48,14 @@
     font-size: 18px;
     padding-top: 80px;
   }
-  .somos-banner {
+
+  /* .somos-banner {
     margin-top: 100px;
   }
   .somos-banner h3 {
     margin: 40px 0px 40px 0px;
     font-size: 22px;
-  }
+  } */
 }
 
 /* MEDIUM devices (landscape tablets, 768px and up) */
@@ -66,13 +68,14 @@
     font-size: 20px;
     padding-top: 80px;
   }
-  .somos-banner {
+
+  /* .somos-banner {
     margin-top: 100px;
   }
   .somos-banner h3 {
     margin: 50px 0px 50px 0px;
     font-size: 28px;
-  }
+  } */
 }
 
 /* LARGE devices (laptops/desktops, 992px and up) */
@@ -85,13 +88,14 @@
     font-size: 22px;
     padding-top: 80px;
   }
-  .somos-banner {
+
+  /* .somos-banner {
     margin-top: 100px;
   }
   .somos-banner h3 {
     margin: 50px 0px 50px 0px;
     font-size: 30px;
-  }
+  } */
 }
 
 /* EXTRA LARGE devices (large laptops and desktops, 1200px and up) */
@@ -104,9 +108,10 @@
     font-size: 20px;
     padding-top: 80px;
   }
-  .somos-texto h4 {
+  /* .somos-texto h4 {
     color: #fca728;
-  }
+  } */
+
   /* .somos-banner {
     margin-top: 100px;
   } */
