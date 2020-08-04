@@ -81,7 +81,7 @@ const Cotizacion = (props) => {
                   <p className='beneficios-jumbo'>y mucho mas...</p>
                 </div>
                 <div className='col boton-ordenar'>
-                  <Link to='/crear' className='btn mb-2'>
+                  <Link to='/crear' className='btn btn-comprar mb-2'>
                     Comprar
                   </Link>
                 </div>
