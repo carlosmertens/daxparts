@@ -52,7 +52,7 @@ class App extends Component {
 
     return (
       <Router>
-        <Route path='/' component={Modal} />
+        <Route path='/' component={Modal} idioma={idioma} />
         <Route
           path='/'
           render={() => {

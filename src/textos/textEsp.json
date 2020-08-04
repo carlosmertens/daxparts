@@ -6,9 +6,10 @@
     "enlace4": "Contáctanos",
     "botonTexto1": "Ingresar",
     "botonTexto2": "Crear cuenta",
-    "modal": {
+    "modalIngresar": {
       "campoUuario": "Usuario",
       "campoContrasena": "Contraseña",
+      "olvide": "Me olvide",
       "botonIngresar": "Ingresar"
     }
   },

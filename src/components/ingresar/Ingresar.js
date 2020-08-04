@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import navLogo from '../../images/logoNav.png';
 import './Ingresar.css';
+// import textoEsp from '../../textos/textEsp.json';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -29,6 +30,7 @@ class Ingresar extends Component {
   };
 
   render() {
+    console.log(this.props);
     return (
       <>
         <div className='modal-logo d-flex justify-content-center'>

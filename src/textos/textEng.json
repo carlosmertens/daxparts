@@ -14,10 +14,10 @@
   },
 
   "home": {
-    "leyendaBuscar": "Spare part",
-    "campoBuscar": "Enter code",
+    "leyendaBuscar": "Spare part number",
+    "campoBuscar": "Enter number",
     "botonBuscar": "Search",
-    "enlaceClick": "Click here is you do not know the code",
+    "enlaceClick": "Click here is you don't know the code",
     "leyendaTutorial": "Tutorials",
     "modal": {
       "titulo": "WHAT TO DO WITHOUT THE CODE",
@@ -27,24 +27,19 @@
   },
 
   "somos": {
-    "titulo": "Who we are",
+    "titulo": "Who are we?",
     "contenido": "Since 2018, DAX has specialized in providing spare parts for all types of machinery to its clients in Latin America. Initially attending to the construction sector in Bolivia, Peru, and Paraguay; Today the DAX service extends to various countries and areas. His passion for technology; It has allowed it to develop its own technology that allows its customers to purchase spare parts efficiently, economically and in one place. Allowing your customers to benefit from savings on spare parts, freight, and time.",
-    "titulo2": "What we do",
-    "contenido2": "We offer you an easy and simple service to search, quote and buy spare parts for heavy, agricultural and construction equipment. Our system will offer you the best brands, prices and delivery times in Bolivia and the world. You decide which one to buy and we will send it to you. You don't need to call different stores to find your part, we will find it for you. All in one place.",
-    "banner": {
-      "texto1": "250.000+ Spare Parts",
-      "texto2": "50+ Manufacturers",
-      "texto3": "13+ Years in the market"
-    }
+    "titulo2": "What do we do?",
+    "contenido2": "We offer you an easy and simple service to search, quote and buy spare parts for heavy, agricultural and construction equipment. Our system will offer you the best brands, prices and delivery times in Bolivia and the world. You decide which one to buy and we will send it to you. You don't need to call different stores to find your part, we will find it for you. All in one place."
   },
 
   "hacemos": {
-    "titulo": "What we do",
+    "titulo": "How do we do it?",
     "contenido": "Our sales system allows us to offer more than 250,000 spare parts, from 50 different manufacturers and a network of local and international partners. You enter your part number (if you do not know it, we will help you find it) and our search engine will offer you the best options. We offer you spare parts of all brands, from the best stores in Bolivia and the world. Caterpillar, John Deere, Komatsu, Case, New Holland, Kubota, Volvo, Cummins, Iveco and many more."
   },
 
   "ofrecemos": {
-    "titulo": "What we offer",
+    "titulo": "What do we offer?",
     "subtitulo": "Spare parts for:",
     "span": {
       "a1": "Earth moving equipment:",
@@ -63,7 +58,7 @@
   },
 
   "contacto": {
-    "titulo": "How to reach us",
+    "titulo": "How can you reach us?",
     "usa": {
       "nombre": "Dax Parts Usa",
       "email": "dax@daxparts.com",
@@ -84,11 +79,11 @@
       "email": "ventaspy@daxparts.com",
       "telefono": "+591-678-98045"
     },
-    "contenido": "We like to meet and chat with our new clients. Start by sending us a message and we will contact you shortly."
+    "contenido": "We love to meet and chat with our new clients. You can begin by sending us a message and we will contact you shortly."
   },
 
   "cotizacion": {
-    "titulo": "Search result for spare part:",
+    "titulo": "Search result for spare part number:",
     "tabla": {
       "col1": "Descripcion",
       "col2": "Aplicacion",
