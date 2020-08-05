@@ -44,6 +44,7 @@ class App extends Component {
     this.setState({ parte: numero });
   };
 
+  // Capturar el pais del usuario
   componentDidMount() {
     const locationUrl = 'https://extreme-ip-lookup.com/json/';
     axios.get(locationUrl).then((response) => {
@@ -59,17 +60,6 @@ class App extends Component {
     let idioma = castellano;
     if (this.state.lang !== 'Español') {
       idioma = ingles;
-    }
-
-    // Logica para seleccionar pais del usuario
-    if (this.state.country === 'Bolivia') {
-      console.log('Welcome Bolivia');
-    } else if (this.state.country === 'Peru') {
-      console.log('Welcome Peru');
-    } else if (this.state.country === 'Paraguay') {
-      console.log('Welcome Paraguay');
-    } else {
-      console.log('Welcome to DaxParts');
     }
 
     return (
