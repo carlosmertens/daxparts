@@ -66,7 +66,7 @@ const Home = (props) => {
             type='button'
             className='button-link'
             onClick={() => {
-              this.props.openModal('open', <Noparte idioma={props.idioma} />);
+              props.openModal('open', <Noparte idioma={props.idioma} />);
             }}>
             <p className='click-link-text'>{props.idioma.home.enlaceClick}</p>
           </button>

@@ -21,6 +21,7 @@ class Noparte extends Component {
   };
 
   render() {
+    console.log(this.props);
     return (
       <>
         <div className='modal-logo d-flex justify-content-center'>
@@ -29,16 +30,14 @@ class Noparte extends Component {
 
         <div className='modal-body'>
           <div className='modal-header'>
-            <h4 className='modal-title'>
-              QUE HACER CUANDO NO TIENES TU NUMERO DE PARTE
-            </h4>
+            <h4 className='modal-title'>{this.props.idioma.home.modal.titulo}</h4>
           </div>
           <div className='modal-body d-flex justify-content-center'>
             <div className='row'>
               <div className='col'>
                 <Link to='/tutorial/'>
                   <button className='que-hacer-button' onClick={this.closeModal}>
-                    Manuales en linea gratuitos
+                    {this.props.idioma.home.modal.enlaceTutorial}
                   </button>
                 </Link>
               </div>
@@ -46,9 +45,12 @@ class Noparte extends Component {
                 <button
                   className='que-hacer-button'
                   onClick={() => {
-                    this.props.openModal('open', <Buscamos />);
+                    this.props.openModal(
+                      'open',
+                      <Buscamos idioma={this.props.idioma} />
+                    );
                   }}>
-                  Avisanos que necesitas y nosotros lo buscamos
+                  {this.props.idioma.home.modal.enlaceBuscamos}
                 </button>
               </div>
             </div>
@@ -57,13 +59,13 @@ class Noparte extends Component {
 
         <div className='modal-footer d-flex justify-content-center'>
           <div>
-            Ya tienes una cuenta?{' '}
+            {this.props.idioma.home.modal.tienesCuenta}{' '}
             <span
               className='pointer'
               onClick={() => {
-                this.props.openModal('open', <Ingresar />);
+                this.props.openModal('open', <Ingresar idioma={this.props.idioma} />);
               }}>
-              Pincha aqui
+              {this.props.idioma.home.modal.click}
             </span>
           </div>
         </div>

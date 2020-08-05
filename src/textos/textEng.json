@@ -20,9 +20,11 @@
     "enlaceClick": "Click here is you don't know the code",
     "leyendaTutorial": "Tutorials",
     "modal": {
-      "titulo": "WHAT TO DO WITHOUT THE CODE",
+      "titulo": "WHAT TO DO WITHOUT THE SPARE PART NUMBER",
       "enlaceTutorial": "Online tutorials",
-      "enlaceBuscamos": "Let us know what you need"
+      "enlaceBuscamos": "Let us know what you need",
+      "tienesCuenta": "Do you have an account?",
+      "click": "Click here"
     }
   },
 

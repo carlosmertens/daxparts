@@ -23,7 +23,9 @@
     "modal": {
       "titulo": "QUE HACER CUANDO NO TIENES TU NUMERO DE PARTE",
       "enlaceTutorial": "Manuales en linea gratitos",
-      "enlaceBuscamos": "Avisanos que necesitas y nosotros lo buscamos"
+      "enlaceBuscamos": "Avisanos que necesitas y nosotros lo buscamos",
+      "tienesCuenta": "Ya tienes una cuenta?",
+      "click": "Click aqui"
     }
   },
 
