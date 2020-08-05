@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import axios from 'axios';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
@@ -23,7 +24,7 @@ class App extends Component {
   // Objecto (State) inicial del idioma y el campo de busqueda
   state = {
     lang: 'Español',
-    country: 'Bolivia',
+    country: '',
     parte: '',
   };
 
@@ -43,11 +44,32 @@ class App extends Component {
     this.setState({ parte: numero });
   };
 
+  componentDidMount() {
+    const locationUrl = 'https://extreme-ip-lookup.com/json/';
+    axios.get(locationUrl).then((response) => {
+      // console.log(response.data);
+      const userCountry = response.data.country;
+      console.log(userCountry);
+      this.setState({ country: userCountry });
+    });
+  }
+
   render() {
     // Logica para selecionar idioma de la pagina
     let idioma = castellano;
     if (this.state.lang !== 'Español') {
       idioma = ingles;
+    }
+
+    // Logica para seleccionar pais del usuario
+    if (this.state.country === 'Bolivia') {
+      console.log('Welcome Bolivia');
+    } else if (this.state.country === 'Peru') {
+      console.log('Welcome Peru');
+    } else if (this.state.country === 'Paraguay') {
+      console.log('Welcome Paraguay');
+    } else {
+      console.log('Welcome to DaxParts');
     }
 
     return (
