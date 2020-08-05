@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Tutorial.css';
 
-const Tutorial = () => {
+const Tutorial = (props) => {
+  console.log(props);
   return (
     <div className='container-fluid tutorial'>
       <div className='container tutorial-titulo'>

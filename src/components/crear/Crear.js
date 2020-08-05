@@ -40,6 +40,7 @@ class Crear extends Component {
   };
 
   render() {
+    console.log(this.props);
     return (
       <>
         <div className='modal-logo d-flex justify-content-center'>

@@ -61,7 +61,7 @@ const Navbar = (props) => (
           type='button'
           className='btn btn-texto'
           onClick={() => {
-            props.openModal('open', <Ingresar />);
+            props.openModal('open', <Ingresar idioma={props.idioma} />);
           }}>
           {props.idioma.navbar.botonTexto1}
         </button>
@@ -69,7 +69,7 @@ const Navbar = (props) => (
           type='button'
           className='btn btn-texto'
           onClick={() => {
-            props.openModal('open', <Crear />);
+            props.openModal('open', <Crear idioma={props.idioma} />);
           }}>
           {props.idioma.navbar.botonTexto2}
         </button>

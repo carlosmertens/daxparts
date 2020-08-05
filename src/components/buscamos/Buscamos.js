@@ -33,6 +33,7 @@ class Buscamos extends Component {
   };
 
   render() {
+    console.log(this.props);
     return (
       <>
         <div className='modal-logo d-flex justify-content-center'>
@@ -125,7 +126,7 @@ class Buscamos extends Component {
               onClick={() => {
                 this.props.openModal('open', <Ingresar />);
               }}>
-              Pincha aqui
+              Click aqui
             </span>
           </div>
         </div>
