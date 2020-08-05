@@ -78,6 +78,7 @@ class App extends Component {
             return (
               <Home
                 idioma={idioma}
+                country={this.state.country}
                 cambiarEng={this.cambiarEng}
                 cambiarEsp={this.cambiarEsp}
                 parte={this.state.parte}
