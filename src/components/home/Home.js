@@ -30,9 +30,9 @@ const Home = (props) => {
   return (
     <header>
       <div className='container-fluid header-contenido'>
-        <div className='container-fluid'>
+        <div className='container-fluid d-flex justify-content-between header-pais-idioma'>
           <Pais />
-          <Idioma />
+          <Idioma lang={props.lang} cambiarIdioma={props.cambiarIdioma} />
         </div>
         {/* Boton de idiomas */}
         <div className='idiomas'>

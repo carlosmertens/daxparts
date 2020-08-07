@@ -29,19 +29,17 @@ class App extends Component {
   };
 
   // Evento de cambiar idioma
+  cambiarIdioma = (e) => {
+    this.setState({ lang: e.target.value });
+  };
+
+  // Evento de cambiar idioma
   cambiarEng = () => {
     this.setState({ lang: 'English' });
   };
 
   cambiarEsp = () => {
     this.setState({ lang: 'Español' });
-  };
-
-  // Evento que captura el numero de busqueda
-  buscarParte = (e) => {
-    e.preventDefault();
-    const numero = document.getElementById('buscar').value;
-    this.setState({ parte: numero });
   };
 
   // Capturar el pais del usuario
@@ -55,13 +53,19 @@ class App extends Component {
     });
   }
 
+  // Evento que captura el numero de busqueda
+  buscarParte = (e) => {
+    e.preventDefault();
+    const numero = document.getElementById('buscar').value;
+    this.setState({ parte: numero });
+  };
+
   render() {
     // Logica para selecionar idioma de la pagina
     let idioma = castellano;
     if (this.state.lang !== 'Español') {
       idioma = ingles;
     }
-
     return (
       <Router>
         <Route path='/' component={Modal} idioma={idioma} />
@@ -78,7 +82,9 @@ class App extends Component {
             return (
               <Home
                 idioma={idioma}
+                lang={this.state.lang}
                 country={this.state.country}
+                cambiarIdioma={this.cambiarIdioma}
                 cambiarEng={this.cambiarEng}
                 cambiarEsp={this.cambiarEsp}
                 parte={this.state.parte}

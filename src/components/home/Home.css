@@ -6,7 +6,11 @@ header {
   position: relative;
 }
 
-/* ===== Boton de idiomas ===== */
+/* ===== Opcion Pais/Idioma ===== */
+.header-pais-idioma {
+  margin-top: 15px;
+}
+
 .idiomas {
   margin: 5px;
   text-align: right;
