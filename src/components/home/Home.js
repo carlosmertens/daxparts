@@ -12,6 +12,7 @@ import { bindActionCreators } from 'redux';
 import openModal from '../../actions/openModal';
 
 import Noparte from '../noparte/Noparte';
+import Idioma from '../idiomaSelect/Idioma';
 
 const Home = (props) => {
   // Logica para seleccionar pais del usuario
@@ -27,7 +28,10 @@ const Home = (props) => {
 
   return (
     <header>
-      <div className='container header-contenido'>
+      <div className='container-fluid header-contenido'>
+        <div className='container'>
+          <Idioma />
+        </div>
         {/* Boton de idiomas */}
         <div className='idiomas'>
           <button className='ingles' onClick={props.cambiarEng}>

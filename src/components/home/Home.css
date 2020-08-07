@@ -1,9 +1,7 @@
 /* ========== HOME PAGE ========== */
-
 header {
   text-align: center;
 }
-
 .header-contenido {
   position: relative;
 }
@@ -13,14 +11,9 @@ header {
   margin: 5px;
   text-align: right;
 }
-
 .ingles,
 .castellano {
   margin: 2px;
-}
-
-.ingles,
-.castellano {
   border: none;
   background-color: transparent;
   outline: none;
