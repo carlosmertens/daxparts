@@ -13,6 +13,7 @@ import openModal from '../../actions/openModal';
 
 import Noparte from '../noparte/Noparte';
 import Idioma from '../idiomaSelect/Idioma';
+import Pais from '../paisDetector/Pais';
 
 const Home = (props) => {
   // Logica para seleccionar pais del usuario
@@ -29,7 +30,8 @@ const Home = (props) => {
   return (
     <header>
       <div className='container-fluid header-contenido'>
-        <div className='container'>
+        <div className='container-fluid'>
+          <Pais />
           <Idioma />
         </div>
         {/* Boton de idiomas */}
