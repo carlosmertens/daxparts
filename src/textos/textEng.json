@@ -20,12 +20,26 @@
     "enlaceClick": "Click here is you don't know the code",
     "leyendaTutorial": "Tutorials",
     "modal": {
-      "titulo": "WHAT TO DO WITHOUT THE SPARE PART NUMBER",
+      "titulo": "Don't know spare part number?",
       "enlaceTutorial": "Online tutorials",
-      "enlaceBuscamos": "Let us know what you need",
+      "enlaceBuscamos": "We find it for you",
       "tienesCuenta": "Do you have an account?",
       "click": "Click here"
     }
+  },
+
+  "buscamos": {
+    "titulo1": "Equipment details:",
+    "marca": "Equipment's brand",
+    "modelo": "Equipment's model",
+    "serie": "Equipment's series",
+    "titulo2": "Personal details:",
+    "nombre": "Name",
+    "pais": "County",
+    "telefono": "Phone/WhatsApp",
+    "botonCotizar": "Find it",
+    "cambiarModal": "Already have an account?",
+    "cambiarEnlace": "Click here!"
   },
 
   "somos": {

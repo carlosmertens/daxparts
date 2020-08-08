@@ -21,7 +21,7 @@ class Noparte extends Component {
   };
 
   render() {
-    console.log(this.props);
+    // console.log(this.props);
     return (
       <>
         <div className='modal-logo d-flex justify-content-center'>
@@ -33,15 +33,15 @@ class Noparte extends Component {
             <h4 className='modal-title'>{this.props.idioma.home.modal.titulo}</h4>
           </div>
           <div className='modal-body d-flex justify-content-center'>
-            <div className='row'>
-              <div className='col'>
+            <div className='row botones'>
+              <div className='col-sm'>
                 <Link to='/tutorial/'>
                   <button className='que-hacer-button' onClick={this.closeModal}>
                     {this.props.idioma.home.modal.enlaceTutorial}
                   </button>
                 </Link>
               </div>
-              <div className='col'>
+              <div className='col-sm'>
                 <button
                   className='que-hacer-button'
                   onClick={() => {

@@ -34,6 +34,7 @@ class Buscamos extends Component {
 
   render() {
     console.log(this.props);
+    const idioma = this.props.idioma;
     return (
       <>
         <div className='modal-logo d-flex justify-content-center'>
@@ -44,12 +45,12 @@ class Buscamos extends Component {
 
         <div className='modal-body'>
           <form onSubmit={this.submitLogin}>
-            <h4>Datos del Equipo</h4>
+            <h4>{idioma.buscamos.titulo1}</h4>
             <div className='form-group d-flex justify-content-center'>
               <input
                 type='text'
                 className='form-control mr-sm-2'
-                placeholder='Marca de tu equipo'
+                placeholder={idioma.buscamos.marca}
                 onChange={this.changeMarca}
               />
             </div>
@@ -58,7 +59,7 @@ class Buscamos extends Component {
               <input
                 type='text'
                 className='form-control mr-sm-2'
-                placeholder='Modelo de tu equipo'
+                placeholder={idioma.buscamos.modelo}
                 onChange={this.changeModelo}
               />
             </div>
@@ -67,18 +68,18 @@ class Buscamos extends Component {
               <input
                 type='text'
                 className='form-control mr-sm-2'
-                placeholder='Serie de tu equipo'
+                placeholder={idioma.buscamos.serie}
                 onChange={this.changeSerie}
               />
             </div>
 
-            <h4>Tus datos</h4>
+            <h4>{idioma.buscamos.titulo2}</h4>
 
             <div className='form-group d-flex justify-content-center'>
               <input
                 type='text'
                 className='form-control mr-sm-2'
-                placeholder='Nombre'
+                placeholder={idioma.buscamos.nombre}
                 onChange={this.changeNombre}
               />
             </div>
@@ -87,7 +88,7 @@ class Buscamos extends Component {
               <input
                 type='text'
                 className='form-control mr-sm-2'
-                placeholder='Pais'
+                placeholder={idioma.buscamos.pais}
                 onChange={this.changePais}
               />
             </div>
@@ -105,14 +106,14 @@ class Buscamos extends Component {
               <input
                 type='text'
                 className='form-control mr-sm-2'
-                placeholder='Teléfono/WhatsApp'
+                placeholder={idioma.buscamos.telefono}
                 onChange={this.changeTelefono}
               />
             </div>
 
             <div className='boton-form'>
               <button type='submit' className='btn'>
-                Cotizar
+                {idioma.buscamos.botonCotizar}
               </button>
             </div>
           </form>
@@ -120,13 +121,13 @@ class Buscamos extends Component {
 
         <div className='modal-footer d-flex justify-content-center'>
           <div>
-            Ya tienes una cuenta?{' '}
+            {idioma.buscamos.cambiarModal}{' '}
             <span
               className='pointer'
               onClick={() => {
                 this.props.openModal('open', <Ingresar />);
               }}>
-              Click aqui
+              {idioma.buscamos.cambiarEnlace}
             </span>
           </div>
         </div>

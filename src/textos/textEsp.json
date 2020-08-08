@@ -5,13 +5,7 @@
     "enlace3": "Que ofrecemos",
     "enlace4": "Contáctanos",
     "botonTexto1": "Ingresar",
-    "botonTexto2": "Crear cuenta",
-    "modalIngresar": {
-      "campoUuario": "Usuario",
-      "campoContrasena": "Contraseña",
-      "olvide": "Me olvide",
-      "botonIngresar": "Ingresar"
-    }
+    "botonTexto2": "Crear cuenta"
   },
 
   "home": {
@@ -21,12 +15,26 @@
     "enlaceClick": "Click aqui si no sabes el numero de parte",
     "leyendaTutorial": "Tutoriales",
     "modal": {
-      "titulo": "QUE HACER CUANDO NO TIENES TU NUMERO DE PARTE",
-      "enlaceTutorial": "Manuales en linea gratitos",
-      "enlaceBuscamos": "Avisanos que necesitas y nosotros lo buscamos",
+      "titulo": "No tienes numero de parte?",
+      "enlaceTutorial": "Manuales gratuitos",
+      "enlaceBuscamos": "Te lo buscamos",
       "tienesCuenta": "Ya tienes una cuenta?",
       "click": "Click aqui"
     }
+  },
+
+  "buscamos": {
+    "titulo1": "Datos del equipo:",
+    "marca": "Marca de tu equipo",
+    "modelo": "Modelo de tu equipo",
+    "serie": "Serie de tu equipo",
+    "titulo2": "Tus datos:",
+    "nombre": "Nombre",
+    "pais": "Pais",
+    "telefono": "Teléfono/WhatsApp",
+    "botonCotizar": "Cotizar",
+    "cambiarModal": "Ya tienes una cuenta?",
+    "cambiarEnlace": "Click aqui!"
   },
 
   "somos": {
