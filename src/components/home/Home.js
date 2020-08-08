@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logoCentro from '../../images/logoCentro.png';
 import IconVideos from '../../images/IconVideos.png';
-import engFlag from '../../images/eng.png';
-import espFlag from '../../images/esp.png';
+// import engFlag from '../../images/eng.png';
+// import espFlag from '../../images/esp.png';
 // import lupa from '../../images/lupa.png';
 import './Home.css';
 
@@ -24,14 +24,14 @@ const Home = (props) => {
           <Idioma lang={props.lang} cambiarIdioma={props.cambiarIdioma} />
         </div>
         {/* Boton de idiomas */}
-        <div className='idiomas'>
+        {/* <div className='idiomas'>
           <button className='ingles' onClick={props.cambiarEng}>
             <img className='eng-flag' src={engFlag} alt='ENG logo' />
           </button>
           <button className='castellano' onClick={props.cambiarEsp}>
             <img className='esp-flag' src={espFlag} alt='ESP logo' />
           </button>
-        </div>
+        </div> */}
         {/* ===== Logo del centro ===== */}
         <div className='container'>
           <img className='logo-centro' src={logoCentro} alt='Dax Logo' />
@@ -48,7 +48,7 @@ const Home = (props) => {
                 onChange={props.buscarParte}
               />
 
-              <Link to='/cotizacion' className='btn btn-buscar mb-2'>
+              <Link to='/cotizacion' className='btn btn-buscar'>
                 {props.idioma.home.botonBuscar}
               </Link>
             </div>

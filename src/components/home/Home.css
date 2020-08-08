@@ -96,8 +96,14 @@ header input {
     font-size: 18px;
     margin: 15px;
   }
-  .buscar {
+  .btn-buscar {
     font-size: 22px !important;
+  }
+  .btn-idioma {
+    font-size: 15px !important;
+    height: 25px !important;
+    border-radius: 15px !important;
+    margin-top: 0px !important;
   }
   .click-link {
     margin-top: 20px;
@@ -156,6 +162,12 @@ header input {
     color: #312e2e;
     font-size: 18px;
   }
+  .btn-idioma {
+    font-size: 18px !important;
+    height: 30px !important;
+    border-radius: 15px !important;
+    margin-top: 0px !important;
+  }
 }
 
 /* MEDIUM devices (landscape tablets, 768px and up) */
@@ -192,6 +204,12 @@ header input {
   .tutorial-text {
     color: #312e2e;
     font-size: 16px;
+  }
+  .btn-idioma {
+    font-size: 18px !important;
+    height: 30px !important;
+    border-radius: 15px !important;
+    margin-top: 0px !important;
   }
 }
 
@@ -230,6 +248,12 @@ header input {
     color: #312e2e;
     font-size: 16px;
   }
+  .btn-idioma {
+    font-size: 18px !important;
+    height: 30px !important;
+    border-radius: 15px !important;
+    margin-top: 0px !important;
+  }
 }
 
 /* EXTRA LARGE devices (large laptops and desktops, 1200px and up) */
@@ -254,6 +278,12 @@ header input {
   }
   .btn-buscar {
     font-size: 22px !important;
+  }
+  .btn-idioma {
+    font-size: 18px !important;
+    height: 30px !important;
+    border-radius: 15px !important;
+    margin-top: 0px !important;
   }
   .click-link {
     font-size: 16px;
