@@ -16,22 +16,11 @@ import Idioma from '../idiomaSelect/Idioma';
 import Pais from '../paisDetector/Pais';
 
 const Home = (props) => {
-  // Logica para seleccionar pais del usuario
-  if (props.country === 'Bolivia') {
-    console.log('Welcome Bolivia');
-  } else if (props.country === 'Peru') {
-    console.log('Welcome Peru');
-  } else if (props.country === 'Paraguay') {
-    console.log('Welcome Paraguay');
-  } else {
-    console.log('Welcome to DaxParts');
-  }
-
   return (
     <header>
       <div className='container-fluid header-contenido'>
         <div className='container-fluid d-flex justify-content-between header-pais-idioma'>
-          <Pais />
+          <Pais country={props.country} />
           <Idioma lang={props.lang} cambiarIdioma={props.cambiarIdioma} />
         </div>
         {/* Boton de idiomas */}

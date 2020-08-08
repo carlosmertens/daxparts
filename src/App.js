@@ -24,7 +24,7 @@ class App extends Component {
   // Objecto (State) inicial del idioma y el campo de busqueda
   state = {
     lang: 'Español',
-    country: '',
+    country: 'Peru',
     parte: '',
   };
 
@@ -49,7 +49,7 @@ class App extends Component {
       // console.log(response.data);
       const userCountry = response.data.country;
       console.log(userCountry);
-      this.setState({ country: userCountry });
+      // this.setState({ country: userCountry });
     });
   }
 
