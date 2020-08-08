@@ -93,5 +93,15 @@
       "col4": "Price",
       "col5": "Delivery time"
     }
+  },
+
+  "tutorial": {
+    "titulo": "Tutorials",
+    "descripcion": "We share the following links where you can have access to user's guide for free:",
+    "columna1Titulo": "Use tutorials online",
+    "columna1Texto": "You can access to user's manual for free.",
+    "columna2Titulo": "How to use our services",
+    "columna2Texto": "We can show you easily and quickly.",
+    "enlaceTutorial": "Click here to go to our tutorials."
   }
 }

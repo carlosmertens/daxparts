@@ -99,5 +99,15 @@
       "col4": "Precio",
       "col5": "Tiempo de Entrega"
     }
+  },
+
+  "tutorial": {
+    "titulo": "Tutoriales",
+    "descripcion": "Te compartimos los siguientes links donde puedes tener acceso a manuales de parte de manera gratuita:",
+    "columna1Titulo": "Usar Manuales de partes en linea",
+    "columna1Texto": "puedes tener acceso a manuales de manera gratuita.",
+    "columna2Titulo": "Como usar nuestra pagina",
+    "columna2Texto": "te enseñamos como de manera sencilla y breve.",
+    "enlaceTutorial": "Has click para ir al tutorial."
   }
 }

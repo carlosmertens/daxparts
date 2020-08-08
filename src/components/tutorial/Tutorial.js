@@ -2,19 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Tutorial.css';
 
-const Tutorial = (props) => {
-  console.log(props);
+const Tutorial = ({ idioma }) => {
   return (
     <div className='container-fluid tutorial'>
       <div className='container tutorial-titulo'>
-        <h1>Tutoriales</h1>
+        <h1>{idioma.tutorial.titulo}</h1>
       </div>
 
       <div className='container tutorial-subtitulo'>
-        <p>
-          Te compartimos los siguientes links donde puedes tener acceso a manuales de
-          parte de manera gratuita:
-        </p>
+        <p>{idioma.tutorial.descripcion}</p>
       </div>
 
       <div className='container tutorial-contenido'>
@@ -24,12 +20,12 @@ const Tutorial = (props) => {
             <div className='container'>
               <div className='row'>
                 <p>
-                  Usar Manuales de partes en linea <br />
+                  {idioma.tutorial.columna1Titulo} <br />
                   <span>
-                    puedes tener acceso a manuales de manera gratuita. <br />
+                    {idioma.tutorial.columna1Texto} <br />
                     <Link to='/hacemos'>
                       <em className='tutorial-enlace'>
-                        Has click para ir al tuturial.
+                        {idioma.tutorial.enlaceTutorial}
                       </em>
                     </Link>
                   </span>
@@ -86,12 +82,12 @@ const Tutorial = (props) => {
             <div className='container'>
               <div className='row'>
                 <p>
-                  Como usar nuestra pagina <br />
+                  {idioma.tutorial.columna2Titulo} <br />
                   <span>
-                    te enseñamos como de manera sencilla y breve. <br />
+                    {idioma.tutorial.columna2Texto} <br />
                     <Link to='/hacemos'>
                       <em className='tutorial-enlace'>
-                        Has click para ir al tuturial.
+                        {idioma.tutorial.enlaceTutorial}
                       </em>
                     </Link>
                   </span>
