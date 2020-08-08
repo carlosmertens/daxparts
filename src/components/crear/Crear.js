@@ -41,7 +41,6 @@ class Crear extends Component {
 
   render() {
     const idioma = this.props.idioma;
-    console.log(idioma);
     return (
       <>
         <div className='modal-logo d-flex justify-content-center'>
@@ -52,12 +51,12 @@ class Crear extends Component {
 
         <div className='modal-body'>
           <form onSubmit={this.submitLogin}>
-            <h4>Datos del cliente:</h4>
+            <h4>{idioma.crear.titulo1}</h4>
             <div className='form-group d-flex justify-content-center'>
               <input
                 type='text'
                 className='form-control mr-sm-2'
-                placeholder='Empresa'
+                placeholder={idioma.crear.empresa}
                 onChange={this.changeEmpresa}
               />
             </div>
@@ -66,7 +65,7 @@ class Crear extends Component {
               <input
                 type='text'
                 className='form-control mr-sm-2'
-                placeholder='Nombre'
+                placeholder={idioma.crear.nombre}
                 onChange={this.changeNombre}
               />
             </div>
@@ -76,9 +75,9 @@ class Crear extends Component {
                 className='form-control'
                 onChange={this.changeID}
                 value={this.state.ID}>
-                <option>Cedula de identidad</option>
+                <option>{idioma.crear.cedula}</option>
                 <option>NIT</option>
-                <option>Pasaporte</option>
+                <option>{idioma.crear.pasaporte}</option>
                 <option>RUC</option>
               </select>
             </div>
@@ -87,7 +86,7 @@ class Crear extends Component {
               <input
                 type='text'
                 className='form-control mr-sm-2'
-                placeholder='Numero de identidad'
+                placeholder={idioma.crear.numero}
                 onChange={this.changeNumeroID}
               />
             </div>
@@ -99,7 +98,7 @@ class Crear extends Component {
                 value={this.state.pais}>
                 <option>Bolivia</option>
                 <option>Chile</option>
-                <option>Estados Unidos</option>
+                <option>USA</option>
                 <option>Paraguay</option>
                 <option>Peru</option>
               </select>
@@ -109,7 +108,7 @@ class Crear extends Component {
               <input
                 type='text'
                 className='form-control mr-sm-2'
-                placeholder='Ciudad'
+                placeholder={idioma.crear.ciudad}
                 onChange={this.changeCiudad}
               />
             </div>
@@ -118,7 +117,7 @@ class Crear extends Component {
               <input
                 type='text'
                 className='form-control mr-sm-2'
-                placeholder='Teléfono'
+                placeholder={idioma.crear.telefono}
                 onChange={this.changeTelefono}
               />
             </div>
@@ -132,13 +131,13 @@ class Crear extends Component {
               />
             </div>
 
-            <h4>Creación de usuario:</h4>
+            <h4>{idioma.crear.titulo2}</h4>
 
             <div className='form-group d-flex justify-content-center'>
               <input
                 type='text'
                 className='form-control mr-sm-2'
-                placeholder='Usuario'
+                placeholder={idioma.crear.usuario}
                 onChange={this.changeUsuario}
               />
             </div>
@@ -147,7 +146,7 @@ class Crear extends Component {
               <input
                 type='password'
                 className='form-control mr-sm-2'
-                placeholder='Password'
+                placeholder={idioma.crear.password1}
                 onChange={this.changePassword}
               />
             </div>
@@ -156,14 +155,14 @@ class Crear extends Component {
               <input
                 type='password'
                 className='form-control mr-sm-2'
-                placeholder='Confirmar password'
+                placeholder={idioma.crear.password2}
                 onChange={this.changePassword2}
               />
             </div>
 
             <div className='boton-form'>
               <button type='submit' className='btn'>
-                Crear cuenta
+                {idioma.crear.botonCrear}
               </button>
             </div>
           </form>
@@ -171,13 +170,13 @@ class Crear extends Component {
 
         <div className='modal-footer d-flex justify-content-center'>
           <div>
-            Ya tienes una cuenta?{' '}
+            {idioma.crear.cambiarModal}{' '}
             <span
               className='pointer'
               onClick={() => {
-                this.props.openModal('open', <Ingresar />);
+                this.props.openModal('open', <Ingresar idioma={this.props.idioma} />);
               }}>
-              Click aqui!
+              {idioma.crear.cambiarEnlace}
             </span>
           </div>
         </div>

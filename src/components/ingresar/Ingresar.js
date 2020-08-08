@@ -76,7 +76,7 @@ class Ingresar extends Component {
             <span
               className='pointer'
               onClick={() => {
-                this.props.openModal('open', <Crear />);
+                this.props.openModal('open', <Crear idioma={this.props.idioma} />);
               }}>
               {idioma.ingresar.cambiarEnlace}
             </span>

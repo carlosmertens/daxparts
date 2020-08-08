@@ -117,6 +117,24 @@
     "olvide": "Me olvide",
     "botonIngresar": "Ingresar",
     "cambiarModal": "No tienes una cuenta?",
-    "cambiarEnlace": "Click aqui"
+    "cambiarEnlace": "Click aqui!"
+  },
+
+  "crear": {
+    "titulo1": "Datos del cliente:",
+    "empresa": "Empresa",
+    "nombre": "Nombre",
+    "cedula": "Cedula de identidad",
+    "pasaporte": "Pasaporte",
+    "numero": "Numero de identidad",
+    "ciudad": "Ciudad",
+    "telefono": "Teléfono",
+    "titulo2": "Datos de ingreso:",
+    "usuario": "Usuario",
+    "password1": "Contraseña",
+    "password2": "Confirmar contraseña",
+    "botonCrear": "Crear cuenta",
+    "cambiarModal": "Ya tienes una cuenta?",
+    "cambiarEnlace": "Click aqui!"
   }
 }

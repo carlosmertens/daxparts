@@ -111,6 +111,24 @@
     "olvide": "I forgot password",
     "botonIngresar": "Login",
     "cambiarModal": "Don't have an account?",
-    "cambiarEnlace": "Click here"
+    "cambiarEnlace": "Click here!"
+  },
+
+  "crear": {
+    "titulo1": "Customer details:",
+    "empresa": "Company",
+    "nombre": "Name",
+    "cedula": "Identity document",
+    "pasaporte": "Passport",
+    "numero": "Number of ID",
+    "ciudad": "City",
+    "telefono": "Phone",
+    "titulo2": "Login details:",
+    "usuario": "User Name",
+    "password1": "Password",
+    "password2": "Confirm Password",
+    "botonCrear": "Sign Up",
+    "cambiarModal": "Already have an account?",
+    "cambiarEnlace": "Click here!"
   }
 }
