@@ -40,7 +40,8 @@ class Crear extends Component {
   };
 
   render() {
-    console.log(this.props);
+    const idioma = this.props.idioma;
+    console.log(idioma);
     return (
       <>
         <div className='modal-logo d-flex justify-content-center'>

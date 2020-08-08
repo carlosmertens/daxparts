@@ -109,5 +109,14 @@
     "columna2Titulo": "Como usar nuestra pagina",
     "columna2Texto": "te enseñamos como de manera sencilla y breve.",
     "enlaceTutorial": "Has click para ir al tutorial."
+  },
+
+  "ingresar": {
+    "nombre": "Nombre de usuario",
+    "password": "Contraseña",
+    "olvide": "Me olvide",
+    "botonIngresar": "Ingresar",
+    "cambiarModal": "No tienes una cuenta?",
+    "cambiarEnlace": "Click aqui"
   }
 }

@@ -29,7 +29,7 @@ class Ingresar extends Component {
   };
 
   render() {
-    console.log(this.props);
+    const idioma = this.props.idioma;
     return (
       <>
         <div className='modal-logo d-flex justify-content-center'>
@@ -42,7 +42,7 @@ class Ingresar extends Component {
               <input
                 type='text'
                 className='form-control mr-sm-2'
-                placeholder='Nombre de Usuario'
+                placeholder={idioma.ingresar.nombre}
                 onChange={this.changeEmail}
               />
             </div>
@@ -51,20 +51,20 @@ class Ingresar extends Component {
               <input
                 type='password'
                 className='form-control mr-sm-2'
-                placeholder='Password'
+                placeholder={idioma.ingresar.password}
                 onChange={this.changePassword}
               />
             </div>
 
             <div className='enlace-form'>
               <a className='me-olvide' href='/#'>
-                Me olvide
+                {idioma.ingresar.olvide}
               </a>
             </div>
 
             <div className='boton-form'>
               <button type='submit' className='btn'>
-                Ingresar
+                {idioma.ingresar.botonIngresar}
               </button>
             </div>
           </form>
@@ -72,13 +72,13 @@ class Ingresar extends Component {
 
         <div className='modal-footer d-flex justify-content-center'>
           <div>
-            No tienes una cuenta?{' '}
+            {idioma.ingresar.cambiarModal}{' '}
             <span
               className='pointer'
               onClick={() => {
                 this.props.openModal('open', <Crear />);
               }}>
-              Pincha aqui
+              {idioma.ingresar.cambiarEnlace}
             </span>
           </div>
         </div>

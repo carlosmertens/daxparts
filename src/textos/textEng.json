@@ -103,5 +103,14 @@
     "columna2Titulo": "How to use our services",
     "columna2Texto": "We can show you easily and quickly.",
     "enlaceTutorial": "Click here to go to our tutorials."
+  },
+
+  "ingresar": {
+    "nombre": "User Name",
+    "password": "Password",
+    "olvide": "I forgot password",
+    "botonIngresar": "Login",
+    "cambiarModal": "Don't have an account?",
+    "cambiarEnlace": "Click here"
   }
 }
