@@ -22,7 +22,7 @@ const Cotizacion = (props) => {
     return <Spinner />;
   }
   // Desestructuración del props idioma
-  const texto = { ...props.idioma };
+  const idioma = { ...props.idioma };
   // Bucle el resultado y formar las lineas de la tabla
   const movieGrid = busqueda.map((item, index) => {
     return (
@@ -35,12 +35,11 @@ const Cotizacion = (props) => {
       </tr>
     );
   });
-  console.log(props.parte);
   return (
     <div className='container-fluid cotizacion-contenido'>
       <div className='container cotizacion-title'>
         <p>
-          {texto.cotizacion.titulo} {props.parte}
+          {idioma.cotizacion.titulo} {props.parte}
         </p>
       </div>
 
@@ -49,40 +48,35 @@ const Cotizacion = (props) => {
           <table className='table table-striped table-bordered'>
             <thead className='thead-dark'>
               <tr>
-                <th scope='col'>{texto.cotizacion.tabla.col1}</th>
-                <th scope='col'>{texto.cotizacion.tabla.col2}</th>
-                <th scope='col'>{texto.cotizacion.tabla.col3}</th>
-                <th scope='col'>{texto.cotizacion.tabla.col4}</th>
-                <th scope='col'>{texto.cotizacion.tabla.col5}</th>
+                <th scope='col'>{idioma.cotizacion.tabla.col1}</th>
+                <th scope='col'>{idioma.cotizacion.tabla.col2}</th>
+                <th scope='col'>{idioma.cotizacion.tabla.col3}</th>
+                <th scope='col'>{idioma.cotizacion.tabla.col4}</th>
+                <th scope='col'>{idioma.cotizacion.tabla.col5}</th>
               </tr>
             </thead>
             <tbody>{movieGrid}</tbody>
           </table>
           <div className='Container bg-secondary'>
             <p className='nota text-white'>
-              <span>Nota:</span> Nombres OEM, logos y numeros de partes son usados para
-              referencia. No implicamos que nuestros productos o servicios estén
-              afiliados, patrocinados o aprobados por los fabricantes de equipos
-              originales
+              <span>{idioma.cotizacion.nota}</span> {idioma.cotizacion.notaTexto}
             </p>
           </div>
           <div className='container d-flex justify-content-center'>
             <div className='container beneficios bg-dark'>
               <div className='container row'>
-                <h4 className='titulo-jumbo'>Si eres usuario podras:</h4>
+                <h4 className='titulo-jumbo'>{idioma.cotizacion.tituloComprar}</h4>
               </div>
               <div className='row'>
                 <div className='col'>
-                  <p className='beneficios-jumbo'>Crear varias cotizaciones</p>
-                  <p className='beneficios-jumbo'>Hacer seguimientos a tus ordenes</p>
-                  <p className='beneficios-jumbo'>
-                    Acceder a miles de piezas usadas y reconstruidas
-                  </p>
-                  <p className='beneficios-jumbo'>y mucho mas...</p>
+                  <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio1}</p>
+                  <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio2}</p>
+                  <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio3}</p>
+                  <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio4}</p>
                 </div>
                 <div className='col boton-ordenar'>
                   <Link to='/crear' className='btn btn-comprar mb-2'>
-                    Comprar
+                    {idioma.cotizacion.botonComprar}
                   </Link>
                 </div>
               </div>

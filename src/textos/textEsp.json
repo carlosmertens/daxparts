@@ -106,7 +106,15 @@
       "col3": "Tipo",
       "col4": "Precio",
       "col5": "Tiempo de Entrega"
-    }
+    },
+    "nota": "Nota",
+    "notaTexto": "Nombres OEM, logos y numeros de partes son usados para referencia. No implicamos que nuestros productos o servicios estén afiliados, patrocinados o aprobados por los fabricantes de equipos originales",
+    "tituloComprar": "Si eres usuario podras:",
+    "benficio1": "Crear varias cotizaciones",
+    "beneficio2": "Hacer seguimiento a tus ordenes",
+    "beneficio3": "Acceder a miles de pieza usadas y reconstruidas",
+    "beneficio4": "y mucho mas...",
+    "botonComprar": "Comprar"
   },
 
   "tutorial": {

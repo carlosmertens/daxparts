@@ -7,7 +7,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import openModal from '../../actions/openModal';
 
-import Ingresar from '../crear/Crear';
+import Ingresar from '../ingresar/Ingresar';
 import Buscamos from '../buscamos/Buscamos';
 
 class Noparte extends Component {

@@ -33,7 +33,6 @@ class Buscamos extends Component {
   };
 
   render() {
-    console.log(this.props);
     const idioma = this.props.idioma;
     return (
       <>
@@ -125,7 +124,7 @@ class Buscamos extends Component {
             <span
               className='pointer'
               onClick={() => {
-                this.props.openModal('open', <Ingresar />);
+                this.props.openModal('open', <Ingresar idioma={this.props.idioma} />);
               }}>
               {idioma.buscamos.cambiarEnlace}
             </span>

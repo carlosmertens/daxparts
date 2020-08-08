@@ -97,7 +97,6 @@ class Crear extends Component {
                 onChange={this.changePais}
                 value={this.state.pais}>
                 <option>Bolivia</option>
-                <option>Chile</option>
                 <option>USA</option>
                 <option>Paraguay</option>
                 <option>Peru</option>
