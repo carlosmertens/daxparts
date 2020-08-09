@@ -11,14 +11,12 @@ import openModal from '../../actions/openModal';
 
 const Navbar = (props) => (
   <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
-    {/* Logo Navigador */}
     <div className='navbar-brand'>
       <Link to='/'>
         <img src={navLogoWhite} alt='Dax Logo' />
       </Link>
     </div>
 
-    {/* Boton pantalla pequeña */}
     <button
       className='navbar-toggler'
       type='button'
@@ -31,7 +29,6 @@ const Navbar = (props) => (
     </button>
 
     <div className='collapse navbar-collapse' id='navbarSupportedContent'>
-      {/* Enlaces Introductorios */}
       <ul className='navbar-nav mx-auto'>
         <li className='nav-item'>
           <Link to='/somos' className='nav-link text-white navbar-enlace'>
@@ -55,7 +52,6 @@ const Navbar = (props) => (
         </li>
       </ul>
 
-      {/* Botones modal de Ingresar y Crear Cuenta */}
       <div className='form-inline my-2 my-lg-0'>
         <button
           type='button'
