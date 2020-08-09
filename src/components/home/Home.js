@@ -2,9 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logoCentro from '../../images/logoCentro.png';
 import IconVideos from '../../images/IconVideos.png';
-// import engFlag from '../../images/eng.png';
-// import espFlag from '../../images/esp.png';
-// import lupa from '../../images/lupa.png';
 import './Home.css';
 
 import { connect } from 'react-redux';
@@ -23,20 +20,11 @@ const Home = (props) => {
           <Pais country={props.country} />
           <Idioma lang={props.lang} cambiarIdioma={props.cambiarIdioma} />
         </div>
-        {/* Boton de idiomas */}
-        {/* <div className='idiomas'>
-          <button className='ingles' onClick={props.cambiarEng}>
-            <img className='eng-flag' src={engFlag} alt='ENG logo' />
-          </button>
-          <button className='castellano' onClick={props.cambiarEsp}>
-            <img className='esp-flag' src={espFlag} alt='ESP logo' />
-          </button>
-        </div> */}
-        {/* ===== Logo del centro ===== */}
+
         <div className='container'>
           <img className='logo-centro' src={logoCentro} alt='Dax Logo' />
         </div>
-        {/* ===== Formulario para buscar partes ===== */}
+
         <div className='container d-flex justify-content-center'>
           <form className='form-inline'>
             <div className='form-group mb-2'>
@@ -54,9 +42,8 @@ const Home = (props) => {
             </div>
           </form>
         </div>
-        {/* ===== Enlace para ayuda ===== */}
+
         <div className='container click-link'>
-          {/* <!-- Button trigger modal --> */}
           <button
             type='button'
             className='button-link'
@@ -66,7 +53,7 @@ const Home = (props) => {
             <p className='click-link-text'>{props.idioma.home.enlaceClick}</p>
           </button>
         </div>
-        {/* ===== Icono Tutorial ===== */}
+
         <div className='container tutorial-link'>
           <Link to='/tutorial'>
             <img className='logo-tutorial' src={IconVideos} alt='Tutorial Logo' />
@@ -78,6 +65,7 @@ const Home = (props) => {
   );
 };
 
+// Function para abrir modal
 function mapDispatchToProps(dispacher) {
   return bindActionCreators(
     {
