@@ -10,6 +10,12 @@ import openModal from '../../actions/openModal';
 import Ingresar from '../ingresar/Ingresar';
 import Buscamos from '../buscamos/Buscamos';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch, faPlayCircle } from '@fortawesome/free-solid-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
+library.add(faSearch);
+library.add(faPlayCircle);
+
 class Noparte extends Component {
   constructor(props) {
     super(props);
@@ -38,6 +44,12 @@ class Noparte extends Component {
                 <Link to='/tutorial/'>
                   <button className='que-hacer-button' onClick={this.closeModal}>
                     {this.props.idioma.home.modal.enlaceTutorial}
+                    <br />
+                    <FontAwesomeIcon
+                      icon='play-circle'
+                      size='2x'
+                      className='icon-video'
+                    />
                   </button>
                 </Link>
               </div>
@@ -51,6 +63,8 @@ class Noparte extends Component {
                     );
                   }}>
                   {this.props.idioma.home.modal.enlaceBuscamos}
+                  <br />
+                  <FontAwesomeIcon icon='search' size='2x' className='icon-video' />
                 </button>
               </div>
             </div>

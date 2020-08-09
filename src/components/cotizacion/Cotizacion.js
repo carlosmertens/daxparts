@@ -3,7 +3,11 @@ import Spinner from '../spinner/Spinner';
 import axios from 'axios';
 import config from '../../config';
 import './Cotizacion.css';
-import { Link } from 'react-router-dom';
+import Ingresar from '../ingresar/Ingresar';
+
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import openModal from '../../actions/openModal';
 
 const Cotizacion = (props) => {
   const [busqueda, setBusqueda] = useState([]);
@@ -70,14 +74,19 @@ const Cotizacion = (props) => {
               <div className='row'>
                 <div className='col'>
                   <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio1}</p>
-                  <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio2}</p>
-                  <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio3}</p>
-                  <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio4}</p>
+                  <p className='beneficios-jumbo'>✓ {idioma.cotizacion.beneficio2}</p>
+                  <p className='beneficios-jumbo'>✓ {idioma.cotizacion.beneficio3}</p>
+                  <p className='beneficios-jumbo'>✓ {idioma.cotizacion.beneficio4}</p>
                 </div>
                 <div className='col boton-ordenar'>
-                  <Link to='/crear' className='btn btn-comprar mb-2'>
+                  <button
+                    type='button'
+                    className='btn btn-comprar mb-2'
+                    onClick={() => {
+                      props.openModal('open', <Ingresar idioma={props.idioma} />);
+                    }}>
                     {idioma.cotizacion.botonComprar}
-                  </Link>
+                  </button>
                 </div>
               </div>
             </div>
@@ -88,4 +97,13 @@ const Cotizacion = (props) => {
   );
 };
 
-export default Cotizacion;
+function mapDispatchToProps(dispacher) {
+  return bindActionCreators(
+    {
+      openModal: openModal,
+    },
+    dispacher
+  );
+}
+
+export default connect(null, mapDispatchToProps)(Cotizacion);
