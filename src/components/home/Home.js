@@ -13,6 +13,12 @@ import Idioma from '../idiomaSelect/Idioma';
 import Pais from '../paisDetector/Pais';
 
 const Home = (props) => {
+  console.log(props.parte);
+  // Logica si ususario no introduce numero de parte
+  let buscarParte = props.parte;
+  if (props.parte !== '') {
+    buscarParte = 'cotizacion';
+  }
   return (
     <header>
       <div className='container-fluid header-contenido'>
@@ -27,19 +33,17 @@ const Home = (props) => {
 
         <div className='container d-flex justify-content-center'>
           <form className='form-inline'>
-            <div className='form-group mb-2'>
-              <label htmlFor='buscar'>{props.idioma.home.leyendaBuscar}</label>
-              <input
-                type='text'
-                id='buscar'
-                placeholder={props.idioma.home.campoBuscar}
-                onChange={props.buscarParte}
-              />
-
-              <Link to='/cotizacion' className='btn btn-buscar'>
-                {props.idioma.home.botonBuscar}
-              </Link>
-            </div>
+            <label htmlFor='buscar'>{props.idioma.home.leyendaBuscar}</label>
+            <input
+              type='text'
+              id='buscar'
+              placeholder={props.idioma.home.campoBuscar}
+              value={props.parte}
+              onChange={props.handleChange}
+            />
+            <Link to={`/${buscarParte}`} className='btn btn-buscar'>
+              {props.idioma.home.botonBuscar}
+            </Link>
           </form>
         </div>
 

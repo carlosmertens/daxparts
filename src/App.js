@@ -33,15 +33,6 @@ class App extends Component {
     this.setState({ lang: e.target.value });
   };
 
-  // Evento de cambiar idioma
-  cambiarEng = () => {
-    this.setState({ lang: 'English' });
-  };
-
-  cambiarEsp = () => {
-    this.setState({ lang: 'Español' });
-  };
-
   // Capturar el pais del usuario
   componentDidMount() {
     const locationUrl = 'https://extreme-ip-lookup.com/json/';
@@ -54,10 +45,9 @@ class App extends Component {
   }
 
   // Evento que captura el numero de busqueda
-  buscarParte = (e) => {
-    e.preventDefault();
-    const numero = document.getElementById('buscar').value;
-    this.setState({ parte: numero });
+
+  handleChange = (e) => {
+    this.setState({ parte: e.target.value });
   };
 
   render() {
@@ -85,10 +75,8 @@ class App extends Component {
                 lang={this.state.lang}
                 country={this.state.country}
                 cambiarIdioma={this.cambiarIdioma}
-                cambiarEng={this.cambiarEng}
-                cambiarEsp={this.cambiarEsp}
                 parte={this.state.parte}
-                buscarParte={this.buscarParte}
+                handleChange={this.handleChange}
               />
             );
           }}
