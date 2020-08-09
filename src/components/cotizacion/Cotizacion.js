@@ -10,7 +10,10 @@ import { bindActionCreators } from 'redux';
 import openModal from '../../actions/openModal';
 
 const Cotizacion = (props) => {
+  // Iniciar state para el resultado de la busqueda
   const [busqueda, setBusqueda] = useState([]);
+
+  // Llamar API con la parte a buscar
   useEffect(() => {
     // Prueba con API de peliculas (TheMovieDB)
     const nowPlayingUrl = `https://api.themoviedb.org/3/movie/now_playing?api_key=${config.api_key}`;
@@ -20,13 +23,14 @@ const Cotizacion = (props) => {
       setBusqueda(movieData);
     });
   }, []);
-
   // Mientras "buscar state" este vacio, spinner va a correr
   if (busqueda.length === 0) {
     return <Spinner />;
   }
+
   // Desestructuración del props idioma
   const idioma = { ...props.idioma };
+
   // Bucle el resultado y formar las lineas de la tabla
   const movieGrid = busqueda.map((item, index) => {
     return (
@@ -39,6 +43,7 @@ const Cotizacion = (props) => {
       </tr>
     );
   });
+
   return (
     <div className='container-fluid cotizacion-contenido'>
       <div className='container cotizacion-title'>
