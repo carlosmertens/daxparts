@@ -4,15 +4,14 @@ import './Somos.css';
 const Somos = ({ idioma }) => (
   <div className='somos-contenido'>
     <div className='container somos-title'>
-      <h1>{idioma.somos.titulo}</h1>
+      <h1>
+        <strong>{idioma.somos.titulo}</strong>
+      </h1>
     </div>
 
     <div className='container somos-texto'>
       <p>{idioma.somos.contenido}</p>
-    </div>
-
-    <div className='container somos-texto'>
-      <h4>{idioma.somos.titulo2}</h4>
+      <h2>{idioma.somos.titulo2}</h2>
       <p>{idioma.somos.contenido2}</p>
     </div>
 

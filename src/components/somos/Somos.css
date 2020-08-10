@@ -1,11 +1,5 @@
 /* ========== SOMOS CSS ========== */
 
-.somos-title h1 {
-  color: #fca728;
-  font-weight: bolder;
-  text-align: right;
-}
-
 /* .somos-banner {
   background-color: #fca728;
   width: 100%;
@@ -22,7 +16,6 @@
 @media only screen and (max-width: 480px) {
   .somos-title h1 {
     font-size: 40px;
-    padding-top: 30px;
   }
   .somos-texto {
     font-size: 13px;
@@ -80,12 +73,11 @@
 
 /* LARGE devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .somos-title h1 {
+  .somos-title {
     font-size: 60px;
-    padding-top: 50px;
   }
   .somos-texto {
-    font-size: 22px;
+    font-size: 20px;
     padding-top: 80px;
   }
 
@@ -100,9 +92,8 @@
 
 /* EXTRA LARGE devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .somos-title h1 {
+  .somos-title {
     font-size: 60px;
-    padding-top: 20px;
   }
   .somos-texto {
     font-size: 20px;

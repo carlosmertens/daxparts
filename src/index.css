@@ -18,6 +18,13 @@ body {
   text-rendering: optimizeSpeed;
 }
 
+/* ===== TEXTO ===== */
+h1 {
+  color: #fca728;
+  font-weight: bolder;
+  text-align: right;
+}
+
 /* ===== HOMEPAGE ===== */
 header {
   position: relative;
