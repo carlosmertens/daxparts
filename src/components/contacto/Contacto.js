@@ -9,7 +9,9 @@ import mapa from '../../images/mapaDAX.png';
 const Contacto = ({ idioma }) => (
   <div className='container-fluid contacto-contenido'>
     <div className='container contacto-title'>
-      <h1>{idioma.contacto.titulo}</h1>
+      <h1>
+        <strong>{idioma.contacto.titulo}</strong>
+      </h1>
     </div>
 
     <div className='container contacto-contenido'>
