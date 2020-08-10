@@ -1,21 +1,13 @@
-/* ========== HACEMOS CSS ========== */
-
-.hacemos-title h1 {
-  color: #fca728;
-  font-weight: bolder;
-  text-align: right;
-}
-
-/* ========== RESPONSIVE TEMPLATE ========== */
+/* ========== RESPONSIVE HACEMOS CSS ========== */
 /* EXTRA SMALL devices (less than 480px) */
 @media only screen and (max-width: 480px) {
   .hacemos-title h1 {
-    font-size: 35px;
-    padding-top: 30px;
+    font-size: 40px;
+    padding-top: 20px;
     padding-bottom: 30px;
   }
   .hacemos-texto {
-    font-size: 13px;
+    font-size: 12px;
   }
   .dax-video {
     margin-top: 20px;
@@ -26,12 +18,11 @@
 @media only screen and (min-width: 480px) {
   .hacemos-title h1 {
     font-size: 50px;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 40px;
   }
   .hacemos-texto {
-    font-size: 18px;
-    margin-right: 20px;
+    font-size: 16px;
   }
   .dax-video {
     margin-top: 40px;
@@ -41,14 +32,12 @@
 /* MEDIUM devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .hacemos-title h1 {
-    font-size: 50px;
-    padding-top: 50px;
+    font-size: 60px;
+    padding-top: 20px;
     padding-bottom: 40px;
   }
   .hacemos-texto {
-    font-size: 20px;
-    padding-right: 20px;
-    margin-right: 20px;
+    font-size: 18px;
   }
 }
 
@@ -56,7 +45,7 @@
 @media only screen and (min-width: 992px) {
   .hacemos-title h1 {
     font-size: 60px;
-    padding-top: 60px;
+    padding-top: 20px;
     padding-bottom: 100px;
   }
   .hacemos-texto {
@@ -71,7 +60,7 @@
   .hacemos-title h1 {
     font-size: 60px;
     padding-top: 20px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
   }
   .hacemos-texto {
     font-size: 20px;

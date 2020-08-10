@@ -4,15 +4,17 @@ import './Hacemos.css';
 const Hacemos = ({ idioma }) => (
   <div className='container-fluid hacemos'>
     <div className='container hacemos-title'>
-      <h1>{idioma.hacemos.titulo}</h1>
+      <h1>
+        <strong>{idioma.hacemos.titulo}</strong>
+      </h1>
     </div>
 
     <div className='container'>
       <div className='row'>
-        <div className='col-lg-6'>
+        <div className='col-lg'>
           <p className='hacemos-texto'>{idioma.hacemos.contenido}</p>
         </div>
-        <div className='col-lg-6'>
+        <div className='col-lg'>
           <div className='dax-video embed-responsive embed-responsive-16by9'>
             <iframe
               className='embed-responsive-item'
