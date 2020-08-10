@@ -1,6 +1,5 @@
 import React from 'react';
 import navLogo from '../../images/logoNav.png';
-import './Noparte.css';
 import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import navLogo from '../../images/logoNav.png';
-import './Crear.css';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';

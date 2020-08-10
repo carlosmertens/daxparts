@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import navLogo from '../../images/logoNav.png';
-// import './Buscamos.css';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';

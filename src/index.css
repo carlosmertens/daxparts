@@ -220,3 +220,74 @@ header input {
   font-size: 25px !important;
   width: 159px;
 }
+
+/* *************************************** */
+/* ===== MODAL CONTENT ===== */
+/* ===== modal login/signup ===== */
+.modal-logo img {
+  width: 200px;
+  height: auto;
+}
+.form-group {
+  margin: 15px;
+}
+.modal-body input {
+  width: 250px;
+  height: 38px;
+  font-size: 18px;
+  background: #d1c5c540 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 50px;
+  opacity: 1;
+  border: 0;
+  padding: 10px;
+  margin: 5px;
+  outline: none;
+}
+.modal-body select {
+  width: 250px;
+  height: 38px;
+  font-size: 18px;
+  background: #d1c5c540 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 50px;
+  opacity: 1;
+  border: 0;
+  padding: 10px;
+  margin: 5px;
+  outline: none;
+}
+.modal-body h4 {
+  color: #fca728;
+  text-align: center;
+}
+.enlace-form {
+  text-align: center;
+}
+.boton-form {
+  text-align: center;
+  margin-top: 10px;
+}
+.me-olvide {
+  color: #fca728;
+  text-decoration: underline;
+}
+
+/* ===== modal noparte ===== */
+.modal-title {
+  margin-bottom: 20px;
+}
+.que-hacer-button {
+  height: 120px;
+  width: 180px;
+  border-radius: 20px;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.botones {
+  text-align: center;
+}
+.icon-video {
+  margin-top: 10px;
+}
