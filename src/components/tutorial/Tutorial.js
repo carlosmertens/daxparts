@@ -6,7 +6,9 @@ const Tutorial = ({ idioma }) => {
   return (
     <div className='container-fluid tutorial'>
       <div className='container tutorial-titulo'>
-        <h1>{idioma.tutorial.titulo}</h1>
+        <h1>
+          <strong>{idioma.tutorial.titulo}</strong>
+        </h1>
       </div>
 
       <div className='container tutorial-subtitulo'>

@@ -3,7 +3,7 @@ import './Somos.css';
 
 const Somos = ({ idioma }) => (
   <div className='somos-contenido'>
-    <div className='container somos-title'>
+    <div className='container somos-titulo'>
       <h1>
         <strong>{idioma.somos.titulo}</strong>
       </h1>

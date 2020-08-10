@@ -1,57 +1,4 @@
-/* ========== TUTORIAL CSS ========== */
-
-.tutorial .row {
-  margin-bottom: 20px !important;
-}
-
-.tutorial-titulo {
-  font-size: 60px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-.tutorial-subtitulo {
-  margin-bottom: 50px;
-}
-
-.tutorial-titulo h1 {
-  color: #fca728;
-  font-weight: 700;
-  text-align: right;
-}
-
-.tutorial p {
-  font-size: 20px;
-}
-
-.tutorial-contenido span {
-  color: #fca728;
-  font-size: 15px;
-}
-
-.tutorial-enlace {
-  color: #fca728;
-}
-
-.logo-video {
-  float: right;
-  padding-right: 40px;
-}
-
-.texto-logo-tutorial {
-  float: left;
-  padding-left: 40px;
-}
-
-.tutorial-video {
-  display: flex;
-  float: inline-start;
-}
-.tutorial-video-texto span {
-  font-size: 120px;
-  color: #fca728;
-}
-
-/* ========== RESPONSIVE HOME ========== */
+/* ========== RESPONSIVE TUTORIAL ========== */
 /* EXTRA SMALL devices (less than 480px) */
 @media only screen and (max-width: 480px) {
   .tutorial-titulo h1 {
@@ -68,14 +15,7 @@
   .logo-video {
     height: 35px;
     width: auto;
-    /* float: right;
-    padding-right: 40px; */
   }
-
-  /* .texto-logo-tutorial {
-    float: left;
-    padding-left: 40px;
-  } */
 }
 
 /* SMALL devices (old iPhones, 480px and up) */
@@ -83,6 +23,7 @@
   .tutorial-titulo h1 {
     font-size: 50px;
     padding-top: 20px;
+    margin-bottom: 40px;
   }
 }
 
@@ -91,6 +32,7 @@
   .tutorial-titulo h1 {
     font-size: 60px;
     padding-top: 20px;
+    margin-bottom: 50px;
   }
 }
 
@@ -99,6 +41,7 @@
   .tutorial-titulo h1 {
     font-size: 60px;
     padding-top: 20px;
+    margin-bottom: 60px;
   }
 }
 
@@ -106,8 +49,8 @@
 @media only screen and (min-width: 1200px) {
   .tutorial-titulo h1 {
     font-size: 60px;
-    margin-top: 20px;
-    margin-bottom: 50px;
+    padding-top: 20px;
+    margin-bottom: 60px;
   }
   .tutorial-subtitulo {
     margin-bottom: 50px;

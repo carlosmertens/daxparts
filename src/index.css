@@ -23,7 +23,7 @@ body {
 h1 {
   color: #fca728;
   font-weight: bolder;
-  text-align: right;
+  text-align: center;
 }
 
 /* ===== navbar ===== */
@@ -35,7 +35,7 @@ h1 {
 .btn {
   border-radius: 20px !important;
   border: none !important;
-  /* box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16) !important; */
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16) !important;
   background-color: #fca728 !important;
   color: #000000 !important;
   margin: 5px !important;
@@ -67,6 +67,7 @@ header {
   height: 25px;
   width: auto;
   margin-right: 5px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16) !important;
 }
 .pais-texto {
   font-size: 20px;
@@ -83,7 +84,7 @@ header {
 /* ===== form ===== */
 header input {
   background: #a79f9f40 0% 0% no-repeat padding-box;
-  /* box-shadow: 0px 3px 6px #00000029; */
+  box-shadow: 0px 3px 6px #00000029;
   border-radius: 50px;
   opacity: 1;
   border: 0;
@@ -107,6 +108,33 @@ header input {
 }
 .tutorial-text:hover {
   text-decoration: #000000 underline;
+}
+
+/* *************************************** */
+/* ===== SOMOS ===== */
+.somos-contenido h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.somos-texto {
+  text-align: justify;
+}
+
+/* .somos-banner {
+  background-color: #fca728;
+  width: 100%;
+  text-align: center;
+}
+
+.somos-banner h3 {
+  font-weight: bolder;
+  color: #fff;
+} */
+
+/* *************************************** */
+/* ===== HACEMOS ===== */
+.hacemos-texto {
+  text-align: justify;
 }
 
 /* *************************************** */
@@ -146,6 +174,9 @@ header input {
 .contacto-grupo {
   margin-bottom: 40px !important;
 }
+.contacto-grupo img {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16) !important;
+}
 .contacto-contenido h4 {
   padding-top: 10px;
   font-size: 25px;
@@ -157,6 +188,44 @@ header input {
 .contacto-telefono {
   color: black;
   font-size: 18px;
+}
+
+/* *************************************** */
+/* ===== TUTORIAL ===== */
+.tutorial .row {
+  margin-bottom: 20px !important;
+}
+.tutorial-subtitulo {
+  margin-bottom: 50px;
+}
+.tutorial p {
+  font-size: 20px;
+}
+.tutorial-contenido span {
+  color: #fca728;
+  font-size: 15px;
+}
+.tutorial-enlace {
+  color: #fca728;
+}
+.tutorial-enlace:hover {
+  text-decoration: #fca728 underline;
+}
+.logo-video {
+  float: right;
+  padding-right: 40px;
+}
+.texto-logo-tutorial {
+  float: left;
+  padding-left: 40px;
+}
+.tutorial-video {
+  display: flex;
+  float: inline-start;
+}
+.tutorial-video-texto span {
+  font-size: 120px;
+  color: #fca728;
 }
 
 /* *************************************** */

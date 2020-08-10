@@ -1,7 +1,7 @@
 /* ========== RESPONSIVE TEMPLATE ========== */
 /* EXTRA SMALL devices (less than 480px) */
 @media only screen and (max-width: 480px) {
-  .ofrecemos-title h1 {
+  .ofrecemos-titulo h1 {
     font-size: 40px;
     padding-top: 20px;
   }
@@ -23,7 +23,7 @@
 
 /* SMALL devices (old iPhones, 480px and up) */
 @media only screen and (min-width: 480px) {
-  .ofrecemos-title h1 {
+  .ofrecemos-titulo h1 {
     font-size: 50px;
     padding-top: 20px;
   }
@@ -37,7 +37,7 @@
 
 /* MEDIUM devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .ofrecemos-title h1 {
+  .ofrecemos-titulo h1 {
     font-size: 60px;
     padding-top: 20px;
   }
@@ -48,7 +48,7 @@
 
 /* LARGE devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .ofrecemos-title h1 {
+  .ofrecemos-titulo h1 {
     font-size: 60px;
     padding-top: 20px;
   }
@@ -59,7 +59,7 @@
 
 /* EXTRA LARGE devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .ofrecemos-title h1 {
+  .ofrecemos-titulo h1 {
     font-size: 60px;
     padding-top: 20px;
   }

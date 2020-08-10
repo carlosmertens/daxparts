@@ -10,7 +10,7 @@ import { ReactComponent as Truck } from '../../images/truck.svg';
 
 const Ofrecemos = ({ idioma }) => (
   <div className='container-fluid ofrecemos-contenido'>
-    <div className='container ofrecemos-title'>
+    <div className='container ofrecemos-titulo'>
       <h1>
         <strong>{idioma.ofrecemos.titulo}</strong>
       </h1>
@@ -30,7 +30,10 @@ const Ofrecemos = ({ idioma }) => (
               </div>
               <div className='col ofrecemos-texto'>
                 <p>
-                  <span>{idioma.ofrecemos.span.a1}</span> {idioma.ofrecemos.span.a2}
+                  <span>
+                    <strong>{idioma.ofrecemos.span.a1}</strong>
+                  </span>{' '}
+                  {idioma.ofrecemos.span.a2}
                 </p>
               </div>
             </div>
@@ -44,7 +47,10 @@ const Ofrecemos = ({ idioma }) => (
               </div>
               <div className='col ofrecemos-texto'>
                 <p>
-                  <span>{idioma.ofrecemos.span.b1}</span> {idioma.ofrecemos.span.b2}
+                  <span>
+                    <strong>{idioma.ofrecemos.span.b1}</strong>
+                  </span>{' '}
+                  {idioma.ofrecemos.span.b2}
                 </p>
               </div>
             </div>
@@ -58,7 +64,10 @@ const Ofrecemos = ({ idioma }) => (
               </div>
               <div className='col ofrecemos-texto'>
                 <p>
-                  <span>{idioma.ofrecemos.span.c1}</span> {idioma.ofrecemos.span.c2}
+                  <span>
+                    <strong>{idioma.ofrecemos.span.c1}</strong>
+                  </span>{' '}
+                  {idioma.ofrecemos.span.c2}
                 </p>
               </div>
             </div>
@@ -74,7 +83,10 @@ const Ofrecemos = ({ idioma }) => (
               </div>
               <div className='col ofrecemos-texto'>
                 <p>
-                  <span>{idioma.ofrecemos.span.d1}</span> {idioma.ofrecemos.span.d2}
+                  <span>
+                    <strong>{idioma.ofrecemos.span.d1}</strong>
+                  </span>{' '}
+                  {idioma.ofrecemos.span.d2}
                 </p>
               </div>
             </div>
@@ -88,7 +100,10 @@ const Ofrecemos = ({ idioma }) => (
               </div>
               <div className='col ofrecemos-texto'>
                 <p>
-                  <span>{idioma.ofrecemos.span.e1}</span> {idioma.ofrecemos.span.e2}
+                  <span>
+                    <strong>{idioma.ofrecemos.span.e1}</strong>
+                  </span>{' '}
+                  {idioma.ofrecemos.span.e2}
                 </p>
               </div>
             </div>
@@ -102,7 +117,10 @@ const Ofrecemos = ({ idioma }) => (
               </div>
               <div className='col ofrecemos-texto'>
                 <p>
-                  <span>{idioma.ofrecemos.span.f1}</span> {idioma.ofrecemos.span.f2}
+                  <span>
+                    <strong>{idioma.ofrecemos.span.f1}</strong>
+                  </span>{' '}
+                  {idioma.ofrecemos.span.f2}
                 </p>
               </div>
             </div>
