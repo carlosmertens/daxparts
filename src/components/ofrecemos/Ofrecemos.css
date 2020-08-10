@@ -1,27 +1,17 @@
 /* ========== OFRECEMOS CSS ========== */
 
-.ofrecemos-title h1 {
-  color: #fca728;
-  font-weight: bolder;
-  text-align: right;
-}
-
 .ofrecemos-contenido h4 {
   text-align: left;
 }
-
 .ofrecemos-contenido p {
   font-size: 15px;
 }
-
 .ofrecemos-contenido .row {
   text-align: center;
 }
-
 .ofrecemos-contenido span {
   color: #fca728;
 }
-
 .ofrecemos-opciones {
   margin-bottom: 40px !important;
 }
@@ -38,8 +28,8 @@
 /* EXTRA SMALL devices (less than 480px) */
 @media only screen and (max-width: 480px) {
   .ofrecemos-title h1 {
-    font-size: 35px;
-    padding-top: 30px;
+    font-size: 40px;
+    padding-top: 20px;
   }
   .ofrecemos-contenido h4 {
     font-size: 22px;
@@ -52,16 +42,22 @@
   .ofrecemos-opciones {
     margin-bottom: 0px !important;
   }
+  .ofrecemos-contenido .col {
+    padding-bottom: 30px;
+  }
 }
 
 /* SMALL devices (old iPhones, 480px and up) */
 @media only screen and (min-width: 480px) {
   .ofrecemos-title h1 {
-    font-size: 60px;
+    font-size: 50px;
     padding-top: 20px;
   }
   .ofrecemos-contenido h4 {
-    margin: 40px 0px 100px 0px;
+    margin: 40px 0px 60px 0px;
+  }
+  .ofrecemos-contenido .col {
+    padding-bottom: 30px;
   }
 }
 

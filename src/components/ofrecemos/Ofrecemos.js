@@ -11,18 +11,19 @@ import { ReactComponent as Truck } from '../../images/truck.svg';
 const Ofrecemos = ({ idioma }) => (
   <div className='container-fluid ofrecemos-contenido'>
     <div className='container ofrecemos-title'>
-      <h1>{idioma.ofrecemos.titulo}</h1>
+      <h1>
+        <strong>{idioma.ofrecemos.titulo}</strong>
+      </h1>
     </div>
 
     <div className='container ofrecemos-subtitle'>
       <h4>{idioma.ofrecemos.subtitulo}</h4>
     </div>
 
-    {/* Grid de contenido */}
     <div className='container ofrecemos-contenido'>
       <div className='row ofrecemos-opciones align-items-center'>
-        <div className='col-sm'>
-          <div className='container opcion'>
+        <div className='col-md'>
+          <div className='container oferta'>
             <div className='row'>
               <div className='col ofrecemos-icono'>
                 <Bulldozer />
@@ -35,8 +36,8 @@ const Ofrecemos = ({ idioma }) => (
             </div>
           </div>
         </div>
-        <div className='col-sm'>
-          <div className='container option'>
+        <div className='col-md'>
+          <div className='container oferta'>
             <div className='row'>
               <div className='col ofrecemos-icono'>
                 <Crane />
@@ -49,8 +50,8 @@ const Ofrecemos = ({ idioma }) => (
             </div>
           </div>
         </div>
-        <div className='col-sm'>
-          <div className='container option'>
+        <div className='col-md'>
+          <div className='container oferta'>
             <div className='row'>
               <div className='col ofrecemos-icono'>
                 <Page />
@@ -65,8 +66,8 @@ const Ofrecemos = ({ idioma }) => (
         </div>
       </div>
       <div className='row ofrecemos-opciones align-items-center'>
-        <div className='col-sm'>
-          <div className='container option'>
+        <div className='col-md'>
+          <div className='container oferta'>
             <div className='row'>
               <div className='col ofrecemos-icono'>
                 <Machine />
@@ -79,8 +80,8 @@ const Ofrecemos = ({ idioma }) => (
             </div>
           </div>
         </div>
-        <div className='col-sm'>
-          <div className='container option'>
+        <div className='col-md'>
+          <div className='container oferta'>
             <div className='row'>
               <div className='col ofrecemos-icono'>
                 <Tow />
@@ -93,8 +94,8 @@ const Ofrecemos = ({ idioma }) => (
             </div>
           </div>
         </div>
-        <div className='col-sm'>
-          <div className='container'>
+        <div className='col-md'>
+          <div className='container oferta'>
             <div className='row'>
               <div className='col ofrecemos-icono'>
                 <Truck />
