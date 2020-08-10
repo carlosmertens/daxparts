@@ -152,5 +152,7 @@
     "botonCrear": "Sign Up",
     "cambiarModal": "Already have an account?",
     "cambiarEnlace": "Click here!"
-  }
+  },
+
+  "spinner": "SEARCHING AROUND THE WORLD..."
 }

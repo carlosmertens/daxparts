@@ -25,7 +25,7 @@ const Cotizacion = (props) => {
   }, []);
   // Mientras "buscar state" este vacio, spinner va a correr
   if (busqueda.length === 0) {
-    return <Spinner />;
+    return <Spinner idioma={props.idioma} />;
   }
 
   // Desestructuración del props idioma
