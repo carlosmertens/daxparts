@@ -1,20 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logoCentro from '../../images/logoCentro.png';
-import IconVideos from '../../images/IconVideos.png';
-import './Home.css';
-
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import openModal from '../../actions/openModal';
 
+import './Home.css';
+import logoCentro from '../../images/logoCentro.png';
+import IconVideos from '../../images/IconVideos.png';
+
+import Idioma from './Idioma';
+import Pais from './Pais';
 import Noparte from '../noparte/Noparte';
-import Idioma from '../idiomaSelect/Idioma';
-import Pais from '../paisDetector/Pais';
 
 const Home = (props) => {
-  console.log(props.parte);
-  // Logica si ususario no introduce numero de parte
+  // Logica si usuario no introduce numero de parte (no ir a cotizacion)
   let buscarParte = props.parte;
   if (props.parte !== '') {
     buscarParte = 'cotizacion';
@@ -22,7 +21,7 @@ const Home = (props) => {
   return (
     <header>
       <div className='container-fluid header-contenido'>
-        <div className='container-fluid d-flex justify-content-between header-pais-idioma'>
+        <div className='container-fluid d-flex justify-content-between pais-idioma'>
           <Pais country={props.country} />
           <Idioma lang={props.lang} cambiarIdioma={props.cambiarIdioma} />
         </div>

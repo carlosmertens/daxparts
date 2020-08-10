@@ -18,6 +18,14 @@ body {
   text-rendering: optimizeSpeed;
 }
 
+/* ===== HOMEPAGE ===== */
+header {
+  text-align: center;
+}
+.header-contenido {
+  position: relative;
+}
+
 /* ===== NAVBAR ===== */
 .nav-link:hover {
   color: #fca728 !important;

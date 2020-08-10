@@ -10,8 +10,8 @@ const Pais = (props) => {
     return (
       <div>
         <div className='d-flex flex-row'>
-          <img src={flagBolivia} alt='Bandera Bolivia' className='bandera' />
-          <p className='texto-pais'>
+          <img src={flagBolivia} alt='Bandera Bolivia' className='pais-bandera' />
+          <p className='pais-texto'>
             <strong>Bolivia</strong>
           </p>
         </div>
@@ -21,8 +21,8 @@ const Pais = (props) => {
     return (
       <div>
         <div className='d-flex flex-row'>
-          <img src={flagPeru} alt='Bandera Peru' className='bandera' />
-          <p className='texto-pais'>
+          <img src={flagPeru} alt='Bandera Peru' className='pais-bandera' />
+          <p className='pais-texto'>
             <strong>Peru</strong>
           </p>
         </div>
@@ -32,8 +32,8 @@ const Pais = (props) => {
     return (
       <div>
         <div className='d-flex flex-row'>
-          <img src={flagParaguay} alt='Bandera Paraguay' className='bandera' />
-          <p className='texto-pais'>
+          <img src={flagParaguay} alt='Bandera Paraguay' className='pais-bandera' />
+          <p className='pais-texto'>
             <strong>Paraguay</strong>
           </p>
         </div>
@@ -43,8 +43,8 @@ const Pais = (props) => {
     return (
       <div>
         <div className='d-flex flex-row'>
-          <img src={flagUsa} alt='Bandera Usa' className='bandera' />
-          <p className='texto-pais'>
+          <img src={flagUsa} alt='Bandera Usa' className='pais-bandera' />
+          <p className='pais-texto'>
             <strong>United States</strong>
           </p>
         </div>

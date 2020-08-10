@@ -1,42 +1,24 @@
-/* ========== HOME PAGE ========== */
-header {
-  text-align: center;
-}
-.header-contenido {
-  position: relative;
-}
-
-/* ===== Opcion Pais/Idioma ===== */
-.header-pais-idioma {
+/* ===== PAIS/IDIOMA ===== */
+.pais-idioma {
   margin-top: 15px;
 }
 
-.bandera {
+/* ===== PAIS ===== */
+.pais-bandera {
   height: 25px;
   width: auto;
   margin-right: 5px;
 }
+.pais-texto {
+  font-size: 20px;
+}
 
-.idiomas {
-  margin: 5px;
-  text-align: right;
-}
-.ingles,
-.castellano {
-  margin: 2px;
-  border: none;
-  background-color: transparent;
-  outline: none;
-}
-.ingles:focus,
-.castellano:focus {
-  border: none;
-  background-color: transparent;
-  outline: none;
-}
-.eng-flag,
-.esp-flag {
-  height: 30px;
+/* ===== IDIOMA ===== */
+.btn-idioma {
+  font-size: 15px !important;
+  height: 30px !important;
+  border-radius: 15px !important;
+  margin-top: 0px !important;
 }
 
 /* ===== Formulario para adquirir numero de parte ===== */
@@ -99,12 +81,7 @@ header input {
   .btn-buscar {
     font-size: 22px !important;
   }
-  .btn-idioma {
-    font-size: 15px !important;
-    height: 25px !important;
-    border-radius: 15px !important;
-    margin-top: 0px !important;
-  }
+
   .click-link {
     margin-top: 20px;
     font-size: 15px;
@@ -162,12 +139,6 @@ header input {
     color: #312e2e;
     font-size: 18px;
   }
-  .btn-idioma {
-    font-size: 18px !important;
-    height: 30px !important;
-    border-radius: 15px !important;
-    margin-top: 0px !important;
-  }
 }
 
 /* MEDIUM devices (landscape tablets, 768px and up) */
@@ -204,12 +175,6 @@ header input {
   .tutorial-text {
     color: #312e2e;
     font-size: 16px;
-  }
-  .btn-idioma {
-    font-size: 18px !important;
-    height: 30px !important;
-    border-radius: 15px !important;
-    margin-top: 0px !important;
   }
 }
 
@@ -248,12 +213,6 @@ header input {
     color: #312e2e;
     font-size: 16px;
   }
-  .btn-idioma {
-    font-size: 18px !important;
-    height: 30px !important;
-    border-radius: 15px !important;
-    margin-top: 0px !important;
-  }
 }
 
 /* EXTRA LARGE devices (large laptops and desktops, 1200px and up) */
@@ -279,12 +238,7 @@ header input {
   .btn-buscar {
     font-size: 22px !important;
   }
-  .btn-idioma {
-    font-size: 18px !important;
-    height: 30px !important;
-    border-radius: 15px !important;
-    margin-top: 0px !important;
-  }
+
   .click-link {
     font-size: 16px;
   }
