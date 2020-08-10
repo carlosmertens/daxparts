@@ -1,33 +1,4 @@
-/* ========== CONTACTO CSS ========== */
-
-.contacto-contenido .row {
-  text-align: center;
-}
-
-.contacto-texto {
-  padding-bottom: 40px;
-}
-
-.contacto-grupo {
-  margin-bottom: 40px !important;
-}
-
-.contacto-contenido h4 {
-  padding-top: 10px;
-  font-size: 25px;
-}
-
-.contacto-email {
-  text-decoration: underline;
-  font-size: 18px;
-}
-
-.contacto-telefono {
-  color: black;
-  font-size: 18px;
-}
-
-/* ========== RESPONSIVE HOME ========== */
+/* ========== RESPONSIVE CONTACTO ========== */
 /* EXTRA SMALL devices (less than 480px) */
 @media only screen and (max-width: 480px) {
   .contacto-title h1 {

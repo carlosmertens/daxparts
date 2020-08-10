@@ -1,4 +1,5 @@
-/* ===== GLOBAL CSS VALUES ===== */
+/* *************************************** */
+/* ===== GLOBAL CSS ===== */
 * {
   padding: 0;
   margin: 0;
@@ -18,27 +19,19 @@ body {
   text-rendering: optimizeSpeed;
 }
 
-/* ===== TEXTO ===== */
+/* ===== texto ===== */
 h1 {
   color: #fca728;
   font-weight: bolder;
   text-align: right;
 }
 
-/* ===== HOMEPAGE ===== */
-header {
-  position: relative;
-}
-.header-contenido {
-  text-align: center;
-}
-
-/* ===== NAVBAR ===== */
+/* ===== navbar ===== */
 .nav-link:hover {
   color: #fca728 !important;
 }
 
-/* ===== BUTTON ===== */
+/* ===== button ===== */
 .btn {
   border-radius: 20px !important;
   border: none !important;
@@ -48,37 +41,120 @@ header {
   margin: 5px !important;
   padding: 3px 10px 3px 10px !important;
 }
-
 .btn:hover {
   background-color: #c9c5c0 !important;
 }
-
 .btn-idioma:hover {
   background-color: #fca728ab !important;
 }
 
-/* ========== RESPONSIVE TEMPLATE ========== */
-/* EXTRA SMALL DEVICES (less than 480px) */
-@media only screen and (max-width: 480px) {
-  /* Values go here... */
+/* *************************************** */
+/* ===== HOME ===== */
+/* ===== header ===== */
+header {
+  position: relative;
+}
+.header-contenido {
+  text-align: center;
+}
+/* ===== pais/idioma ===== */
+.pais-idioma {
+  margin-top: 15px;
 }
 
-/* SMALL DEVICES (old iPhones, 480px and up) */
-@media only screen and (min-width: 480px) {
-  /* Values go here... */
+/* ===== pais ===== */
+.pais-bandera {
+  height: 25px;
+  width: auto;
+  margin-right: 5px;
+}
+.pais-texto {
+  font-size: 20px;
 }
 
-/* MEDIUM DEVICES (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  /* Values go here... */
+/* ===== idioma ===== */
+.btn-idioma {
+  font-size: 15px !important;
+  height: 30px !important;
+  border-radius: 15px !important;
+  margin-top: 0px !important;
 }
 
-/* LARGE DEVICES (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  /* Values go here... */
+/* ===== form ===== */
+header input {
+  background: #a79f9f40 0% 0% no-repeat padding-box;
+  /* box-shadow: 0px 3px 6px #00000029; */
+  border-radius: 50px;
+  opacity: 1;
+  border: 0;
+  outline: none;
 }
 
-/* EXTRA LARGE DEVICES (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  /* Values go here... */
+/* ===== link modal ===== */
+.button-link {
+  color: #fca728;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.button-link:focus {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.modal-title {
+  color: #fca728;
+}
+.tutorial-text:hover {
+  text-decoration: #000000 underline;
+}
+
+/* *************************************** */
+/* ===== OFRECEMOS ===== */
+.ofrecemos-contenido h4 {
+  text-align: left;
+}
+.ofrecemos-contenido p {
+  font-size: 15px;
+}
+.ofrecemos-contenido .row {
+  text-align: center;
+}
+.ofrecemos-contenido span {
+  color: #fca728;
+}
+.ofrecemos-opciones {
+  margin-bottom: 40px !important;
+}
+.ofrecemos-icono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ofrecemos-texto {
+  text-align: left;
+}
+
+/* *************************************** */
+/* ===== CONTACTO ===== */
+.contacto-contenido .row {
+  text-align: center;
+}
+.contacto-texto {
+  padding-bottom: 40px;
+}
+.contacto-grupo {
+  margin-bottom: 40px !important;
+}
+.contacto-contenido h4 {
+  padding-top: 10px;
+  font-size: 25px;
+}
+.contacto-email {
+  text-decoration: underline;
+  font-size: 18px;
+}
+.contacto-telefono {
+  color: black;
+  font-size: 18px;
 }
