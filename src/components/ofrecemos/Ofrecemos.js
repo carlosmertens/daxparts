@@ -52,10 +52,10 @@ const Ofrecemos = ({ idioma }) => (
         <div className='col-sm'>
           <div className='container option'>
             <div className='row'>
-              <div className='col ofrecemos-icono bg-primary'>
+              <div className='col ofrecemos-icono'>
                 <Page />
               </div>
-              <div className='col ofrecemos-texto bg-secondary'>
+              <div className='col ofrecemos-texto'>
                 <p>
                   <span>{idioma.ofrecemos.span.c1}</span> {idioma.ofrecemos.span.c2}
                 </p>

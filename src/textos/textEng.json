@@ -17,7 +17,7 @@
     "leyendaBuscar": "Spare part number",
     "campoBuscar": "Enter number",
     "botonBuscar": "Search",
-    "enlaceClick": "Click here is you don't know the code",
+    "enlaceClick": "Click here if you don't know the code",
     "leyendaTutorial": "Tutorials",
     "modal": {
       "titulo": "Don't know spare part number?",
@@ -130,7 +130,7 @@
   "ingresar": {
     "nombre": "User Name",
     "password": "Password",
-    "olvide": "I forgot password",
+    "olvide": "Forgot your password?",
     "botonIngresar": "Login",
     "cambiarModal": "Don't have an account?",
     "cambiarEnlace": "Click here!"

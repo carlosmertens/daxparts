@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
-import navLogoWhite from '../../images/logoNavWhite.png';
-import Ingresar from '../ingresar/Ingresar';
-import Crear from '../crear/Crear';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import openModal from '../../actions/openModal';
+
+import './Navbar.css';
+import navLogoWhite from '../../images/logoNavWhite.png';
+
+import Ingresar from '../ingresar/Ingresar';
+import Crear from '../crear/Crear';
 
 const Navbar = (props) => (
   <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
@@ -31,22 +33,22 @@ const Navbar = (props) => (
     <div className='collapse navbar-collapse' id='navbarSupportedContent'>
       <ul className='navbar-nav mx-auto'>
         <li className='nav-item'>
-          <Link to='/somos' className='nav-link text-white navbar-enlace'>
+          <Link to='/somos' className='nav-link text-white'>
             {props.idioma.navbar.enlace1}
           </Link>
         </li>
         <li className='nav-item'>
-          <Link to='/hacemos' className='nav-link text-white navbar-enlace'>
+          <Link to='/hacemos' className='nav-link text-white'>
             {props.idioma.navbar.enlace2}
           </Link>
         </li>
         <li className='nav-item'>
-          <Link to='ofrecemos' className='nav-link text-white navbar-enlace'>
+          <Link to='ofrecemos' className='nav-link text-white'>
             {props.idioma.navbar.enlace3}
           </Link>
         </li>
         <li className='nav-item'>
-          <Link to='contacto' className='nav-link text-white navbar-enlace'>
+          <Link to='contacto' className='nav-link text-white'>
             {props.idioma.navbar.enlace4}
           </Link>
         </li>
@@ -55,7 +57,7 @@ const Navbar = (props) => (
       <div className='form-inline my-2 my-lg-0'>
         <button
           type='button'
-          className='btn btn-texto'
+          className='btn'
           onClick={() => {
             props.openModal('open', <Ingresar idioma={props.idioma} />);
           }}>
@@ -63,7 +65,7 @@ const Navbar = (props) => (
         </button>
         <button
           type='button'
-          className='btn btn-texto'
+          className='btn'
           onClick={() => {
             props.openModal('open', <Crear idioma={props.idioma} />);
           }}>
@@ -74,7 +76,8 @@ const Navbar = (props) => (
   </nav>
 );
 
-// Action dispacher para llamar modal
+// Action dispacher to call up modal
+// Accion dispacher para mostrar modal
 function mapDispatchToProps(dispacher) {
   return bindActionCreators(
     {
