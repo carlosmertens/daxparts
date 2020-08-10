@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Spinner from '../spinner/Spinner';
+import Spinner from './Spinner';
 import axios from 'axios';
 import config from '../../config';
 import './Cotizacion.css';
@@ -11,27 +11,35 @@ import openModal from '../../actions/openModal';
 
 const Cotizacion = (props) => {
   // Iniciar state para el resultado de la busqueda
+  // Set empty state to fill with the API result
   const [busqueda, setBusqueda] = useState([]);
 
-  // Llamar API con la parte a buscar
+  // Llamar API con el numero de parte a buscar
+  // Call up API with state buscar
   useEffect(() => {
     // Prueba con API de peliculas (TheMovieDB)
-    const nowPlayingUrl = `https://api.themoviedb.org/3/movie/now_playing?api_key=${config.api_key}`;
-    axios.get(nowPlayingUrl).then((response) => {
-      // console.log(response.data);
-      const movieData = response.data.results;
-      setBusqueda(movieData);
+    // Test with movie API
+    const urlAPI = `https://api.themoviedb.org/3/movie/now_playing?api_key=${config.api_key}`;
+    axios.get(urlAPI).then((response) => {
+      // Console log response
+      console.log(response.data);
+      const resp = response.data.results;
+      setBusqueda(resp);
     });
   }, []);
+
   // Mientras "buscar state" este vacio, spinner va a correr
+  // Run spinner while the API return the search
   if (busqueda.length === 0) {
     return <Spinner idioma={props.idioma} />;
   }
 
   // Desestructuración del props idioma
+  // Destructuring the prop idioma
   const idioma = { ...props.idioma };
 
   // Bucle el resultado y formar las lineas de la tabla
+  // Map through the API results
   const movieGrid = busqueda.map((item, index) => {
     return (
       <tr key={index}>
@@ -44,6 +52,8 @@ const Cotizacion = (props) => {
     );
   });
 
+  // Retorno del componente Cotizacion
+  // Return for the component Cotizacion
   return (
     <div className='container-fluid cotizacion-contenido'>
       <div className='container cotizacion-title'>
@@ -102,6 +112,8 @@ const Cotizacion = (props) => {
   );
 };
 
+// Funcion para llamar el modal
+// Function to call up the modal
 function mapDispatchToProps(dispacher) {
   return bindActionCreators(
     {

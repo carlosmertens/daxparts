@@ -1,83 +1,31 @@
-/* ========== COTIZACION CSS ========== */
-
-.cotizacion-title p {
-  color: #fca728;
-  font-size: 20px;
-  text-align: left;
-  margin-top: 20px;
-}
-
-.nota {
-  font-size: 10px;
-  padding: 15px 5px 15px 25px;
-}
-.nota span {
-  font-size: 15px;
-}
-
-.beneficios {
-  border-radius: 15px;
-  width: 700px;
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.titulo-jumbo {
-  font-size: 20px;
-  color: #fca728;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.beneficios-jumbo {
-  color: whitesmoke;
-  text-align: left;
-  font-size: 12px;
-  margin: 5px !important;
-}
-.beneficios-jumbo:last-child {
-  margin-bottom: 30px !important;
-}
-
-.btn-comprar {
-  color: whitesmoke !important;
-  font-size: 25px !important;
-  width: 159px;
-}
-
 /* ========== RESPONSIVE COTIZACION ========== */
 /* EXTRA SMALL devices (less than 480px) */
 @media only screen and (max-width: 480px) {
-  .cotizacion-title h1 {
-    padding-top: 20px;
+  .btn-comprar {
+    font-size: 15px !important;
+    width: 80px;
   }
 }
 
 /* SMALL devices (old iPhones, 480px and up) */
 @media only screen and (min-width: 480px) {
-  .cotizacion-title h1 {
-    padding-top: 20px;
+  .btn-comprar {
+    font-size: 18px !important;
+    width: 100px;
   }
 }
 
 /* MEDIUM devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .cotizacion-title h1 {
-    padding-top: 20px;
-  }
+  /* Code here */
 }
 
 /* LARGE devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .cotizacion-title h1 {
-    padding-top: 20px;
-  }
+  /* Code here */
 }
 
 /* EXTRA LARGE devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .cotizacion-title h1 {
-    padding-top: 20px;
-  }
+  /* Code here */
 }
