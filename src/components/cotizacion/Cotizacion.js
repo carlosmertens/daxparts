@@ -40,7 +40,7 @@ const Cotizacion = (props) => {
 
   // Bucle el resultado y formar las lineas de la tabla
   // Map through the API results
-  const movieGrid = busqueda.map((item, index) => {
+  const cotizarGrid = busqueda.map((item, index) => {
     return (
       <tr key={index}>
         <th scope='row'>{item.title}</th>
@@ -74,36 +74,38 @@ const Cotizacion = (props) => {
                 <th scope='col'>{idioma.cotizacion.tabla.col5}</th>
               </tr>
             </thead>
-            <tbody>{movieGrid}</tbody>
+            <tbody>{cotizarGrid}</tbody>
           </table>
-          <div className='Container bg-secondary'>
-            <p className='nota text-white'>
-              <span>{idioma.cotizacion.nota}</span> {idioma.cotizacion.notaTexto}
-            </p>
+        </div>
+
+        <div className='container bg-secondary'>
+          <p className='nota text-white'>
+            <span>{idioma.cotizacion.nota}</span> {idioma.cotizacion.notaTexto}
+          </p>
+        </div>
+      </div>
+
+      <div className='container'>
+        <div className='col-md-8 offset-md-2 bg-dark beneficios'>
+          <div className='container row'>
+            <h4 className='titulo-jumbo'>{idioma.cotizacion.tituloComprar}</h4>
           </div>
-          <div className='container d-flex justify-content-center'>
-            <div className='container beneficios bg-dark'>
-              <div className='container row'>
-                <h4 className='titulo-jumbo'>{idioma.cotizacion.tituloComprar}</h4>
-              </div>
-              <div className='row'>
-                <div className='col'>
-                  <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio1}</p>
-                  <p className='beneficios-jumbo'>✓ {idioma.cotizacion.beneficio2}</p>
-                  <p className='beneficios-jumbo'>✓ {idioma.cotizacion.beneficio3}</p>
-                  <p className='beneficios-jumbo'>✓ {idioma.cotizacion.beneficio4}</p>
-                </div>
-                <div className='col boton-ordenar'>
-                  <button
-                    type='button'
-                    className='btn btn-comprar mb-2'
-                    onClick={() => {
-                      props.openModal('open', <Ingresar idioma={props.idioma} />);
-                    }}>
-                    {idioma.cotizacion.botonComprar}
-                  </button>
-                </div>
-              </div>
+          <div className='row'>
+            <div className='col'>
+              <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio1}</p>
+              <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio2}</p>
+              <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio3}</p>
+              <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio4}</p>
+            </div>
+            <div className='col boton-ordenar'>
+              <button
+                type='button'
+                className='btn btn-comprar mb-2'
+                onClick={() => {
+                  props.openModal('open', <Ingresar idioma={props.idioma} />);
+                }}>
+                {idioma.cotizacion.botonComprar}
+              </button>
             </div>
           </div>
         </div>
