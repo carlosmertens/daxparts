@@ -5,7 +5,7 @@ import { ReactComponent as Bulldozer } from '../../images/bulldozer.svg';
 import { ReactComponent as Crane } from '../../images/crane.svg';
 import { ReactComponent as Machine } from '../../images/machine.svg';
 import { ReactComponent as Page } from '../../images/Page-1.svg';
-import { ReactComponent as Tow } from '../../images/tow-truck.svg';
+import { ReactComponent as Harvester } from '../../images/harvester.svg';
 import { ReactComponent as Truck } from '../../images/truck.svg';
 
 const Ofrecemos = ({ idioma }) => (
@@ -84,7 +84,7 @@ const Ofrecemos = ({ idioma }) => (
           <div className='container oferta'>
             <div className='row'>
               <div className='col ofrecemos-icono'>
-                <Tow />
+                <Harvester />
               </div>
               <div className='col ofrecemos-texto'>
                 <p>
