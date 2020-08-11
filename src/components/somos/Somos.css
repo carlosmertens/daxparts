@@ -7,10 +7,11 @@
   }
   .somos-contenido h2 {
     font-size: 30px;
+    margin-bottom: 20px;
   }
   .somos-texto {
     font-size: 13px;
-    padding-top: 30px;
+    padding-top: 20px;
   }
 
   /* .somos-banner {
@@ -96,6 +97,12 @@
   .somos-titulo h1 {
     font-size: 60px;
     padding-top: 20px;
+  }
+  .somos-texto h2 {
+    font-size: 50px;
+    color: #5f5959;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
   .somos-texto {
     font-size: 20px;

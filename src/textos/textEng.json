@@ -5,7 +5,7 @@
     "enlace3": "What do we offer?",
     "enlace4": "Contacts",
     "botonTexto1": "Login",
-    "botonTexto2": "Signup",
+    "botonTexto2": "Sign up",
     "modal": {
       "campoUuario": "User",
       "campoContrasena": "Password",
@@ -15,7 +15,7 @@
 
   "home": {
     "leyendaBuscar": "Spare part number",
-    "campoBuscar": "Enter number",
+    "campoBuscar": "🔎 Enter number",
     "botonBuscar": "Search",
     "enlaceClick": "Click here if you don't know the code",
     "leyendaTutorial": "Tutorials",
@@ -110,10 +110,10 @@
     "nota": "Disclosure:",
     "notaTexto": "OEM names, logos and part numbers are used for reference. We do not imply that our products or services are affiliated with, sponsored or endorsed by the original equipment manufacturers.",
     "tituloComprar": "Benefits for registered users:",
-    "beneficio1": "Create multiple estimates",
-    "beneficio2": "Follow your orders",
-    "beneficio3": "Access to thousands of used and refurbished spare parts",
-    "beneficio4": "and much more...",
+    "beneficio1": "✓ Create multiple estimates",
+    "beneficio2": "✓ Follow your orders",
+    "beneficio3": "✓ Access to thousands of used and refurbished spare parts",
+    "beneficio4": "✓ and much more...",
     "botonComprar": "Register"
   },
 

@@ -118,6 +118,7 @@ header input {
 }
 .somos-texto {
   text-align: justify;
+  margin-bottom: 40px;
 }
 
 /* .somos-banner {
@@ -340,6 +341,9 @@ header input {
 .me-olvide {
   color: #fca728;
   text-decoration: underline;
+}
+.pointer {
+  cursor: pointer;
 }
 
 /* ===== modal noparte ===== */
