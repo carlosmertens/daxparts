@@ -10,7 +10,7 @@
 
   "home": {
     "leyendaBuscar": "Nro. de parte",
-    "campoBuscar": "🔎 Introduce el numero de parte",
+    "campoBuscar": "Introduce el numero de parte",
     "botonBuscar": "Buscar",
     "enlaceClick": "Click aqui si no sabes el numero de parte",
     "leyendaTutorial": "Tutoriales",
