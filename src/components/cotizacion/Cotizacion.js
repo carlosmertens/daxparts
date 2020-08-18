@@ -40,9 +40,9 @@ const Cotizacion = (props) => {
 
   // Bucle el resultado y formar las lineas de la tabla
   // Map through the API results
-  const cotizarGrid = busqueda.map((item, index) => {
+  const cotizarGrid = busqueda.map((item, codigo) => {
     return (
-      <tr key={index}>
+      <tr key={codigo}>
         <th scope='row'>{item.title}</th>
         <td>{item.id}</td>
         <td>{item.original_language}</td>

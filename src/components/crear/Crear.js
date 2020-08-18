@@ -34,6 +34,8 @@ class Crear extends Component {
     this.closeModal();
   };
 
+  // Conectar con el API
+
   closeModal = () => {
     this.props.openModal('closed', '');
   };

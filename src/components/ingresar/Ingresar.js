@@ -13,6 +13,7 @@ class Ingresar extends Component {
     this.state = {};
   }
 
+  // TODO: Cambiar email por ususario
   changeEmail = (e) => this.setState({ email: e.target.value });
   changePassword = (e) => this.setState({ password: e.target.value });
 
@@ -22,6 +23,9 @@ class Ingresar extends Component {
     console.log(this.state.password);
     this.closeModal();
   };
+
+  // Conectar API
+  //
 
   closeModal = () => {
     this.props.openModal('closed', '');

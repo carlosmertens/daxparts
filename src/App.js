@@ -24,8 +24,9 @@ class App extends Component {
   // Objecto (State) inicial del idioma y el campo de busqueda
   state = {
     lang: 'Español',
-    country: 'Peru',
+    country: 'Bolivia',
     parte: '',
+    codigo: '',
   };
 
   // Evento de cambiar idioma
