@@ -17,14 +17,14 @@ const Tutorial = ({ idioma }) => {
 
       <div className='container tutorial-contenido'>
         <div className='row'>
-          {/* === Columna 1 === */}
+          {/* === Columna 2 === */}
           <div className='col-sm'>
             <div className='container'>
               <div className='row'>
                 <p>
-                  {idioma.tutorial.columna1Titulo} <br />
+                  {idioma.tutorial.columna2Titulo} <br />
                   <span>
-                    {idioma.tutorial.columna1Texto} <br />
+                    {idioma.tutorial.columna2Texto} <br />
                     <Link to='/hacemos'>
                       <em className='tutorial-enlace'>
                         {idioma.tutorial.enlaceTutorial}
@@ -34,6 +34,7 @@ const Tutorial = ({ idioma }) => {
                 </p>
               </div>
             </div>
+
             <div className='container'>
               <div className='row'>
                 <div className='col'>
@@ -79,14 +80,14 @@ const Tutorial = ({ idioma }) => {
               </div>
             </div>
           </div>
-          {/* === Columna 2 === */}
+          {/* === Columna 1 === */}
           <div className='col-sm'>
             <div className='container'>
               <div className='row'>
                 <p>
-                  {idioma.tutorial.columna2Titulo} <br />
+                  {idioma.tutorial.columna1Titulo} <br />
                   <span>
-                    {idioma.tutorial.columna2Texto} <br />
+                    {idioma.tutorial.columna1Texto} <br />
                     <Link to='/hacemos'>
                       <em className='tutorial-enlace'>
                         {idioma.tutorial.enlaceTutorial}
@@ -96,7 +97,6 @@ const Tutorial = ({ idioma }) => {
                 </p>
               </div>
             </div>
-
             <div className='container'>
               <div className='row'>
                 <div className='col'>
