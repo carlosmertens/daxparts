@@ -48,6 +48,19 @@ const Cotizacion = (props) => {
         <td>{item.original_language}</td>
         <td>{item.vote_count}</td>
         <td>{item.release_date}</td>
+        <td>
+          <button
+            type='button'
+            className='btn'
+            onClick={() => {
+              props.openModal(
+                'open',
+                <Ingresar idioma={props.idioma} codigo={codigo} />
+              );
+            }}>
+            {idioma.cotizacion.botonComprar}
+          </button>
+        </td>
       </tr>
     );
   });
@@ -72,6 +85,7 @@ const Cotizacion = (props) => {
                 <th scope='col'>{idioma.cotizacion.tabla.col3}</th>
                 <th scope='col'>{idioma.cotizacion.tabla.col4}</th>
                 <th scope='col'>{idioma.cotizacion.tabla.col5}</th>
+                <th scope='col'></th>
               </tr>
             </thead>
             <tbody>{cotizarGrid}</tbody>
@@ -97,15 +111,10 @@ const Cotizacion = (props) => {
               <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio3}</p>
               <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio4}</p>
             </div>
-            <div className='col boton-ordenar'>
-              <button
-                type='button'
-                className='btn btn-comprar mb-2'
-                onClick={() => {
-                  props.openModal('open', <Ingresar idioma={props.idioma} />);
-                }}>
-                {idioma.cotizacion.botonComprar}
-              </button>
+            <div className='col'>
+              <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio1}</p>
+              <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio2}</p>
+              <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio3}</p>
             </div>
           </div>
         </div>

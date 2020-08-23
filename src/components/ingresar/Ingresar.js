@@ -33,6 +33,7 @@ class Ingresar extends Component {
 
   render() {
     const idioma = this.props.idioma;
+    console.log(this.props);
     return (
       <>
         <div className='modal-logo d-flex justify-content-center'>
