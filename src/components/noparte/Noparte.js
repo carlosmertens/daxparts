@@ -34,6 +34,17 @@ const Noparte = (props) => {
         <div className='modal-body d-flex justify-content-center'>
           <div className='row botones'>
             <div className='col-sm'>
+              <button
+                className='que-hacer-button'
+                onClick={() => {
+                  props.openModal('open', <Buscamos idioma={props.idioma} />);
+                }}>
+                {props.idioma.home.modal.enlaceBuscamos}
+                <br />
+                <FontAwesomeIcon icon='search' size='2x' className='icon-video' />
+              </button>
+            </div>
+            <div className='col-sm'>
               <Link to='/tutorial/'>
                 <button className='que-hacer-button' onClick={closeModal}>
                   {props.idioma.home.modal.enlaceTutorial}
@@ -45,17 +56,6 @@ const Noparte = (props) => {
                   />
                 </button>
               </Link>
-            </div>
-            <div className='col-sm'>
-              <button
-                className='que-hacer-button'
-                onClick={() => {
-                  props.openModal('open', <Buscamos idioma={props.idioma} />);
-                }}>
-                {props.idioma.home.modal.enlaceBuscamos}
-                <br />
-                <FontAwesomeIcon icon='search' size='2x' className='icon-video' />
-              </button>
             </div>
           </div>
         </div>

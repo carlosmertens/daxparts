@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -13,6 +15,26 @@ import Pais from './Pais';
 import Noparte from '../noparte/Noparte';
 
 const Home = (props) => {
+  // Iniciar state para el resultado de la busqueda
+  // Set empty state to fill with the API result
+  const [busqueda, setBusqueda] = useState([]);
+
+  // Llamar API con el numero de parte a buscar
+  // Call up API with state buscar
+  useEffect(() => {
+    // Prueba con API de peliculas (TheMovieDB)
+    // Test with movie API
+    const urlAPI = `http://www.wp.daxparts.com/api/pais/listado`;
+    axios.get(urlAPI).then((response) => {
+      // Console log response
+      console.log(response.data);
+      const resp = response.data.results;
+      setBusqueda(resp);
+    });
+  }, []);
+
+  console.log(busqueda);
+
   // Logica si usuario no introduce numero de parte (no ir a cotizacion)
   let buscarParte = props.parte;
   if (props.parte !== '') {
