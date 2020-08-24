@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Spinner from './Spinner';
 import axios from 'axios';
-import config from '../../config';
+// import config from '../../config';
 import './Cotizacion.css';
 import Ingresar from '../ingresar/Ingresar';
 
@@ -10,6 +10,8 @@ import { bindActionCreators } from 'redux';
 import openModal from '../../actions/openModal';
 
 const Cotizacion = (props) => {
+  const strNroParte = props.parte;
+  console.log(props.parte);
   // Iniciar state para el resultado de la busqueda
   // Set empty state to fill with the API result
   const [busqueda, setBusqueda] = useState([]);
@@ -17,16 +19,14 @@ const Cotizacion = (props) => {
   // Llamar API con el numero de parte a buscar
   // Call up API with state buscar
   useEffect(() => {
-    // Prueba con API de peliculas (TheMovieDB)
-    // Test with movie API
-    const urlAPI = `https://api.themoviedb.org/3/movie/now_playing?api_key=${config.api_key}`;
-    axios.get(urlAPI).then((response) => {
-      // Console log response
-      console.log(response.data);
-      const resp = response.data.results;
-      setBusqueda(resp);
-    });
-  }, []);
+    const apiUrl = `http://www.wp.daxparts.com/api/cotizacion/BuscarCodigo2/${strNroParte}/BO`;
+    const fetchData = async () => {
+      const result = await axios(apiUrl);
+      setBusqueda(result.data.dato);
+    };
+
+    fetchData();
+  }, [strNroParte]);
 
   // Mientras "buscar state" este vacio, spinner va a correr
   // Run spinner while the API return the search
@@ -40,14 +40,14 @@ const Cotizacion = (props) => {
 
   // Bucle el resultado y formar las lineas de la tabla
   // Map through the API results
-  const cotizarGrid = busqueda.map((item, codigo) => {
+  const cotizarGrid = busqueda.map((item, index) => {
     return (
-      <tr key={codigo}>
-        <th scope='row'>{item.title}</th>
-        <td>{item.id}</td>
-        <td>{item.original_language}</td>
-        <td>{item.vote_count}</td>
-        <td>{item.release_date}</td>
+      <tr key={index}>
+        <th scope='row'>{item.DesRepuesto}</th>
+        <td>{item.Aplicacion}</td>
+        <td>{item.TipRepuesto}</td>
+        <td>{item.Precio} USD</td>
+        <td>{item.TiEntrega}</td>
         <td>
           <button
             type='button'
@@ -55,7 +55,7 @@ const Cotizacion = (props) => {
             onClick={() => {
               props.openModal(
                 'open',
-                <Ingresar idioma={props.idioma} codigo={codigo} />
+                <Ingresar idioma={props.idioma} codigo={item.CodRepuesto} />
               );
             }}>
             {idioma.cotizacion.botonComprar}
@@ -71,7 +71,7 @@ const Cotizacion = (props) => {
     <div className='container-fluid cotizacion-contenido'>
       <div className='container cotizacion-title'>
         <p>
-          {idioma.cotizacion.titulo} {props.parte}
+          {idioma.cotizacion.titulo} {strNroParte}
         </p>
       </div>
 

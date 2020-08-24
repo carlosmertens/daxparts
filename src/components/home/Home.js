@@ -17,23 +17,23 @@ import Noparte from '../noparte/Noparte';
 const Home = (props) => {
   // Iniciar state para el resultado de la busqueda
   // Set empty state to fill with the API result
-  const [busqueda, setBusqueda] = useState([]);
 
-  // Llamar API con el numero de parte a buscar
-  // Call up API with state buscar
+  // const [busqueda, setBusqueda] = useState([]);
+
+  const [data, setData] = useState({});
+
   useEffect(() => {
-    // Prueba con API de peliculas (TheMovieDB)
-    // Test with movie API
-    const urlAPI = `http://www.wp.daxparts.com/api/pais/listado`;
-    axios.get(urlAPI).then((response) => {
-      // Console log response
-      console.log(response.data);
-      const resp = response.data.results;
-      setBusqueda(resp);
-    });
+    const apiUrl = 'http://www.wp.daxparts.com/api/cotizacion/BuscarCodigo2/7T5427/BO';
+    const fetchData = async () => {
+      const result = await axios(apiUrl);
+
+      setData(result.data);
+    };
+
+    fetchData();
   }, []);
 
-  console.log(busqueda);
+  console.log(data);
 
   // Logica si usuario no introduce numero de parte (no ir a cotizacion)
   let buscarParte = props.parte;
