@@ -10,33 +10,30 @@ import { bindActionCreators } from 'redux';
 import openModal from '../../actions/openModal';
 
 const Cotizacion = (props) => {
-  const strNroParte = props.parte;
-  console.log(props.parte);
-  // Iniciar state para el resultado de la busqueda
-  // Set empty state to fill with the API result
+  const idioma = { ...props.idioma };
+  const strNroParte = props.strNroParte;
+  const codpais = props.codpais;
   const [busqueda, setBusqueda] = useState([]);
 
-  // Llamar API con el numero de parte a buscar
-  // Call up API with state buscar
+  // Llamar API (Call API)
   useEffect(() => {
-    const apiUrl = `http://www.wp.daxparts.com/api/cotizacion/BuscarCodigo2/${strNroParte}/BO`;
+    const apiUrl = `http://www.wp.daxparts.com/api/cotizacion/BuscarCodigo2/${strNroParte}/${codpais}`;
     const fetchData = async () => {
       const result = await axios(apiUrl);
       setBusqueda(result.data.dato);
     };
 
     fetchData();
-  }, [strNroParte]);
+  }, [strNroParte, codpais]);
+
+  console.log(codpais);
+  console.log(strNroParte);
 
   // Mientras "buscar state" este vacio, spinner va a correr
   // Run spinner while the API return the search
   if (busqueda.length === 0) {
     return <Spinner idioma={props.idioma} />;
   }
-
-  // Desestructuración del props idioma
-  // Destructuring the prop idioma
-  const idioma = { ...props.idioma };
 
   // Bucle el resultado y formar las lineas de la tabla
   // Map through the API results
@@ -123,8 +120,8 @@ const Cotizacion = (props) => {
   );
 };
 
-// Funcion para llamar el modal
-// Function to call up the modal
+// Funcion para llamar el modal de Ingresar
+// Function to call up modal Ingresar
 function mapDispatchToProps(dispacher) {
   return bindActionCreators(
     {

@@ -16,47 +16,55 @@ import Cotizacion from './components/cotizacion/Cotizacion';
 
 import Modal from './components/modal/Modal';
 
-// Importar json con los textos de ingles y castellano
 import castellano from './textos/textEsp.json';
 import ingles from './textos/textEng.json';
 
 class App extends Component {
-  // Objecto (State) inicial del idioma y el campo de busqueda
   state = {
-    lang: 'Español',
+    language: 'Español',
     country: 'Bolivia',
-    parte: '',
-    codigo: '',
-  };
-
-  // Evento de cambiar idioma
-  cambiarIdioma = (e) => {
-    this.setState({ lang: e.target.value });
+    strNroParte: '',
   };
 
   // Capturar el pais del usuario
   componentDidMount() {
     const locationUrl = 'https://extreme-ip-lookup.com/json/';
     axios.get(locationUrl).then((response) => {
-      // console.log(response.data);
       const userCountry = response.data.country;
       console.log(userCountry);
       // this.setState({ country: userCountry });
     });
   }
 
-  // Evento que captura el numero de busqueda
+  // Evento de cambiar idioma
+  cambiarIdioma = (e) => {
+    this.setState({ language: e.target.value });
+  };
 
+  // Evento que captura el numero de busqueda
   handleChange = (e) => {
-    this.setState({ parte: e.target.value });
+    this.setState({ strNroParte: e.target.value });
   };
 
   render() {
     // Logica para selecionar idioma de la pagina
     let idioma = castellano;
-    if (this.state.lang !== 'Español') {
+    if (this.state.language !== 'Español') {
       idioma = ingles;
     }
+
+    // Logica para crear variable copais
+    let codpais = '';
+    if (this.state.country === 'Bolivia') {
+      codpais = 'BO';
+    } else if (this.state.country === 'Peru') {
+      codpais = 'PE';
+    } else if (this.state.country === 'Paraguay') {
+      codpais = 'PY';
+    } else {
+      codpais = 'US';
+    }
+
     return (
       <Router>
         <Route path='/' component={Modal} idioma={idioma} />
@@ -121,7 +129,14 @@ class App extends Component {
           exact
           path='/cotizacion'
           render={() => {
-            return <Cotizacion idioma={idioma} parte={this.state.parte} />;
+            return (
+              <Cotizacion
+                idioma={idioma}
+                strNroParte={this.state.strNroParte}
+                country={this.state.country}
+                codpais={codpais}
+              />
+            );
           }}
         />
       </Router>

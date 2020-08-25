@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React from 'react';
 
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
@@ -15,31 +14,12 @@ import Pais from './Pais';
 import Noparte from '../noparte/Noparte';
 
 const Home = (props) => {
-  // Iniciar state para el resultado de la busqueda
-  // Set empty state to fill with the API result
-
-  // const [busqueda, setBusqueda] = useState([]);
-
-  const [data, setData] = useState({});
-
-  useEffect(() => {
-    const apiUrl = 'http://www.wp.daxparts.com/api/cotizacion/BuscarCodigo2/7T5427/BO';
-    const fetchData = async () => {
-      const result = await axios(apiUrl);
-
-      setData(result.data);
-    };
-
-    fetchData();
-  }, []);
-
-  console.log(data);
-
-  // Logica si usuario no introduce numero de parte (no ir a cotizacion)
+  // Logica cuando usuario no introduce numero de parte (no ir a cotizacion)
   let buscarParte = props.parte;
   if (props.parte !== '') {
     buscarParte = 'cotizacion';
   }
+
   return (
     <header>
       <div className='container-fluid'>
