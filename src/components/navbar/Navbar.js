@@ -8,7 +8,7 @@ import './Navbar.css';
 import navLogoWhite from '../../images/logoNavWhite.png';
 
 import Ingresar from '../login/Login';
-import Crear from '../crear/Crear';
+import Crear from '../signup/SignUp';
 
 const Navbar = (props) => (
   <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>

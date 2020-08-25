@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import openModal from '../../actions/openModal';
 
-import Crear from '../crear/Crear';
+import Crear from '../signup/SignUp';
 
 class Ingresar extends Component {
   constructor(props) {
