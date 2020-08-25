@@ -11,7 +11,7 @@ import IconVideos from '../../images/IconVideos.png';
 
 import Idioma from './Idioma';
 import Pais from './Pais';
-import Noparte from '../noparte/Noparte';
+import Noparte from '../noparte/NoParte';
 
 const Home = (props) => {
   // Logica cuando usuario no introduce numero de parte (no ir a cotizacion)
