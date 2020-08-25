@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Página oficial de Dax Parts, sistema buscador de repuestos para equipo pesado, agrícola y de construcción.
 
+EN:
+DaxParts is a startup from Bolivia with an online search engine focus on spare parts of heavy machinery.
+The project consist in creating from scratch a new website and bring some functionalities from their system on the front end.
+
 ## Tecnología
 
 1. React js
