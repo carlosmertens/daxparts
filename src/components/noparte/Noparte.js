@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import openModal from '../../actions/openModal';
 
-import Ingresar from '../ingresar/Ingresar';
+import Ingresar from '../login/Login';
 import Buscamos from '../buscamos/Buscamos';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

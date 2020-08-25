@@ -3,7 +3,7 @@ import Spinner from './Spinner';
 import axios from 'axios';
 // import config from '../../config';
 import './Cotizacion.css';
-import Ingresar from '../ingresar/Ingresar';
+import Ingresar from '../login/Login';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -19,8 +19,8 @@ const Cotizacion = (props) => {
   useEffect(() => {
     const apiUrl = `http://www.wp.daxparts.com/api/cotizacion/BuscarCodigo2/${strNroParte}/${codpais}`;
     const fetchData = async () => {
-      const result = await axios(apiUrl);
-      setBusqueda(result.data.dato);
+      const response = await axios.get(apiUrl);
+      setBusqueda(response.data.dato);
     };
 
     fetchData();

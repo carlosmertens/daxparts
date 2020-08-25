@@ -7,7 +7,7 @@ import openModal from '../../actions/openModal';
 import './Navbar.css';
 import navLogoWhite from '../../images/logoNavWhite.png';
 
-import Ingresar from '../ingresar/Ingresar';
+import Ingresar from '../login/Login';
 import Crear from '../crear/Crear';
 
 const Navbar = (props) => (

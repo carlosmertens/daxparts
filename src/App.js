@@ -22,7 +22,7 @@ import ingles from './textos/textEng.json';
 class App extends Component {
   state = {
     language: 'Español',
-    country: 'Bolivia',
+    country: 'Peru',
     strNroParte: '',
   };
 
