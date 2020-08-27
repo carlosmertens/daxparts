@@ -8,7 +8,7 @@ import SignUp from '../signup/SignUp';
 
 const Login = (props) => {
   const idioma = props.idioma;
-  const [user, setUser] = useState('');
+  const [usuario, setUsuario] = useState('');
   const [password, setPassword] = useState('');
 
   // Conponent to close the modal
@@ -20,18 +20,18 @@ const Login = (props) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     closeModal();
-    console.log(user);
+    console.log(usuario);
     console.log(password);
     // ***** Call DaxParts API *****
     // const url = 'http://www.wp.daxparts.com/api/sesion/validar';
     // const data = {
-    //   logususario: this.state.user,
-    //   clausuario: this.state.password,
+    //   logususario: usuario,
+    //   clausuario: password,
     // };
     // ***** Call Test API *****
     const url = `${window.apiHost}/users/login`;
     const data = {
-      email: user,
+      email: usuario,
       password: password,
     };
     // Simple POST request
@@ -52,8 +52,8 @@ const Login = (props) => {
               type='text'
               className='form-control mr-sm-2'
               placeholder={idioma.ingresar.nombre}
-              onChange={(e) => setUser(e.target.value)}
-              value={user}
+              onChange={(e) => setUsuario(e.target.value)}
+              value={usuario}
             />
           </div>
 

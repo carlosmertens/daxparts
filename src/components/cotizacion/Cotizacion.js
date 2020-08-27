@@ -15,7 +15,8 @@ const Cotizacion = (props) => {
   const codpais = props.codpais;
   const [busqueda, setBusqueda] = useState([]);
 
-  // Llamar API (Call API)
+  // Obtener busqueda de la API
+  // Fetch data from API
   useEffect(() => {
     const apiUrl = `http://www.wp.daxparts.com/api/cotizacion/BuscarCodigo2/${strNroParte}/${codpais}`;
     const fetchData = async () => {

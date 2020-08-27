@@ -1,188 +1,196 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import openModal from '../../actions/openModal';
 import navLogo from '../../images/logoNav.png';
 import Login from '../login/Login';
 
-class SignUp extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      ID: 'Cedula de identidad',
-      pais: 'Bolivia',
-    };
-  }
+const SignUp = (props) => {
+  const idioma = props.idioma;
+  const [empresa, setEmpresa] = useState('');
+  const [nombre, setNombre] = useState('');
+  const [id, setId] = useState('');
+  const [numeroId, setNumeroId] = useState('');
+  const [pais, setPais] = useState('');
+  const [ciudad, setCiudad] = useState('');
+  const [telefono, setTelefono] = useState('');
+  const [email, setEmail] = useState('');
+  const [usuario, setUsuario] = useState('');
+  const [password1, setPassword1] = useState('');
+  const [password2, setPassword2] = useState('');
 
-  handleEmpresa = (e) => this.setState({ empresa: e.target.value });
-  handleName = (e) => this.setState({ nombre: e.target.value });
-  handleID = (e) => this.setState({ ID: e.target.value });
-  handleNumeroID = (e) => this.setState({ numeroID: e.target.value });
-  handlePais = (e) => this.setState({ pais: e.target.value });
-  handleCiudad = (e) => this.setState({ ciudad: e.target.value });
-  handleTelefono = (e) => this.setState({ telefono: e.target.value });
-  handleEmail = (e) => this.setState({ email: e.target.value });
-  handleUsuario = (e) => this.setState({ usuario: e.target.value });
-  handlePassword = (e) => this.setState({ password: e.target.value });
-  handlePassword2 = (e) => this.setState({ password1: e.target.value });
+  // Conponent to close the modal
+  const closeModal = () => {
+    props.openModal('closed', '');
+  };
 
-  handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(this.state);
-    this.closeModal();
+    closeModal();
+    console.log(empresa);
+    console.log(nombre);
+    console.log(id);
+    console.log(numeroId);
+    console.log(pais);
+    console.log(ciudad);
+    console.log(telefono);
+    console.log(email);
+    console.log(usuario);
+    console.log(password1);
+    console.log(password2);
   };
 
-  // Conectar con el API
+  return (
+    <>
+      <div className='modal-logo d-flex justify-content-center'>
+        <img src={navLogo} alt='Dax Logo' />
+      </div>
 
-  closeModal = () => {
-    this.props.openModal('closed', '');
-  };
+      <hr />
 
-  render() {
-    const idioma = this.props.idioma;
-    return (
-      <>
-        <div className='modal-logo d-flex justify-content-center'>
-          <img src={navLogo} alt='Dax Logo' />
-        </div>
-
-        <hr />
-
-        <div className='modal-body'>
-          <form onSubmit={this.handleSubmit}>
-            <h4>{idioma.crear.titulo1}</h4>
-            <div className='form-group d-flex justify-content-center'>
-              <input
-                type='text'
-                className='form-control mr-sm-2'
-                placeholder={idioma.crear.empresa}
-                onChange={this.handleEmpresa}
-              />
-            </div>
-
-            <div className='form-group d-flex justify-content-center'>
-              <input
-                type='text'
-                className='form-control mr-sm-2'
-                placeholder={idioma.crear.nombre}
-                onChange={this.handleName}
-              />
-            </div>
-
-            <div className='form-group d-flex justify-content-center'>
-              <select
-                className='form-control'
-                onChange={this.handleID}
-                value={this.state.ID}>
-                <option>{idioma.crear.cedula}</option>
-                <option>NIT</option>
-                <option>{idioma.crear.pasaporte}</option>
-                <option>RUC</option>
-              </select>
-            </div>
-
-            <div className='form-group d-flex justify-content-center'>
-              <input
-                type='text'
-                className='form-control mr-sm-2'
-                placeholder={idioma.crear.numero}
-                onChange={this.handleNumeroID}
-              />
-            </div>
-
-            <div className='form-group d-flex justify-content-center'>
-              <select
-                className='form-control'
-                onChange={this.handlePais}
-                value={this.state.pais}>
-                <option>Bolivia</option>
-                <option>USA</option>
-                <option>Paraguay</option>
-                <option>Peru</option>
-              </select>
-            </div>
-
-            <div className='form-group d-flex justify-content-center'>
-              <input
-                type='text'
-                className='form-control mr-sm-2'
-                placeholder={idioma.crear.ciudad}
-                onChange={this.handleCiudad}
-              />
-            </div>
-
-            <div className='form-group d-flex justify-content-center'>
-              <input
-                type='text'
-                className='form-control mr-sm-2'
-                placeholder={idioma.crear.telefono}
-                onChange={this.handleTelefono}
-              />
-            </div>
-
-            <div className='form-group d-flex justify-content-center'>
-              <input
-                type='email'
-                className='form-control mr-sm-2'
-                placeholder='Email'
-                onChange={this.handleEmail}
-              />
-            </div>
-
-            <h4>{idioma.crear.titulo2}</h4>
-
-            <div className='form-group d-flex justify-content-center'>
-              <input
-                type='text'
-                className='form-control mr-sm-2'
-                placeholder={idioma.crear.usuario}
-                onChange={this.handleUsuario}
-              />
-            </div>
-
-            <div className='form-group d-flex justify-content-center'>
-              <input
-                type='password'
-                className='form-control mr-sm-2'
-                placeholder={idioma.crear.password1}
-                onChange={this.handlePassword}
-              />
-            </div>
-
-            <div className='form-group d-flex justify-content-center'>
-              <input
-                type='password'
-                className='form-control mr-sm-2'
-                placeholder={idioma.crear.password2}
-                onChange={this.handlePassword2}
-              />
-            </div>
-
-            <div className='boton-form'>
-              <button type='submit' className='btn'>
-                {idioma.crear.botonCrear}
-              </button>
-            </div>
-          </form>
-        </div>
-
-        <div className='modal-footer d-flex justify-content-center'>
-          <div>
-            {idioma.crear.cambiarModal}{' '}
-            <span
-              className='pointer'
-              onClick={() => {
-                this.props.openModal('open', <Login idioma={this.props.idioma} />);
-              }}
-              style={{ color: '#fca728' }}>
-              {idioma.crear.cambiarEnlace}
-            </span>
+      <div className='modal-body'>
+        <form onSubmit={handleSubmit}>
+          <h4>{idioma.crear.titulo1}</h4>
+          <div className='form-group d-flex justify-content-center'>
+            <input
+              type='text'
+              className='form-control mr-sm-2'
+              placeholder={idioma.crear.empresa}
+              onChange={(e) => setEmpresa(e.target.value)}
+              value={empresa}
+            />
           </div>
+
+          <div className='form-group d-flex justify-content-center'>
+            <input
+              type='text'
+              className='form-control mr-sm-2'
+              placeholder={idioma.crear.nombre}
+              onChange={(e) => setNombre(e.target.value)}
+              value={nombre}
+            />
+          </div>
+
+          <div className='form-group d-flex justify-content-center'>
+            <select
+              className='form-control'
+              onChange={(e) => setId(e.target.value)}
+              value={id}>
+              <option>{idioma.crear.cedula}</option>
+              <option>NIT</option>
+              <option>{idioma.crear.pasaporte}</option>
+              <option>RUC</option>
+            </select>
+          </div>
+
+          <div className='form-group d-flex justify-content-center'>
+            <input
+              type='text'
+              className='form-control mr-sm-2'
+              placeholder={idioma.crear.numero}
+              onChange={(e) => setNumeroId(e.target.value)}
+              value={numeroId}
+            />
+          </div>
+
+          <div className='form-group d-flex justify-content-center'>
+            <select
+              className='form-control'
+              onChange={(e) => setPais(e.target.value)}
+              value={pais}>
+              <option>Bolivia</option>
+              <option>USA</option>
+              <option>Paraguay</option>
+              <option>Peru</option>
+            </select>
+          </div>
+
+          <div className='form-group d-flex justify-content-center'>
+            <input
+              type='text'
+              className='form-control mr-sm-2'
+              placeholder={idioma.crear.ciudad}
+              onChange={(e) => setCiudad(e.target.value)}
+              value={ciudad}
+            />
+          </div>
+
+          <div className='form-group d-flex justify-content-center'>
+            <input
+              type='text'
+              className='form-control mr-sm-2'
+              placeholder={idioma.crear.telefono}
+              onChange={(e) => setTelefono(e.target.value)}
+              value={telefono}
+            />
+          </div>
+
+          <div className='form-group d-flex justify-content-center'>
+            <input
+              type='email'
+              className='form-control mr-sm-2'
+              placeholder='Email'
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+            />
+          </div>
+
+          <h4>{idioma.crear.titulo2}</h4>
+
+          <div className='form-group d-flex justify-content-center'>
+            <input
+              type='text'
+              className='form-control mr-sm-2'
+              placeholder={idioma.crear.usuario}
+              onChange={(e) => setUsuario(e.target.value)}
+              value={usuario}
+            />
+          </div>
+
+          <div className='form-group d-flex justify-content-center'>
+            <input
+              type='password'
+              className='form-control mr-sm-2'
+              placeholder={idioma.crear.password1}
+              onChange={(e) => setPassword1(e.target.value)}
+              value={password1}
+            />
+          </div>
+
+          <div className='form-group d-flex justify-content-center'>
+            <input
+              type='password'
+              className='form-control mr-sm-2'
+              placeholder={idioma.crear.password2}
+              onChange={(e) => setPassword2(e.target.value)}
+              value={password2}
+            />
+          </div>
+
+          <div className='boton-form'>
+            <button type='submit' className='btn'>
+              {idioma.crear.botonCrear}
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div className='modal-footer d-flex justify-content-center'>
+        <div>
+          {idioma.crear.cambiarModal}{' '}
+          <span
+            className='pointer'
+            onClick={() => {
+              this.props.openModal('open', <Login idioma={this.props.idioma} />);
+            }}
+            style={{ color: '#fca728' }}>
+            {idioma.crear.cambiarEnlace}
+          </span>
         </div>
-      </>
-    );
-  }
-}
+      </div>
+    </>
+  );
+};
 
 function mapStateToProps(state) {
   return {
