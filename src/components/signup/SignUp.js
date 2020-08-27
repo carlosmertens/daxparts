@@ -181,7 +181,7 @@ const SignUp = (props) => {
           <span
             className='pointer'
             onClick={() => {
-              this.props.openModal('open', <Login idioma={this.props.idioma} />);
+              props.openModal('open', <Login idioma={idioma} />);
             }}
             style={{ color: '#fca728' }}>
             {idioma.crear.cambiarEnlace}
