@@ -1,14 +1,11 @@
 import React from 'react';
-import navLogo from '../../images/logoNav.png';
 import { Link } from 'react-router-dom';
-
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import openModal from '../../actions/openModal';
-
+import navLogo from '../../images/logoNav.png';
 import Login from '../login/Login';
 import Buscamos from '../buscamos/Buscamos';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';

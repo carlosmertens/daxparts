@@ -1,20 +1,17 @@
 import React, { Component } from 'react';
-import navLogo from '../../images/logoNav.png';
-
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import openModal from '../../actions/openModal';
+import navLogo from '../../images/logoNav.png';
+import SignUp from '../signup/SignUp';
 
-import Crear from '../signup/SignUp';
-
-class Ingresar extends Component {
+class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
 
-  // TODO: Cambiar email por ususario
-  handleUser = (e) => this.setState({ email: e.target.value });
+  handleUser = (e) => this.setState({ user: e.target.value });
   handlePassword = (e) => this.setState({ password: e.target.value });
 
   handleSubmit = (e) => {
@@ -60,11 +57,11 @@ class Ingresar extends Component {
               />
             </div>
 
-            <div className='enlace-form'>
+            {/* <div className='enlace-form'>
               <a className='me-olvide' href='/#'>
                 {idioma.ingresar.olvide}
               </a>
-            </div>
+            </div> */}
 
             <div className='boton-form'>
               <button type='submit' className='btn'>
@@ -80,7 +77,7 @@ class Ingresar extends Component {
             <span
               className='pointer'
               onClick={() => {
-                this.props.openModal('open', <Crear idioma={this.props.idioma} />);
+                this.props.openModal('open', <SignUp idioma={this.props.idioma} />);
               }}
               style={{ color: '#fca728' }}>
               {idioma.ingresar.cambiarEnlace}
@@ -107,4 +104,4 @@ function mapDispatchToProps(dispacher) {
   );
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Ingresar);
+export default connect(mapStateToProps, mapDispatchToProps)(Login);
