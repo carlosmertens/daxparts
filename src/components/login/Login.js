@@ -14,10 +14,10 @@ class Ingresar extends Component {
   }
 
   // TODO: Cambiar email por ususario
-  changeEmail = (e) => this.setState({ email: e.target.value });
-  changePassword = (e) => this.setState({ password: e.target.value });
+  handleUser = (e) => this.setState({ email: e.target.value });
+  handlePassword = (e) => this.setState({ password: e.target.value });
 
-  submitLogin = (e) => {
+  handleSubmit = (e) => {
     e.preventDefault();
     console.log(this.state.email);
     console.log(this.state.password);
@@ -41,13 +41,13 @@ class Ingresar extends Component {
         </div>
 
         <div className='modal-body'>
-          <form onSubmit={this.submitLogin}>
+          <form onSubmit={this.handleSubmit}>
             <div className='form-group d-flex justify-content-center'>
               <input
                 type='text'
                 className='form-control mr-sm-2'
                 placeholder={idioma.ingresar.nombre}
-                onChange={this.changeEmail}
+                onChange={this.handleUser}
               />
             </div>
 
@@ -56,7 +56,7 @@ class Ingresar extends Component {
                 type='password'
                 className='form-control mr-sm-2'
                 placeholder={idioma.ingresar.password}
-                onChange={this.changePassword}
+                onChange={this.handlePassword}
               />
             </div>
 
@@ -81,7 +81,8 @@ class Ingresar extends Component {
               className='pointer'
               onClick={() => {
                 this.props.openModal('open', <Crear idioma={this.props.idioma} />);
-              }}>
+              }}
+              style={{ color: '#fca728' }}>
               {idioma.ingresar.cambiarEnlace}
             </span>
           </div>

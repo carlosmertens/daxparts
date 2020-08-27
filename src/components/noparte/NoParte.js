@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import openModal from '../../actions/openModal';
 
-import Ingresar from '../login/Login';
+import Login from '../login/Login';
 import Buscamos from '../buscamos/Buscamos';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -45,7 +45,7 @@ const Noparte = (props) => {
               </button>
             </div>
             <div className='col-sm'>
-              <Link to='/tutorial/'>
+              <Link to='/tutorial'>
                 <button className='que-hacer-button' onClick={closeModal}>
                   {props.idioma.home.modal.enlaceTutorial}
                   <br />
@@ -67,8 +67,9 @@ const Noparte = (props) => {
           <span
             className='pointer'
             onClick={() => {
-              props.openModal('open', <Ingresar idioma={props.idioma} />);
-            }}>
+              props.openModal('open', <Login idioma={props.idioma} />);
+            }}
+            style={{ color: '#fca728' }}>
             {props.idioma.home.modal.click}
           </span>
         </div>

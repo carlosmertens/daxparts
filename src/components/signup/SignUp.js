@@ -175,7 +175,8 @@ class Crear extends Component {
               className='pointer'
               onClick={() => {
                 this.props.openModal('open', <Ingresar idioma={this.props.idioma} />);
-              }}>
+              }}
+              style={{ color: '#fca728' }}>
               {idioma.crear.cambiarEnlace}
             </span>
           </div>
