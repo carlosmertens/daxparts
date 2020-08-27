@@ -1,43 +1,41 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import './Modal.css';
 import openModal from '../../actions/openModal';
+import './Modal.css';
 
-class Modal extends Component {
-  state = {};
-
-  closeModal = () => {
-    this.props.openModal('closed', '');
+const Modal = (props) => {
+  // Conponent to close the modal
+  const closeModal = () => {
+    props.openModal('closed', '');
   };
 
-  render() {
-    let modalInlineStyle;
-    if (this.props.siteModal.openClose === 'open') {
-      modalInlineStyle = { display: 'block' };
-    } else {
-      modalInlineStyle = { display: 'none' };
-    }
+  // Logic to visualize the modal
+  let modalInlineStyle;
+  if (props.siteModal.openClose === 'open') {
+    modalInlineStyle = { display: 'block' };
+  } else {
+    modalInlineStyle = { display: 'none' };
+  }
 
-    return (
-      <div className='site-modal' style={modalInlineStyle} tabIndex='-1' role='dialog'>
-        <div className='modal-dialog'>
-          <div className='modal-content'>
-            <div className='col right'>
-              <span onClick={this.closeModal} className='close'>
-                &times;
-              </span>
-            </div>
-            <div className='formulario-ingreso'>
-              {/* Contenido del modal goes here... */}
-              {this.props.siteModal.content}
-            </div>
+  return (
+    <div className='site-modal' style={modalInlineStyle} tabIndex='-1' role='dialog'>
+      <div className='modal-dialog'>
+        <div className='modal-content'>
+          <div className='col right'>
+            <span onClick={closeModal} className='close'>
+              &times;
+            </span>
+          </div>
+          <div className='formulario-ingreso'>
+            {/* Contenido del modal goes below... */}
+            {props.siteModal.content}
           </div>
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 function mapStateToProps(state) {
   return {

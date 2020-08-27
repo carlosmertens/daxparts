@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import openModal from '../../actions/openModal';
+import axios from 'axios';
 import navLogo from '../../images/logoNav.png';
 import SignUp from '../signup/SignUp';
 
@@ -14,11 +15,34 @@ class Login extends Component {
   handleUser = (e) => this.setState({ user: e.target.value });
   handlePassword = (e) => this.setState({ password: e.target.value });
 
-  handleSubmit = (e) => {
+  handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(this.state.email);
-    console.log(this.state.password);
     this.closeModal();
+    console.log(this.state.user);
+    console.log(this.state.password);
+    // ***** Call DaxParts API *****
+    const url = 'http://www.wp.daxparts.com/api/sesion/validar';
+    const data = {
+      logususario: this.state.user,
+      clausuario: this.state.password,
+    };
+    const fetchData = async () => {
+      const response = await axios.post(url, data);
+      console.log(response);
+    };
+
+    fetchData();
+
+    // ***** Call Test API *****
+    // const url = `${window.apiHost}/users/login`;
+    // const data = {
+    //   email: this.state.email,
+    //   password: this.state.password,
+    // };
+
+    // Simple POST request
+    // const response = await axios.post(url, data);
+    // console.log(response);
   };
 
   // Conectar API
@@ -30,7 +54,7 @@ class Login extends Component {
 
   render() {
     const idioma = this.props.idioma;
-    console.log(this.props);
+    // console.log(this.props);
     return (
       <>
         <div className='modal-logo d-flex justify-content-center'>
