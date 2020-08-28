@@ -130,7 +130,8 @@ const Buscamos = (props) => {
             className='pointer'
             onClick={() => {
               props.openModal('open', <Ingresar idioma={idioma} />);
-            }}>
+            }}
+            style={{ color: '#fca728' }}>
             {idioma.buscamos.cambiarEnlace}
           </span>
         </div>
