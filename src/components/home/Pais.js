@@ -6,6 +6,7 @@ import flagUsa from '../../images/usa.png';
 
 const Pais = (props) => {
   // Logica para seleccionar pais del usuario
+  // Logic to display the user's country
   if (props.country === 'Bolivia') {
     return (
       <div>

@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import navLogo from '../../images/logoNav.png';
-
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import openModal from '../../actions/openModal';
-
+import navLogo from '../../images/logoNav.png';
 import Ingresar from '../login/Login';
 
 const Buscamos = (props) => {
@@ -17,6 +15,7 @@ const Buscamos = (props) => {
   const [email, setEmail] = useState('');
   const [telefono, setTelefono] = useState('');
 
+  // Funcion para cerrar modal
   // Conponent to close the modal
   const closeModal = () => {
     props.openModal('closed', '');

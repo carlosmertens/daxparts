@@ -1,6 +1,5 @@
 import React from 'react';
 import './Ofrecemos.css';
-
 import { ReactComponent as Bulldozer } from '../../images/bulldozer.svg';
 import { ReactComponent as Crane } from '../../images/crane.svg';
 import { ReactComponent as Machine } from '../../images/machine.svg';

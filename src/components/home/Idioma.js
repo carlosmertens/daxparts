@@ -6,8 +6,8 @@ const Idioma = (props) => {
   return (
     <select
       className='btn btn-idioma'
-      value={props.lang}
-      onChange={props.cambiarIdioma}>
+      value={props.language}
+      onChange={props.handleLanguage}>
       <option>Español</option>
       <option>English</option>
     </select>

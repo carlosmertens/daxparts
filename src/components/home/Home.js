@@ -23,7 +23,7 @@ const Home = (props) => {
       <div className='container-fluid'>
         <div className='container-fluid d-flex justify-content-between pais-idioma'>
           <Pais country={props.country} />
-          <Idioma lang={props.language} cambiarIdioma={props.handleLanguage} />
+          <Idioma language={props.language} handleLanguage={props.handleLanguage} />
         </div>
 
         <div className='header-contenido'>
