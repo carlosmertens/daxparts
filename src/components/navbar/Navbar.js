@@ -1,12 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import openModal from '../../actions/openModal';
-
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 import navLogoWhite from '../../images/logoNavWhite.png';
-
 import Ingresar from '../login/Login';
 import Crear from '../signup/SignUp';
 
