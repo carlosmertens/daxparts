@@ -1,3 +1,14 @@
+/* *************************************** */
+/* ===== SOMOS ===== */
+.somos-contenido h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.somos-texto {
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
 /* ========== RESPONSIVE SOMOS ========== */
 /* EXTRA SMALL devices (less than 480px) */
 @media only screen and (max-width: 480px) {

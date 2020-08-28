@@ -1,3 +1,29 @@
+/* *************************************** */
+/* ===== OFRECEMOS ===== */
+.ofrecemos-contenido h4 {
+  text-align: left;
+}
+.ofrecemos-contenido p {
+  font-size: 15px;
+}
+.ofrecemos-contenido .row {
+  text-align: center;
+}
+.ofrecemos-contenido span {
+  color: #fca728;
+}
+.ofrecemos-opciones {
+  margin-bottom: 40px !important;
+}
+.ofrecemos-icono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ofrecemos-texto {
+  text-align: left;
+}
+
 /* ========== RESPONSIVE TEMPLATE ========== */
 /* EXTRA SMALL devices (less than 480px) */
 @media only screen and (max-width: 480px) {

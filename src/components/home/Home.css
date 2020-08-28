@@ -1,3 +1,65 @@
+/* *************************************** */
+/* ===== HOME ===== */
+/* ===== header ===== */
+header {
+  position: relative;
+}
+.header-contenido {
+  text-align: center;
+}
+/* ===== pais/idioma ===== */
+.pais-idioma {
+  margin-top: 15px;
+}
+
+/* ===== pais ===== */
+.pais-bandera {
+  height: 25px;
+  width: auto;
+  margin-right: 5px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16) !important;
+}
+.pais-texto {
+  font-size: 20px;
+}
+
+/* ===== idioma ===== */
+.btn-idioma {
+  font-size: 15px !important;
+  height: 30px !important;
+  border-radius: 15px !important;
+  margin-top: 0px !important;
+}
+
+/* ===== form ===== */
+header input {
+  background: #a79f9f40 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 50px;
+  opacity: 1;
+  border: 0;
+  outline: none;
+}
+
+/* ===== link modal ===== */
+.button-link {
+  color: #fca728;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.button-link:focus {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.modal-title {
+  color: #fca728;
+}
+.tutorial-text:hover {
+  text-decoration: #000000 underline;
+}
+
 /* ========== RESPONSIVE HOME ========== */
 /* EXTRA SMALL devices (less than 480px) */
 @media only screen and (max-width: 480px) {

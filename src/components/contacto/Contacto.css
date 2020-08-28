@@ -1,3 +1,29 @@
+/* *************************************** */
+/* ===== CONTACTO ===== */
+.contacto-contenido .row {
+  text-align: center;
+}
+.contacto-texto {
+  padding-bottom: 40px;
+}
+.contacto-grupo {
+  margin-bottom: 40px !important;
+}
+.contacto-grupo img {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16) !important;
+}
+.contacto-contenido h4 {
+  padding-top: 10px;
+  font-size: 25px;
+}
+.contacto-email {
+  text-decoration: underline;
+  font-size: 18px;
+}
+.contacto-telefono {
+  color: black;
+  font-size: 18px;
+}
 /* ========== RESPONSIVE CONTACTO ========== */
 /* EXTRA SMALL devices (less than 480px) */
 @media only screen and (max-width: 480px) {

@@ -1,3 +1,41 @@
+/* *************************************** */
+/* ===== TUTORIAL ===== */
+.tutorial .row {
+  margin-bottom: 20px !important;
+}
+.tutorial-subtitulo {
+  margin-bottom: 50px;
+}
+.tutorial p {
+  font-size: 20px;
+}
+.tutorial-contenido span {
+  color: #fca728;
+  font-size: 15px;
+}
+.tutorial-enlace {
+  color: #fca728;
+}
+.tutorial-enlace:hover {
+  text-decoration: #fca728 underline;
+}
+.logo-video {
+  float: right;
+  padding-right: 40px;
+}
+.texto-logo-tutorial {
+  float: left;
+  padding-left: 40px;
+}
+.tutorial-video {
+  display: flex;
+  float: inline-start;
+}
+.tutorial-video-texto span {
+  font-size: 120px;
+  color: #fca728;
+}
+
 /* ========== RESPONSIVE TUTORIAL ========== */
 /* EXTRA SMALL devices (less than 480px) */
 @media only screen and (max-width: 480px) {

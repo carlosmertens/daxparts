@@ -1,3 +1,49 @@
+/* *************************************** */
+/* ===== COTIZACION ===== */
+.cotizacion-title h1 {
+  padding-top: 20px;
+}
+.cotizacion-title p {
+  color: #fca728;
+  font-size: 20px;
+  text-align: left;
+  margin-top: 20px;
+}
+.nota {
+  font-size: 10px;
+  padding: 15px 5px 15px 25px;
+}
+.nota span {
+  font-size: 15px;
+}
+.beneficios {
+  border-radius: 15px;
+  width: 600px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.titulo-jumbo {
+  font-size: 25px;
+  color: #fca728;
+  text-align: center;
+  margin-top: 30px;
+}
+.beneficios-jumbo {
+  color: whitesmoke;
+  text-align: left;
+  font-size: 12px;
+  margin: 5px !important;
+}
+.beneficios-jumbo:last-child {
+  margin-bottom: 30px !important;
+}
+.btn-comprar {
+  color: whitesmoke !important;
+  font-size: 25px !important;
+  width: 159px;
+}
+
 /* ========== RESPONSIVE COTIZACION ========== */
 /* EXTRA SMALL devices (less than 480px) */
 @media only screen and (max-width: 480px) {
