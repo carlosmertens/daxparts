@@ -1,22 +1,20 @@
 import React from 'react';
-
-import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import openModal from '../../actions/openModal';
-
+import { Link } from 'react-router-dom';
 import './Home.css';
 import logoCentro from '../../images/logoCentro.png';
 import IconVideos from '../../images/IconVideos.png';
-
 import Idioma from './Idioma';
 import Pais from './Pais';
 import Noparte from '../noparte/NoParte';
 
 const Home = (props) => {
   // Logica cuando usuario no introduce numero de parte (no ir a cotizacion)
-  let buscarParte = props.parte;
-  if (props.parte !== '') {
+  // Logic to stay at home if not spare part number provided
+  let buscarParte = '';
+  if (props.strNroParte !== '') {
     buscarParte = 'cotizacion';
   }
 
@@ -25,7 +23,7 @@ const Home = (props) => {
       <div className='container-fluid'>
         <div className='container-fluid d-flex justify-content-between pais-idioma'>
           <Pais country={props.country} />
-          <Idioma lang={props.lang} cambiarIdioma={props.cambiarIdioma} />
+          <Idioma lang={props.language} cambiarIdioma={props.handleLanguage} />
         </div>
 
         <div className='header-contenido'>

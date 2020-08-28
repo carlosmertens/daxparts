@@ -79,10 +79,10 @@ const App = () => {
           return (
             <Home
               idioma={idioma}
-              lang={language}
+              language={language}
               country={country}
-              cambiarIdioma={handleLanguage}
-              parte={strNroParte}
+              handleLanguage={handleLanguage}
+              strNroParte={strNroParte}
               handleChange={handleSearch}
             />
           );
