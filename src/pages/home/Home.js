@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 import logoCentro from '../../images/logoCentro.png';
 import IconVideos from '../../images/IconVideos.png';
-import Idioma from './Idioma';
-import Pais from './Pais';
+import Idioma from '../../components/idioma/Idioma';
+import Pais from '../../components/pais/Pais';
 import Noparte from '../../components/noparte/NoParte';
 
 const Home = (props) => {

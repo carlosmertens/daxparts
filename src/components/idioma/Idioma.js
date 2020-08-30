@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css';
+import './Idioma.css';
 
 const Idioma = (props) => {
   // console.log(props);
