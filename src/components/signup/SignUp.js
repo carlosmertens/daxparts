@@ -5,6 +5,10 @@ import openModal from '../../actions/openModal';
 import navLogo from '../../images/logoNav.png';
 import Login from '../login/Login';
 
+// TODO: Wait for API from DaxParts to know exactly what information is
+// needed to be submitted in this section.
+// Set up API submit POST using async and wait
+
 const SignUp = (props) => {
   const idioma = props.idioma;
   const [empresa, setEmpresa] = useState('');
