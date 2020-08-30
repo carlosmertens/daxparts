@@ -4,12 +4,18 @@ import { bindActionCreators } from 'redux';
 import openModal from '../../actions/openModal';
 import navLogo from '../../images/logoNav.png';
 import Ingresar from '../login/Login';
+import Buscamos2 from './Buscamos2';
 
 const Buscamos = (props) => {
   const idioma = props.idioma;
-  const [marca, setMarca] = useState('');
-  const [modelo, setModelo] = useState('');
-  const [serie, setSerie] = useState('');
+  const [marcaEquipo, setMarcaEquipo] = useState('');
+  const [modeloEquipo, setModeloEquipo] = useState('');
+  const [serieEquipo, setSerieEquipo] = useState('');
+  // const [marcaMotor, setMarcaMotor] = useState('');
+  // const [modeloMotor, setModeloMotor] = useState('');
+  // const [serieMotor, setSerieMotor] = useState('');
+  // const [cantidad, setCantidad] = useState('');
+  // const [descripcion, setDescripcion] = useState('');
   const [nombre, setNombre] = useState('');
   const [pais, setPais] = useState('');
   const [email, setEmail] = useState('');
@@ -17,20 +23,10 @@ const Buscamos = (props) => {
 
   // Funcion para cerrar modal
   // Conponent to close the modal
-  const closeModal = () => {
-    props.openModal('closed', '');
-  };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    closeModal();
-    console.log(marca);
-    console.log(modelo);
-    console.log(serie);
-    console.log(nombre);
-    console.log(pais);
-    console.log(email);
-    console.log(telefono);
-  };
+  // const closeModal = () => {
+  //   props.openModal('closed', '');
+  // };
+
   return (
     <>
       <div className='modal-logo d-flex justify-content-center'>
@@ -40,40 +36,8 @@ const Buscamos = (props) => {
       <hr />
 
       <div className='modal-body'>
-        <form onSubmit={handleSubmit}>
-          <h4>{idioma.buscamos.titulo1}</h4>
-          <div className='form-group d-flex justify-content-center'>
-            <input
-              type='text'
-              className='form-control mr-sm-2'
-              placeholder={idioma.buscamos.marca}
-              onChange={(e) => setMarca(e.target.value)}
-              value={marca}
-            />
-          </div>
-
-          <div className='form-group d-flex justify-content-center'>
-            <input
-              type='text'
-              className='form-control mr-sm-2'
-              placeholder={idioma.buscamos.modelo}
-              onChange={(e) => setModelo(e.target.value)}
-              value={modelo}
-            />
-          </div>
-
-          <div className='form-group d-flex justify-content-center'>
-            <input
-              type='text'
-              className='form-control mr-sm-2'
-              placeholder={idioma.buscamos.serie}
-              onChange={(e) => setSerie(e.target.value)}
-              value={serie}
-            />
-          </div>
-
+        <form>
           <h4>{idioma.buscamos.titulo2}</h4>
-
           <div className='form-group d-flex justify-content-center'>
             <input
               type='text'
@@ -114,9 +78,44 @@ const Buscamos = (props) => {
             />
           </div>
 
+          <h4>{idioma.buscamos.titulo1}</h4>
+          <div className='form-group d-flex justify-content-center'>
+            <input
+              type='text'
+              className='form-control mr-sm-2'
+              placeholder={idioma.buscamos.marca}
+              onChange={(e) => setMarcaEquipo(e.target.value)}
+              value={marcaEquipo}
+            />
+          </div>
+
+          <div className='form-group d-flex justify-content-center'>
+            <input
+              type='text'
+              className='form-control mr-sm-2'
+              placeholder={idioma.buscamos.modelo}
+              onChange={(e) => setModeloEquipo(e.target.value)}
+              value={modeloEquipo}
+            />
+          </div>
+
+          <div className='form-group d-flex justify-content-center'>
+            <input
+              type='text'
+              className='form-control mr-sm-2'
+              placeholder={idioma.buscamos.serie}
+              onChange={(e) => setSerieEquipo(e.target.value)}
+              value={serieEquipo}
+            />
+          </div>
+
           <div className='boton-form'>
-            <button type='submit' className='btn'>
-              {idioma.buscamos.botonCotizar}
+            <button
+              className='btn'
+              onClick={() => {
+                props.openModal('open', <Buscamos2 idioma={props.idioma} />);
+              }}>
+              Continuar
             </button>
           </div>
         </form>
