@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import openModal from '../../actions/openModal';
 import Spinner from './Spinner';
 import axios from 'axios';
 // import config from '../../config';
 import './Cotizacion.css';
 import Ingresar from '../../components/login/Login';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import openModal from '../../actions/openModal';
 
 const Cotizacion = (props) => {
   const idioma = { ...props.idioma };

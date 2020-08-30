@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # DAX PARTS
 
-## Descripción
+## Descripción | Description
 
 Página oficial de Dax Parts, sistema buscador de repuestos para equipo pesado, agrícola y de construcción.
 
@@ -10,7 +10,7 @@ EN:
 DaxParts is a startup from Bolivia with an online search engine focus on spare parts of heavy machinery.
 The project consist in creating from scratch a new website and bring some functionalities from their system on the front end.
 
-## Tecnología
+## Tecnología | Technology
 
 1. React js
 2. React Router
@@ -20,32 +20,19 @@ The project consist in creating from scratch a new website and bring some functi
 6. Font Awesome
 7. Git/GitHub
 
-## Duplicar proyecto
+## Duplicar proyecto | Clone project
 
-1. Instalar Node.js y npm
-2. Clonar o bajar archivo del proyecto
-3. En la terminal del pc ir al archivo del proyecto
+1. Instalar Node.js y npm | Install Node.js and npm
+2. Clonar o bajar archivo del proyecto | Clone folder
+3. En la terminal del pc ir al archivo del proyecto | Terminal comands:
 4. Utilizar comando: `npm install`
 5. Utilizar comando: `npm star`
-
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ## Author
 
 - **Carlos Mertens** - _Mertens-Applications_
+
+## Acknowledgment
+
+- **Herbert Sonnenschein** - _Designer_
+- **Andres Cabrera** - _Product Manager_
