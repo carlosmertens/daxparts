@@ -6,6 +6,9 @@ import navLogo from '../../images/logoNav.png';
 import Ingresar from '../login/Login';
 import Buscamos2 from './Buscamos2';
 
+// TODO: Wait for the API from DaxParts to know exactly what information is
+// needed in this section and Buscamos2
+
 const Buscamos = (props) => {
   const idioma = props.idioma;
   const [marcaEquipo, setMarcaEquipo] = useState('');
