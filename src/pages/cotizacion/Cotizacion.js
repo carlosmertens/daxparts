@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import openModal from '../../actions/openModal';
-import Spinner from './Spinner';
+import Spinner from '../../components/spinner/Spinner';
 import axios from 'axios';
 // import config from '../../config';
 import './Cotizacion.css';
