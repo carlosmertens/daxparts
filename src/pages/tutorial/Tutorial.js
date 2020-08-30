@@ -40,11 +40,11 @@ const Tutorial = ({ idioma }) => (
                 <iframe
                   width='121'
                   height='65'
-                  title='Video1'
+                  title='Castellano'
                   src='https://www.youtube.com/embed/4jnCVogNCtc'></iframe>
               </div>
               <div className='col'>
-                <span className='tutorial-video-texto'>Video 1</span>
+                <span className='tutorial-video-texto'>Dax Castellano</span>
               </div>
             </div>
           </div>
@@ -55,11 +55,11 @@ const Tutorial = ({ idioma }) => (
                 <iframe
                   width='121'
                   height='65'
-                  title='Video1'
-                  src='https://www.youtube.com/embed/4jnCVogNCtc'></iframe>
+                  title='EnglishDax'
+                  src='https://www.youtube.com/embed/L22Gk3eXE7I'></iframe>
               </div>
               <div className='col'>
-                <span className='tutorial-video-texto'>Video 2</span>
+                <span className='tutorial-video-texto'>Dax English</span>
               </div>
             </div>
           </div>
@@ -70,11 +70,11 @@ const Tutorial = ({ idioma }) => (
                 <iframe
                   width='121'
                   height='65'
-                  title='Video1'
-                  src='https://www.youtube.com/embed/4jnCVogNCtc'></iframe>
+                  title='Demo'
+                  src='https://www.youtube.com/embed/j42UyjVCDuo'></iframe>
               </div>
               <div className='col'>
-                <span className='tutorial-video-texto'>Video 3</span>
+                <span className='tutorial-video-texto'>Demo</span>
               </div>
             </div>
           </div>
@@ -102,26 +102,11 @@ const Tutorial = ({ idioma }) => (
                 <iframe
                   width='121'
                   height='65'
-                  title='Video1'
-                  src='https://www.youtube.com/embed/4jnCVogNCtc'></iframe>
+                  title='John Deere'
+                  src='https://www.youtube.com/embed/FkRyowhMekU'></iframe>
               </div>
               <div className='col'>
-                <span className='tutorial-video-texto'>Video 1</span>
-              </div>
-            </div>
-          </div>
-
-          <div className='container'>
-            <div className='row'>
-              <div className='col'>
-                <iframe
-                  width='121'
-                  height='65'
-                  title='Video1'
-                  src='https://www.youtube.com/embed/4jnCVogNCtc'></iframe>
-              </div>
-              <div className='col'>
-                <span className='tutorial-video-texto'>Video 2</span>
+                <span className='tutorial-video-texto'>John Deere</span>
               </div>
             </div>
           </div>
@@ -132,11 +117,26 @@ const Tutorial = ({ idioma }) => (
                 <iframe
                   width='121'
                   height='65'
-                  title='Video1'
-                  src='https://www.youtube.com/embed/4jnCVogNCtc'></iframe>
+                  title='Catarpillar'
+                  src='src="https://www.youtube.com/embed/MaOpwIWJa0o"'></iframe>
               </div>
               <div className='col'>
-                <span className='tutorial-video-texto'>Video 3</span>
+                <span className='tutorial-video-texto'>Catarpillar</span>
+              </div>
+            </div>
+          </div>
+
+          <div className='container'>
+            <div className='row'>
+              <div className='col'>
+                <iframe
+                  width='121'
+                  height='65'
+                  title='CASE'
+                  src='https://www.youtube.com/embed/nApCi2Y8w7Y'></iframe>
+              </div>
+              <div className='col'>
+                <span className='tutorial-video-texto'>CASE</span>
               </div>
             </div>
           </div>
