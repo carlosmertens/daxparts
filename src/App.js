@@ -26,8 +26,8 @@ const App = () => {
     const locationUrl = 'https://extreme-ip-lookup.com/json/';
     axios.get(locationUrl).then((response) => {
       const userCountry = response.data.country;
-      console.log(userCountry);
-      setCountry('Peru');
+      console.log('User is visiting from:', userCountry);
+      setCountry(userCountry);
     });
   }, []);
 
@@ -60,7 +60,8 @@ const App = () => {
   } else if (country === 'Paraguay') {
     codpais = 'PY';
   } else {
-    codpais = 'US';
+    // TODO: When API bug for US is findByText, change PE for US
+    codpais = 'PE';
   }
 
   return (
