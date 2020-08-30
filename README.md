@@ -10,6 +10,10 @@ EN:
 DaxParts is a startup from Bolivia with an online search engine focus on spare parts of heavy machinery.
 The project consist in creating from scratch a new website and bring some functionalities from their system on the front end.
 
+#### Published for testing
+
+- [DaxParts](https://carlosmertens.github.io/daxparts)
+
 ## Tecnología | Technology
 
 1. React js
