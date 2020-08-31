@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import axios from 'axios';
 import openModal from '../../actions/openModal';
 import navLogo from '../../images/logoNav.png';
 import Login from '../login/Login';
@@ -11,37 +12,66 @@ import Login from '../login/Login';
 
 const SignUp = (props) => {
   const idioma = props.idioma;
-  const [empresa, setEmpresa] = useState('');
-  const [nombre, setNombre] = useState('');
-  const [id, setId] = useState('');
-  const [numeroId, setNumeroId] = useState('');
-  const [pais, setPais] = useState('');
-  const [ciudad, setCiudad] = useState('');
-  const [telefono, setTelefono] = useState('');
-  const [email, setEmail] = useState('');
-  const [usuario, setUsuario] = useState('');
-  const [password1, setPassword1] = useState('');
-  const [password2, setPassword2] = useState('');
 
+  const [NomCliente, setNomCliente] = useState('');
+  const [NomContacto, setNomContacto] = useState('');
+  // const [id, setId] = useState('Cedula de identidad');
+  const [NumNit, setNumNit] = useState('');
+  const [CodPais, setCodPais] = useState('Bolivia');
+  const [CodCiudad, setCodCiudad] = useState('');
+  const [Direccion, setDireccion] = useState('');
+  const [NumTel1, setNumTel1] = useState('');
+  const [NumTel2, setNumTel2] = useState('');
+  const [Mail, setMail] = useState('');
+  const [NomUsuario, setNomUsuario] = useState('');
+  const [LogUsuario, setLogUsuario] = useState('');
+  const [Contrasena, setContrasena] = useState('');
+  // const [password2, setPassword2] = useState('');
+
+  // Funcion para cerrar el modal al enviar formulario
   // Conponent to close the modal
   const closeModal = () => {
     props.openModal('closed', '');
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     closeModal();
-    console.log(empresa);
-    console.log(nombre);
-    console.log(id);
-    console.log(numeroId);
-    console.log(pais);
-    console.log(ciudad);
-    console.log(telefono);
-    console.log(email);
-    console.log(usuario);
-    console.log(password1);
-    console.log(password2);
+
+    console.log(NomCliente);
+    console.log(NomContacto);
+    console.log(NumNit);
+    console.log(CodPais);
+    console.log(CodCiudad);
+    console.log(Direccion);
+    console.log(NumTel1);
+    console.log(NumTel2);
+    console.log(Mail);
+    console.log(LogUsuario);
+    console.log(Contrasena);
+
+    // ***** Llamar DaxParts API *****
+    // ***** Call DaxParts API *****
+    const url = 'http://www.wp.daxparts.com/api/sesion/validar';
+    const data = {
+      IdCliente: '0',
+      NomCliente: NomCliente,
+      NomContacto: NomContacto,
+      NumNit: NumNit,
+      CodPais: CodPais,
+      CodCiudad: CodCiudad,
+      Direccion: Direccion,
+      NumTel1: NumTel1,
+      NumTel2: NumTel2,
+      Mail: Mail,
+      NomUsuario: NomUsuario,
+      LogUsuario: LogUsuario,
+      Contrasena: Contrasena,
+    };
+    // ***** Enviar pedido POST a la API
+    // ***** Call POST request *****
+    const response = await axios.post(url, data);
+    console.log(response);
   };
 
   return (
@@ -60,8 +90,8 @@ const SignUp = (props) => {
               type='text'
               className='form-control mr-sm-2'
               placeholder={idioma.crear.empresa}
-              onChange={(e) => setEmpresa(e.target.value)}
-              value={empresa}
+              onChange={(e) => setNomCliente(e.target.value)}
+              value={NomCliente}
             />
           </div>
 
@@ -70,12 +100,15 @@ const SignUp = (props) => {
               type='text'
               className='form-control mr-sm-2'
               placeholder={idioma.crear.nombre}
-              onChange={(e) => setNombre(e.target.value)}
-              value={nombre}
+              onChange={(e) => setNomContacto(e.target.value)}
+              value={NomContacto}
             />
           </div>
 
-          <div className='form-group d-flex justify-content-center'>
+          {/* API no lo requiere 
+            TODO: Confirm with Dax since API does not request it */}
+
+          {/* <div className='form-group d-flex justify-content-center'>
             <select
               className='form-control'
               onChange={(e) => setId(e.target.value)}
@@ -85,23 +118,23 @@ const SignUp = (props) => {
               <option>{idioma.crear.pasaporte}</option>
               <option>RUC</option>
             </select>
-          </div>
+          </div> */}
 
           <div className='form-group d-flex justify-content-center'>
             <input
               type='text'
               className='form-control mr-sm-2'
               placeholder={idioma.crear.numero}
-              onChange={(e) => setNumeroId(e.target.value)}
-              value={numeroId}
+              onChange={(e) => setNumNit(e.target.value)}
+              value={NumNit}
             />
           </div>
 
           <div className='form-group d-flex justify-content-center'>
             <select
               className='form-control'
-              onChange={(e) => setPais(e.target.value)}
-              value={pais}>
+              onChange={(e) => setCodPais(e.target.value)}
+              value={CodPais}>
               <option>Bolivia</option>
               <option>USA</option>
               <option>Paraguay</option>
@@ -114,8 +147,8 @@ const SignUp = (props) => {
               type='text'
               className='form-control mr-sm-2'
               placeholder={idioma.crear.ciudad}
-              onChange={(e) => setCiudad(e.target.value)}
-              value={ciudad}
+              onChange={(e) => setCodCiudad(e.target.value)}
+              value={CodCiudad}
             />
           </div>
 
@@ -123,9 +156,29 @@ const SignUp = (props) => {
             <input
               type='text'
               className='form-control mr-sm-2'
-              placeholder={idioma.crear.telefono}
-              onChange={(e) => setTelefono(e.target.value)}
-              value={telefono}
+              placeholder='Direccion'
+              onChange={(e) => setDireccion(e.target.value)}
+              value={Direccion}
+            />
+          </div>
+
+          <div className='form-group d-flex justify-content-center'>
+            <input
+              type='text'
+              className='form-control mr-sm-2'
+              placeholder={idioma.crear.telefono1}
+              onChange={(e) => setNumTel1(e.target.value)}
+              value={NumTel1}
+            />
+          </div>
+
+          <div className='form-group d-flex justify-content-center'>
+            <input
+              type='text'
+              className='form-control mr-sm-2'
+              placeholder={idioma.crear.telefono2}
+              onChange={(e) => setNumTel2(e.target.value)}
+              value={NumTel2}
             />
           </div>
 
@@ -134,8 +187,8 @@ const SignUp = (props) => {
               type='email'
               className='form-control mr-sm-2'
               placeholder='Email'
-              onChange={(e) => setEmail(e.target.value)}
-              value={email}
+              onChange={(e) => setMail(e.target.value)}
+              value={Mail}
             />
           </div>
 
@@ -145,9 +198,19 @@ const SignUp = (props) => {
             <input
               type='text'
               className='form-control mr-sm-2'
+              placeholder={idioma.crear.nomUsuario}
+              onChange={(e) => setNomUsuario(e.target.value)}
+              value={NomUsuario}
+            />
+          </div>
+
+          <div className='form-group d-flex justify-content-center'>
+            <input
+              type='text'
+              className='form-control mr-sm-2'
               placeholder={idioma.crear.usuario}
-              onChange={(e) => setUsuario(e.target.value)}
-              value={usuario}
+              onChange={(e) => setLogUsuario(e.target.value)}
+              value={LogUsuario}
             />
           </div>
 
@@ -156,12 +219,15 @@ const SignUp = (props) => {
               type='password'
               className='form-control mr-sm-2'
               placeholder={idioma.crear.password1}
-              onChange={(e) => setPassword1(e.target.value)}
-              value={password1}
+              onChange={(e) => setContrasena(e.target.value)}
+              value={Contrasena}
             />
           </div>
 
-          <div className='form-group d-flex justify-content-center'>
+          {/* API no lo requiere 
+            TODO: Confirm with Dax since API does not request it */}
+
+          {/* <div className='form-group d-flex justify-content-center'>
             <input
               type='password'
               className='form-control mr-sm-2'
@@ -169,7 +235,7 @@ const SignUp = (props) => {
               onChange={(e) => setPassword2(e.target.value)}
               value={password2}
             />
-          </div>
+          </div> */}
 
           <div className='boton-form'>
             <button type='submit' className='btn'>

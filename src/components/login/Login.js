@@ -35,7 +35,9 @@ const Login = (props) => {
     //   email: usuario,
     //   password: password,
     // };
-    // Simple POST request
+
+    // ***** Enviar pedido POST a la API
+    // ***** Call POST request *****
     const response = await axios.post(url, data);
     console.log(response);
     // Hacer algo con la respuesta del API (Usuario valido o no)
