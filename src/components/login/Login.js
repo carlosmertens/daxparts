@@ -22,21 +22,24 @@ const Login = (props) => {
     closeModal();
     console.log(usuario);
     console.log(password);
+    // ***** Llamar DaxParts API *****
     // ***** Call DaxParts API *****
-    // const url = 'http://www.wp.daxparts.com/api/sesion/validar';
-    // const data = {
-    //   logususario: usuario,
-    //   clausuario: password,
-    // };
-    // ***** Call Test API *****
-    const url = `${window.apiHost}/users/login`;
+    const url = 'http://www.wp.daxparts.com/api/sesion/validar';
     const data = {
-      email: usuario,
-      password: password,
+      logususario: usuario,
+      clausuario: password,
     };
+    // ***** Test External API *****
+    // const url = `${window.apiHost}/users/login`;
+    // const data = {
+    //   email: usuario,
+    //   password: password,
+    // };
     // Simple POST request
     const response = await axios.post(url, data);
     console.log(response);
+    // Hacer algo con la respuesta del API (Usuario valido o no)
+    // TODO: Do something with the response
   };
 
   return (
