@@ -106,12 +106,11 @@ const Cotizacion = (props) => {
               <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio1}</p>
               <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio2}</p>
               <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio3}</p>
-              <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio4}</p>
             </div>
             <div className='col'>
-              <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio1}</p>
-              <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio2}</p>
-              <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio3}</p>
+              <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio4}</p>
+              <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio5}</p>
+              <p className='beneficios-jumbo'>{idioma.cotizacion.beneficio6}</p>
             </div>
           </div>
         </div>
