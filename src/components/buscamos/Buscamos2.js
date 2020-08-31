@@ -25,6 +25,8 @@ const Buscamos2 = (props) => {
     props.openModal('closed', '');
   };
 
+  // Añadir async: const handleSubmit = async (e) => {
+  // Add async
   const handleSubmit = (e) => {
     e.preventDefault();
     closeModal();
@@ -40,6 +42,20 @@ const Buscamos2 = (props) => {
     console.log(pais);
     console.log(email);
     console.log(telefono);
+    // ***** Llamar DaxParts API *****
+    // ***** Call DaxParts API *****
+    // const url = 'http://www.wp.daxparts.com/api/...';
+    // const data = {
+    //   campo1: props.marcaEquipo,
+    //   campo2: props.modeloEquipo,
+    //   campo3: props.serieEquipo,
+    //   ... TODO: Copletar los campos
+    // };
+
+    // ***** Enviar pedido POST a la API
+    // ***** Call POST request *****
+    // const response = await axios.post(url, data);
+    // console.log(response);
   };
 
   return (

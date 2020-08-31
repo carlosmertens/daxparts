@@ -30,7 +30,7 @@ const Login = (props) => {
       clausuario: password,
     };
     // ***** Test External API *****
-    // const url = `${window.apiHost}/users/login`;
+    // const url = 'https://airbnb-api.robertbunch.dev/users/login';
     // const data = {
     //   email: usuario,
     //   password: password,
