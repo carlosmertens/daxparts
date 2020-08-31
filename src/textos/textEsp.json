@@ -14,6 +14,7 @@
     "botonBuscar": "Buscar",
     "enlaceClick": "Click aqui si no sabes el numero de parte",
     "leyendaTutorial": "Tutoriales",
+
     "modal": {
       "titulo": "No tienes numero de parte?",
       "enlaceTutorial": "Manuales gratuitos",
@@ -28,10 +29,23 @@
     "marca": "Marca de tu equipo",
     "modelo": "Modelo de tu equipo",
     "serie": "Serie de tu equipo",
-    "titulo2": "Tus datos:",
+
+    "titulo2": "Datos del motor",
+    "marcaMotor": "Marca de tu motor",
+    "modeloMotor": "Modelo de tu motor",
+    "serieMotor": "Serie de tu motor",
+
+    "titulo3": "Datos de la orden",
+    "cantidad": "Cantidad",
+    "descripcion": "Describe la parte...",
+
+    "titulo4": "Tus datos:",
     "nombre": "Nombre",
     "pais": "Pais",
     "telefono": "Teléfono/WhatsApp",
+
+    "botonContinuar": "Siguiente",
+
     "botonCotizar": "Cotizar",
     "cambiarModal": "Ya tienes una cuenta?",
     "cambiarEnlace": "Click aqui!"
@@ -41,12 +55,7 @@
     "titulo": "Quienes somos?",
     "contenido": "Desde el 2018, DAX se ha especializado en facilitar repuestos para todo tipo de maquinaria a sus clientes en Latino América. Inicialmente atendiendo el rubro de la construcción en Bolivia, Perú, y Paraguay; hoy el servicio de DAX se extiende a diversos países y rubros.\nSu pasión por la tecnología; le ha permitido desarrollar tecnología propia que permite a sus clientes adquirir repuestos de manera eficiente, económica y en un solo lugar. Permitiendo a sus clientes beneficiarse de ahorros en repuestos, fletes, y tiempo.",
     "titulo2": "Que hacemos?",
-    "contenido2": "Te ofrecemos un servicio fácil y sencillo de búsqueda, cotización y compra de repuestos para equipo pesado, agrícola y de construcción. Nuestro sistema te ofertará las mejores marcas, precios y tiempos de entrega de Bolivia y el mundo. Tú decides cual comprar y te lo enviamos. No necesitas llamar a diferentes tiendas para encontrar tu parte, nosotros la encontramos por ti. Todo en un solo lugar.",
-    "banner": {
-      "texto1": "250.000+ Repuestos",
-      "texto2": "50+ Fabricantes",
-      "texto3": "13+ Años al mercado"
-    }
+    "contenido2": "Te ofrecemos un servicio fácil y sencillo de búsqueda, cotización y compra de repuestos para equipo pesado, agrícola y de construcción. Nuestro sistema te ofertará las mejores marcas, precios y tiempos de entrega de Bolivia y el mundo. Tú decides cual comprar y te lo enviamos. No necesitas llamar a diferentes tiendas para encontrar tu parte, nosotros la encontramos por ti. Todo en un solo lugar."
   },
 
   "hacemos": {

@@ -68,13 +68,13 @@ const Buscamos2 = (props) => {
 
       <div className='modal-body'>
         <form onSubmit={handleSubmit}>
-          <h4>Datos de la orden</h4>
+          <h4>{idioma.buscamos.titulo3}</h4>
 
           <div className='form-group d-flex justify-content-center'>
             <input
               type='text'
               className='form-control mr-sm-2'
-              placeholder='Cantidad'
+              placeholder={idioma.buscamos.cantidad}
               onChange={(e) => setCantidad(e.target.value)}
               value={cantidad}
             />
@@ -84,12 +84,12 @@ const Buscamos2 = (props) => {
             <textarea
               type='text'
               className='description form-control mr-sm-2'
-              placeholder='Describe la parte...'
+              placeholder={idioma.buscamos.descripcion}
               onChange={(e) => setDescripcion(e.target.value)}
               value={descripcion}></textarea>
           </div>
 
-          <h4>{idioma.buscamos.titulo2}</h4>
+          <h4>{idioma.buscamos.titulo4}</h4>
           <div className='form-group d-flex justify-content-center'>
             <input
               type='text'

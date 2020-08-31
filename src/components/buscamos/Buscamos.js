@@ -59,13 +59,13 @@ const Buscamos = (props) => {
             />
           </div>
 
-          <h4>Datos del Motor</h4>
+          <h4>{idioma.buscamos.titulo2}</h4>
 
           <div className='form-group d-flex justify-content-center'>
             <input
               type='text'
               className='form-control mr-sm-2'
-              placeholder='Marca de tu motor'
+              placeholder={idioma.buscamos.marcaMotor}
               onChange={(e) => setMarcaMotor(e.target.value)}
               value={marcaMotor}
             />
@@ -75,7 +75,7 @@ const Buscamos = (props) => {
             <input
               type='text'
               className='form-control mr-sm-2'
-              placeholder='Modelo de tu motor'
+              placeholder={idioma.buscamos.modeloMotor}
               onChange={(e) => setModeloMotor(e.target.value)}
               value={modeloMotor}
             />
@@ -85,7 +85,7 @@ const Buscamos = (props) => {
             <input
               type='text'
               className='form-control mr-sm-2'
-              placeholder='Serie de tu motor'
+              placeholder={idioma.buscamos.serieMotor}
               onChange={(e) => setSerieMotor(e.target.value)}
               value={serieMotor}
             />
@@ -109,7 +109,7 @@ const Buscamos = (props) => {
                   />
                 );
               }}>
-              Continuar
+              {idioma.buscamos.botonContinuar}
             </button>
           </div>
         </form>

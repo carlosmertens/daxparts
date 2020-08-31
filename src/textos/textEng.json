@@ -5,12 +5,7 @@
     "enlace3": "What do we offer?",
     "enlace4": "Contacts",
     "botonTexto1": "Login",
-    "botonTexto2": "Sign up",
-    "modal": {
-      "campoUuario": "User",
-      "campoContrasena": "Password",
-      "botonIngresar": "Sign in"
-    }
+    "botonTexto2": "Sign up"
   },
 
   "home": {
@@ -19,6 +14,7 @@
     "botonBuscar": "Search",
     "enlaceClick": "Click here if you don't know the code",
     "leyendaTutorial": "Tutorials",
+
     "modal": {
       "titulo": "Don't know spare part number?",
       "enlaceTutorial": "Online tutorials",
@@ -33,10 +29,23 @@
     "marca": "Equipment's brand",
     "modelo": "Equipment's model",
     "serie": "Equipment's series",
-    "titulo2": "Personal details:",
+
+    "titulo2": "Motor details",
+    "marcaMotor": "Brand of the motor",
+    "modeloMotor": "Model of the motor",
+    "serieMotor": "Serie of the motor",
+
+    "titulo3": "Orden details",
+    "cantidad": "Quantity",
+    "descripcion": "Describe the order...",
+
+    "titulo4": "Personal details:",
     "nombre": "Name",
-    "pais": "County",
+    "pais": "Country",
     "telefono": "Phone/WhatsApp",
+
+    "botonContinuar": "Next",
+
     "botonCotizar": "Find it",
     "cambiarModal": "Already have an account?",
     "cambiarEnlace": "Click here!"
