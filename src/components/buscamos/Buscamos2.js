@@ -6,6 +6,9 @@ import navLogo from '../../images/logoNav.png';
 import Ingresar from '../login/Login';
 import './Buscamos.css';
 
+// TODO: Wait for the API from DaxParts to know exactly what information is
+// needed in this section and Buscamos2
+
 const Buscamos2 = (props) => {
   const idioma = props.idioma;
 
@@ -25,8 +28,18 @@ const Buscamos2 = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     closeModal();
+    console.log(props.marcaEquipo);
+    console.log(props.modeloEquipo);
+    console.log(props.serieEquipo);
+    console.log(props.marcaMotor);
+    console.log(props.modeloMotor);
+    console.log(props.serieMotor);
     console.log(cantidad);
     console.log(descripcion);
+    console.log(nombre);
+    console.log(pais);
+    console.log(email);
+    console.log(telefono);
   };
 
   return (

@@ -6,9 +6,6 @@ import navLogo from '../../images/logoNav.png';
 import Ingresar from '../login/Login';
 import Buscamos2 from './Buscamos2';
 
-// TODO: Wait for the API from DaxParts to know exactly what information is
-// needed in this section and Buscamos2
-
 const Buscamos = (props) => {
   const idioma = props.idioma;
   const [marcaEquipo, setMarcaEquipo] = useState('');
@@ -17,12 +14,6 @@ const Buscamos = (props) => {
   const [marcaMotor, setMarcaMotor] = useState('');
   const [modeloMotor, setModeloMotor] = useState('');
   const [serieMotor, setSerieMotor] = useState('');
-
-  // Funcion para cerrar modal
-  // Conponent to close the modal
-  // const closeModal = () => {
-  //   props.openModal('closed', '');
-  // };
 
   return (
     <>
@@ -105,7 +96,18 @@ const Buscamos = (props) => {
               type='button'
               className='btn'
               onClick={() => {
-                props.openModal('open', <Buscamos2 idioma={props.idioma} />);
+                props.openModal(
+                  'open',
+                  <Buscamos2
+                    idioma={props.idioma}
+                    marcaEquipo={marcaEquipo}
+                    modeloEquipo={modeloEquipo}
+                    serieEquipo={serieEquipo}
+                    marcaMotor={marcaMotor}
+                    modeloMotor={modeloMotor}
+                    serieMotor={serieMotor}
+                  />
+                );
               }}>
               Continuar
             </button>
