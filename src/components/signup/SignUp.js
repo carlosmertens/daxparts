@@ -17,7 +17,7 @@ const SignUp = (props) => {
   const [NomContacto, setNomContacto] = useState('');
   // const [id, setId] = useState('Cedula de identidad');
   const [NumNit, setNumNit] = useState('');
-  const [CodPais, setCodPais] = useState('Bolivia');
+  const [CodPais, setCodPais] = useState('');
   const [CodCiudad, setCodCiudad] = useState('');
   const [Direccion, setDireccion] = useState('');
   const [NumTel1, setNumTel1] = useState('');
@@ -131,15 +131,13 @@ const SignUp = (props) => {
           </div>
 
           <div className='form-group d-flex justify-content-center'>
-            <select
-              className='form-control'
+            <input
+              type='text'
+              className='form-control mr-sm-2'
+              placeholder={idioma.crear.pais}
               onChange={(e) => setCodPais(e.target.value)}
-              value={CodPais}>
-              <option>Bolivia</option>
-              <option>USA</option>
-              <option>Paraguay</option>
-              <option>Peru</option>
-            </select>
+              value={CodPais}
+            />
           </div>
 
           <div className='form-group d-flex justify-content-center'>
