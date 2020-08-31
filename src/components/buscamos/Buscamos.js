@@ -14,15 +14,9 @@ const Buscamos = (props) => {
   const [marcaEquipo, setMarcaEquipo] = useState('');
   const [modeloEquipo, setModeloEquipo] = useState('');
   const [serieEquipo, setSerieEquipo] = useState('');
-  // const [marcaMotor, setMarcaMotor] = useState('');
-  // const [modeloMotor, setModeloMotor] = useState('');
-  // const [serieMotor, setSerieMotor] = useState('');
-  // const [cantidad, setCantidad] = useState('');
-  // const [descripcion, setDescripcion] = useState('');
-  const [nombre, setNombre] = useState('');
-  const [pais, setPais] = useState('');
-  const [email, setEmail] = useState('');
-  const [telefono, setTelefono] = useState('');
+  const [marcaMotor, setMarcaMotor] = useState('');
+  const [modeloMotor, setModeloMotor] = useState('');
+  const [serieMotor, setSerieMotor] = useState('');
 
   // Funcion para cerrar modal
   // Conponent to close the modal
@@ -39,48 +33,10 @@ const Buscamos = (props) => {
       <hr />
 
       <div className='modal-body'>
-        <form>
-          <h4>{idioma.buscamos.titulo2}</h4>
-          <div className='form-group d-flex justify-content-center'>
-            <input
-              type='text'
-              className='form-control mr-sm-2'
-              placeholder={idioma.buscamos.nombre}
-              onChange={(e) => setNombre(e.target.value)}
-              value={nombre}
-            />
-          </div>
-
-          <div className='form-group d-flex justify-content-center'>
-            <input
-              type='text'
-              className='form-control mr-sm-2'
-              placeholder={idioma.buscamos.pais}
-              onChange={(e) => setPais(e.target.value)}
-              value={pais}
-            />
-          </div>
-
-          <div className='form-group d-flex justify-content-center'>
-            <input
-              type='email'
-              className='form-control mr-sm-2'
-              placeholder='Email'
-              onChange={(e) => setEmail(e.target.value)}
-              value={email}
-            />
-          </div>
-
-          <div className='form-group d-flex justify-content-center'>
-            <input
-              type='text'
-              className='form-control mr-sm-2'
-              placeholder={idioma.buscamos.telefono}
-              onChange={(e) => setTelefono(e.target.value)}
-              value={telefono}
-            />
-          </div>
-
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+          }}>
           <h4>{idioma.buscamos.titulo1}</h4>
           <div className='form-group d-flex justify-content-center'>
             <input
@@ -112,8 +68,41 @@ const Buscamos = (props) => {
             />
           </div>
 
+          <h4>Datos del Motor</h4>
+
+          <div className='form-group d-flex justify-content-center'>
+            <input
+              type='text'
+              className='form-control mr-sm-2'
+              placeholder='Marca de tu motor'
+              onChange={(e) => setMarcaMotor(e.target.value)}
+              value={marcaMotor}
+            />
+          </div>
+
+          <div className='form-group d-flex justify-content-center'>
+            <input
+              type='text'
+              className='form-control mr-sm-2'
+              placeholder='Modelo de tu motor'
+              onChange={(e) => setModeloMotor(e.target.value)}
+              value={modeloMotor}
+            />
+          </div>
+
+          <div className='form-group d-flex justify-content-center'>
+            <input
+              type='text'
+              className='form-control mr-sm-2'
+              placeholder='Serie de tu motor'
+              onChange={(e) => setSerieMotor(e.target.value)}
+              value={serieMotor}
+            />
+          </div>
+
           <div className='boton-form'>
             <button
+              type='button'
               className='btn'
               onClick={() => {
                 props.openModal('open', <Buscamos2 idioma={props.idioma} />);

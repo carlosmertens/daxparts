@@ -8,11 +8,13 @@ import './Buscamos.css';
 
 const Buscamos2 = (props) => {
   const idioma = props.idioma;
-  const [marcaMotor, setMarcaMotor] = useState('');
-  const [modeloMotor, setModeloMotor] = useState('');
-  const [serieMotor, setSerieMotor] = useState('');
+
   const [cantidad, setCantidad] = useState('');
   const [descripcion, setDescripcion] = useState('');
+  const [nombre, setNombre] = useState('');
+  const [pais, setPais] = useState('');
+  const [email, setEmail] = useState('');
+  const [telefono, setTelefono] = useState('');
 
   // Funcion para cerrar modal
   // Conponent to close the modal
@@ -23,9 +25,6 @@ const Buscamos2 = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     closeModal();
-    console.log(marcaMotor);
-    console.log(modeloMotor);
-    console.log(serieMotor);
     console.log(cantidad);
     console.log(descripcion);
   };
@@ -40,36 +39,6 @@ const Buscamos2 = (props) => {
 
       <div className='modal-body'>
         <form onSubmit={handleSubmit}>
-          <h4>Datos del Motor</h4>
-          <div className='form-group d-flex justify-content-center'>
-            <input
-              type='text'
-              className='form-control mr-sm-2'
-              placeholder='Marca de tu motor'
-              onChange={(e) => setMarcaMotor(e.target.value)}
-              value={marcaMotor}
-            />
-          </div>
-
-          <div className='form-group d-flex justify-content-center'>
-            <input
-              type='text'
-              className='form-control mr-sm-2'
-              placeholder='Modelo de tu motor'
-              onChange={(e) => setModeloMotor(e.target.value)}
-              value={modeloMotor}
-            />
-          </div>
-
-          <div className='form-group d-flex justify-content-center'>
-            <input
-              type='text'
-              className='form-control mr-sm-2'
-              placeholder='Serie de tu motor'
-              onChange={(e) => setSerieMotor(e.target.value)}
-              value={serieMotor}
-            />
-          </div>
           <h4>Datos de la orden</h4>
 
           <div className='form-group d-flex justify-content-center'>
@@ -89,6 +58,47 @@ const Buscamos2 = (props) => {
               placeholder='Describe la parte...'
               onChange={(e) => setDescripcion(e.target.value)}
               value={descripcion}></textarea>
+          </div>
+
+          <h4>{idioma.buscamos.titulo2}</h4>
+          <div className='form-group d-flex justify-content-center'>
+            <input
+              type='text'
+              className='form-control mr-sm-2'
+              placeholder={idioma.buscamos.nombre}
+              onChange={(e) => setNombre(e.target.value)}
+              value={nombre}
+            />
+          </div>
+
+          <div className='form-group d-flex justify-content-center'>
+            <input
+              type='text'
+              className='form-control mr-sm-2'
+              placeholder={idioma.buscamos.pais}
+              onChange={(e) => setPais(e.target.value)}
+              value={pais}
+            />
+          </div>
+
+          <div className='form-group d-flex justify-content-center'>
+            <input
+              type='email'
+              className='form-control mr-sm-2'
+              placeholder='Email'
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+            />
+          </div>
+
+          <div className='form-group d-flex justify-content-center'>
+            <input
+              type='text'
+              className='form-control mr-sm-2'
+              placeholder={idioma.buscamos.telefono}
+              onChange={(e) => setTelefono(e.target.value)}
+              value={telefono}
+            />
           </div>
 
           <div className='boton-form'>
