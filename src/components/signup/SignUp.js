@@ -72,6 +72,7 @@ const SignUp = (props) => {
     // ***** Call POST request *****
     const response = await axios.post(url, data);
     console.log(response);
+    // url
   };
 
   return (

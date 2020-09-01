@@ -29,12 +29,6 @@ const Login = (props) => {
       logususario: usuario,
       clausuario: password,
     };
-    // ***** Test External API *****
-    // const url = 'https://airbnb-api.robertbunch.dev/users/login';
-    // const data = {
-    //   email: usuario,
-    //   password: password,
-    // };
 
     // ***** Enviar pedido POST a la API
     // ***** Call POST request *****

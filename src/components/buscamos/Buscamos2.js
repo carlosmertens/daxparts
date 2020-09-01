@@ -71,6 +71,15 @@ const Buscamos2 = (props) => {
           <h4>{idioma.buscamos.titulo3}</h4>
 
           <div className='form-group d-flex justify-content-center'>
+            <textarea
+              type='text'
+              className='description form-control mr-sm-2'
+              placeholder={idioma.buscamos.descripcion}
+              onChange={(e) => setDescripcion(e.target.value)}
+              value={descripcion}></textarea>
+          </div>
+
+          <div className='form-group d-flex justify-content-center'>
             <input
               type='text'
               className='form-control mr-sm-2'
@@ -78,15 +87,6 @@ const Buscamos2 = (props) => {
               onChange={(e) => setCantidad(e.target.value)}
               value={cantidad}
             />
-          </div>
-
-          <div className='form-group d-flex justify-content-center'>
-            <textarea
-              type='text'
-              className='description form-control mr-sm-2'
-              placeholder={idioma.buscamos.descripcion}
-              onChange={(e) => setDescripcion(e.target.value)}
-              value={descripcion}></textarea>
           </div>
 
           <h4>{idioma.buscamos.titulo4}</h4>
